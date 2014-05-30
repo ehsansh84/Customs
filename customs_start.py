@@ -13,7 +13,7 @@ from tornado.options import define, options
 from urls.BaseUrls import url_patterns
 
 
-define("port", default=8084, help="run on the given port", type=int)
+define("port", default=8000, help="run on the given port", type=int)
 
 if __name__ == '__main__':
     tornado.options.parse_command_line()

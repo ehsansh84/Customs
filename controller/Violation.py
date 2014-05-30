@@ -8,7 +8,7 @@ import tornado.options
 import tornado.web
 import tornado.options
 import tornado.websocket
-from republishan2.classes.Violation import Violation
+from classes.Violation import Violation
 
 class GetViolation(tornado.web.RequestHandler):
     def get(self):

@@ -1,0 +1,223 @@
+﻿/***************************/
+/********** Users **********/
+/***************************/
+
+/********** LoginPanel **********/
+.loginPanel {
+    padding:5px 5px;
+    width:300px;
+    float:left;
+    font-size:10pt;
+}
+.loginPanel input[type=text],.loginPanel input[type=password]{
+	width: 115px;
+    margin-right:0px;
+}
+
+.loginPanel label {
+    width:65px;
+    margin:5px 5px 0px 0px;
+}
+
+.loginPanel a:hover {
+    color:black;
+}
+/********** Login **********/
+.login {
+    width:300px;
+    margin:0px auto;
+}
+
+/********** Register **********/
+/*.register {	width: 430px;
+}
+
+    .register a {
+      color: #8c910b;
+      text-shadow: 0px -1px 0px #000;
+    }
+
+    .register h2 {
+	    color: #fff;
+	    text-shadow: 0px -1px 0px #000;
+	    border-bottom: solid #181818 1px;
+	    -moz-box-shadow: 0px 1px 0px #3a3a3a;
+	    text-align: center;
+	    padding: 18px;
+	    margin: 0px 0px 10px 0px;
+	    font-weight: normal;
+	    font-size: 24px;
+	    font-family: B Roya,'B Roya',tahoma;
+	    }
+
+    .register .btnRegister {
+        color:black;
+    }*/
+
+/*  */
+.staticPageManager {
+}
+
+    .staticPageManager label {
+        width:100px;
+    }
+.staticPageManager .StaticPagesListsName {
+    width:100px;
+    text-align:right;
+    color:black;
+}
+
+.staticPageManager .StaticPagesListsTitle {
+    width:300px;
+    text-align:right;
+    color:black;
+}
+
+
+
+
+/*  */
+.DetectsReport label {
+}
+
+.DetectsReport {
+    font-size:12pt;
+}
+
+
+
+/*  */
+.MenuManager span{
+    display:inline-block;
+}
+.MenuListsOrderNo {
+    width:50px;
+}
+
+.MenuListsTitle {
+    width:150px;
+}
+
+
+/********** RequestManager **********/
+.EditRequestsManager label {
+    width:100px;
+}
+
+/********** RequestManager **********/
+.EditRequestsManager {
+}
+
+
+.EditRequestsManager span{
+    display:inline-block;
+}
+
+.EditRequestsManager .EditRequestsListsButtons{
+    width:80px;
+}
+
+.EditRequestsManager .EditRequestsListsFullName{
+    width:150px;
+}
+
+.EditRequestsManager .EditRequestsListssDate{
+    width:80px;
+}
+
+.EditRequestsManager {
+}
+
+
+/********** DetectsReport **********/
+.DetectsReport {
+}
+
+
+.DetectsReport label{
+    display:inline-block;
+}
+
+    .DetectsReport input[type=text] {
+        width:100px;
+    }
+
+    
+    .DetectsManager label {
+        width: 200px;
+    }
+
+.DetectsReport {
+    /*width:800px;*/
+}
+
+    span {
+        display: inline-block;
+        /*border:solid 1px red;*/
+    }
+
+    .DetectsReport .formHeader {
+    }
+    .DetectsReport .DetectsListssDate {width: 80px;}
+    .DetectsReport .DetectsListsKootaj {width: 80px;}
+    .DetectsReport .DetectsListsCertNo {width: 80px;}
+    .DetectsReport .DetectsListsFullName {width: 150px;}
+    .DetectsReport .DetectsListsEzCodeNo {width: 80px;}
+    .DetectsReport .DetectsListsFileNo {width: 80px;}
+    .DetectsReport .DetectsListsCardNo {width: 80px;}
+    .DetectsReport .DetectsListsCodeNo {width: 80px;}
+    
+    .DetectsReport .DetectsListsCompany {width: 80px;}
+    .DetectsReport .DetectsListsEzFullName {width: 80px;}
+    .DetectsReport .DetectsListsEzOwner {width: 80px;}
+    .DetectsReport .DetectsListsEzAgent {width: 80px;}
+    .DetectsReport .DetectsListsEzCodeNo {width: 80px;}
+    .DetectsReport .DetectsListsTrCodeNo {width: 80px;}
+    .DetectsReport .DetectsListsTrFullName {width: 80px;}
+    .DetectsReport .DetectsListsTrNationality {width: 80px;}
+    .DetectsReport .DetectsListsTrManager {width: 80px;}
+    .DetectsReport .DetectsListsTrRegNo {width: 80px;}
+    .DetectsReport .DetectsListsItemName {width: 80px;}
+    .DetectsReport .DetectsListsTariffNo {width: 80px;}
+
+
+    
+
+    .DetectsReport .DetectsListsTrailerNo {width: 80px;}
+    .DetectsReport .DetectsListsTruckNo {width: 80px;}
+    .DetectsReport .DetectsListsChasisNo {width: 80px;}
+    .DetectsReport .DetectsListsDriverName {width: 80px;}
+    .DetectsReport .DetectsListsTruckAddress {width: 180px;}
+
+
+
+
+
+.inline-couple {
+    display:inline-block;
+}
+
+.columnChooers {
+}
+
+
+
+
+/* Change Password */
+.changePass {
+}
+
+.changePass label{
+    display:inline-block;
+    width:170px;
+}
+
+
+/* User Manager */
+.UsersManager {
+}
+
+.UsersManager label{
+    display:inline-block;
+    width:100px;
+}
