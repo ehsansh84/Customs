@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><title>Central error system - reports</title>
+    <link href='{{ static_url("css/web.css") }}' rel="stylesheet">
+    <link href='{{ static_url("css/bootstrap.css") }}' rel="stylesheet">
+    <link href='{{ static_url("css/bootstrap-theme.css") }}' rel="stylesheet">
+    <link href='{{ static_url("css/dropzone.css") }}' rel="stylesheet"></head>
+
+    <script type="text/javascript">
+        var _filter = {};
+    </script>
+<body>
+<h3><b>Reports</b></h3>
+<h3></h3>
+<form class="form-group dropzone" id="form_report_error">
+    <div class="report_conditions">
+    <label>Sub system</label>
+    <input type="text" name="subSystem" id="subSystem">
+    <label>Section</label>
+    <input type="text" name="section" id="section">
+    <label>Severity</label>
+    <input type="text" name="severity" id="severity">
+    <label>Date</label>
+    <input type="text" name="date" id="date">
+    <label>Filename</label>
+    <input type="text" name="filename" id="filename">
+    <label>Message</label>
+    <input type="text" name="message" id="message">
+
+    <input type="hidden" name="query" id="form_query">
+    <input type="hidden" name="page" id="form_page" value="0">
+    <input type="hidden" name="perpage" id="form_perpage" value="20">
+    <!--<input type="hidden" name="total_pages" id="total_pages" value="0">-->
+    <a href="#" onclick="filter(true)" class="btn btn-success">Filter</a>
+    </div>
+</form>
+<div class="grid">
+
+</div>
+<script src="{{static_url('js/jquery.js')}}"></script>
+<script src="{{static_url('js/error_report.js')}}"></script>
+</body>
+</html>
