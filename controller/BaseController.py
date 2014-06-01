@@ -12,7 +12,7 @@ class IndexHandler(tornado.web.RequestHandler):
     # if session.get("LoggedIn","No") != "No" :
     #     session.set('info', {"Ln":"Alavi","Fn":"ali"})
     #     session.set('_id','1233444')
-        self.write('hello')
+        self.render('index.html')
         # else :
         #     session.set('LoggedIn', {"_id":"12222222","name":"ali"})
         #     self.render('index.html',UN="U Are Not Logged In..")

@@ -1,0 +1,8 @@
+#myTab{
+    direction: rtl;
+    border: solid 1px green;
+}
+
+#myTab li{
+    float: right;
+}
