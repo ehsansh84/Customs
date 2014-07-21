@@ -1,0 +1,27 @@
+body{
+  >section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    >.container{
+      >div{
+        background: #ffffff;
+        border: solid thin #CCCCCC;
+        direction: rtl;
+        text-align: right;
+
+        header{
+          background: #245269;
+          color: #ffffff;
+          padding: 0 15px;
+          line-height: 1.8;
+          font-family: BNazanin;
+          font-size: 23px;
+        }
+
+        section{
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

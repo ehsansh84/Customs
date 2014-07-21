@@ -1,0 +1,126 @@
+$gray : darkgray;
+$dark : #000;
+
+@mixin set_webkit($property, $value , $forVal :false) {
+
+  @if $forVal{
+    -webkit-#{$property}: -webkit-#{$value};
+    -moz-#{$property}: -moz-#{$value};
+    -o-#{$property}: -o-#{$value};
+    #{$property}: #{$value};
+  }
+  @else {
+    -webkit-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -o-#{$property}: #{$value};
+    #{$property}: #{$value};
+  }
+}
+
+@mixin set_transition($property : all 0.15s) {
+  @include set_webkit('transition',$property,false);
+}
+
+@mixin set_transform($property) {
+  @include set_webkit('transform',$property,false);
+}
+
+@mixin set_radius($val) {
+  @include set_webkit(border-radius,$val);
+}
+
+@mixin set_image_cover($size:cover,$position:center center) {
+  @include set_webkit('background-size',$size,false);
+  background-position: $position;
+  background-repeat: no-repeat;
+}
+
+@mixin set_self_flex($value:center)
+{
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  >*{
+    @include set_webkit(align-self,$value);
+  }
+}
+
+@mixin font_face($name, $address ,$local ,$local-src , $style: normal, $width: 400)
+{
+  font-family: '#{$name}';
+  font-style: $style;
+  font-weight: $width;
+  src: local('#{$local}'), local('#{$local-src}'), url($address) format('woff');
+}
+
+@mixin font_face_persian($name)
+{
+  @font-face {
+  font-family: '#{$name}';
+  src: url('fonts/#{$name}.eot'); /* IE9 Compat Modes */
+  src: url('fonts/#{$name}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/#{$name}.woff') format('woff'), /* Modern Browsers */
+       url('fonts/#{$name}.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/#{$name}.svg##{$name}') format('svg'); /* Legacy iOS */
+}
+}
+
+
+@mixin link_hover_opacity($first:1,$last:0.7,$set_trans:true)
+{
+  opacity: $first;
+
+  @if $set_trans == true{
+    @include set_transition();
+  }
+
+  &:not([disabled="disabled"]){
+
+    cursor: pointer;
+
+    &:hover{
+      opacity: $last;
+    }
+  }
+}
+
+@mixin link_hover_gray($property:color,$set_trans:true)
+{
+  #{$property} : $gray;
+
+  @if $set_trans == true{
+    @include set_transition();
+  }
+
+  &:not([disabled="disabled"]){
+
+    cursor: pointer;
+
+    &:hover{
+      #{$property} : $dark;
+    }
+  }
+}
+
+@mixin link_hover_dark($property:color,$set_trans:true)
+{
+  #{$property} : $dark;
+
+  @if $set_trans == true{
+    @include set_transition();
+  }
+
+  &:not([disabled="disabled"]){
+
+    cursor: pointer;
+
+    &:hover{
+      #{$property} : $gray;
+    }
+  }
+}

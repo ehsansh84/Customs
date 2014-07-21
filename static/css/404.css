@@ -1,0 +1,30 @@
+body,html{height: 100%;width: 100%;margin: 0;padding: 0}
+body,html{height:100%;width:100%}*{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+body{
+    background: rgb(118,206,230); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(118,206,230,1) 0%, rgba(60,187,220,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(118,206,230,1)), color-stop(100%,rgba(60,187,220,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(118,206,230,1) 0%,rgba(60,187,220,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(118,206,230,1) 0%,rgba(60,187,220,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(118,206,230,1) 0%,rgba(60,187,220,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(118,206,230,1) 0%,rgba(60,187,220,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76cee6', endColorstr='#3cbbdc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    text-align: center;
+    color: #ffffff;
+    font-family: BYekan;
+    padding-top: 10%;
+}
+
+p{
+    font-family: tahoma, "Helvetica Neue", sans-serif;
+    font-size: 100px;
+    line-height: 1.3;
+    margin: 0;
+
+}
+
+span{
+    font-size: 20px;
+}
+
+@font-face{font-family:"BYekan";src:url("fonts/BYekan.eot");src:url("fonts/BYekan.eot?#iefix") format("embedded-opentype"),url("fonts/BYekan.woff") format("woff"),url("fonts/BYekan.ttf") format("truetype"),url("fonts/BYekan.svg#BYekan") format("svg")}
