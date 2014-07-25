@@ -15,7 +15,7 @@ class Personnel(tornado.web.RequestHandler):
         self.render('personnel.html')
 
     def post(self, *args, **kwargs):
-        personnel_id = self.get_argument('personnel_id', '')
+        personnel_id = self.get_argument('personnel_id', '99')
         name = self.get_argument('name', '')
         family = self.get_argument('family', '')
         district = self.get_argument('district', '')

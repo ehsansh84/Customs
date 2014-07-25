@@ -11,6 +11,8 @@ class Personnel():
 
         obj = Model(name=name, family=family, personnel_id=personnel_id, district=district, username=username,
                     password=password)
+        # print 'PERSON'
+        print personnel_id
         obj.set_id(_id=_id)
         obj.create()
 

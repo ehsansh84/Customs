@@ -1,15 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <form method="post" action="/files">
-        <lable>شماره کوتاژ</lable>
-        <input type="text" name="kootaj">
-        <lable>توضیح</lable>
-        <input type="text" name="desc">
-        <input type="submit" value="ثبت">
-    </form>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block body %}
+    <div>
+        <header>
+            فایل
+        </header>
+        <section>
+            <form class="form-horizontal" role="form"  method="post" action="/files">
+
+
+                <div class="form-group col-lg-12">
+                    <label for="kootaj" class="col-sm-1 control-label">
+                        شماره کوتاژ
+                    </label>
+                    <div class="col-sm-11">
+                      <input type="text" name="kootaj" class="form-control" id="kootaj">
+                    </div>
+
+              </div>
+
+                <div class="form-group col-lg-12">
+                    <label for="desc" class="col-sm-1 control-label">
+                        توضیح
+                    </label>
+                    <div class="col-sm-11">
+                      <textarea name="desc" class="form-control" id="desc"></textarea>
+                    </div>
+
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary">ثبت</button>
+                </div>
+              </div>
+            </form>
+        </section>
+    </div>
+
+{% end %}
