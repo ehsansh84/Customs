@@ -44,10 +44,6 @@ class LoginHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('login.html')
 
-class ViolationHandler(tornado.web.RequestHandler):
-
-    def get(self):
-        self.render('Violation.html')
 
 class IntViolationHandler(tornado.web.RequestHandler):
 
