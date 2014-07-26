@@ -11,7 +11,7 @@ class Detect():
             Policy2=False, Policy3=False, Policy4=False, Policy5=False, Policy6=False, Policy7=False, Policy8=False,
             Ezharname=0, PersonType=False, FullName='', CardNo='', CodeNo='', Company='', EzFullName='', EzOwner='',
             EzAgent='', EzCardNo='', EzCodeNo='', TrFullName='', TrCodeNo='', TrRegNo='', TrNationality='',
-            TrManager='', TrType=False, ItemName='', TariffNo='', Paid=0, Defferent=0, Fine=0, DiffPaid=0,
+            TrManager='', TrType=False, ItemName='', TariffNo='', Paid=0, Different=0, Fine=0, DiffPaid=0,
             ViType1=False, ViType2=False, ViType3=False, ViType4=False, ViType5=False, ViType6=False, ViType7=False,
             ViTypeOther='', StatedTariff=0, StatedValue=0, StatedWeight=0, DeductedTariff=0, DeductedValue=0,
             DeductedWeight=0, Law='', Detector=0, DetectorOther='', Commitment=False, Results='', ReceipNo='',
@@ -60,7 +60,7 @@ class Detect():
             obj.ItemName=ItemName
             obj.TariffNo=TariffNo
             obj.Paid=Paid
-            obj.Defferent=Defferent
+            obj.Different=Different
             obj.Fine=Fine
             obj.DiffPaid=DiffPaid
             obj.ViType1=ViType1

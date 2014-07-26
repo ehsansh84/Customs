@@ -40,7 +40,7 @@ class Detect(Document):
     ItemName = StringField()
     TariffNo = StringField()
     Paid = IntField()
-    Defferent = IntField()
+    Different = IntField()
     Fine = IntField()
     DiffPaid = IntField()
     ViType1 = BooleanField()
