@@ -1,6 +1,11 @@
 __author__ = 'ehsan'
 from mongoengine import *
 from connections import *
+print(database)
+print(mongo_host)
+print(mongo_port)
+print(mongo_username)
+print(mongo_password)
 connect(database, host=mongo_host, port=mongo_port, username=mongo_username, password=mongo_password)
 
 

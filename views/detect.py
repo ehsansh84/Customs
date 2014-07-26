@@ -25,7 +25,6 @@ class Detect(tornado.web.RequestHandler):
         Policy2 = self.get_argument('Policy2', '')
         Policy3 = self.get_argument('Policy3', '')
         Policy4 = self.get_argument('Policy4', '')
-        Policy4 = self.get_argument('Policy4', '')
         Policy5 = self.get_argument('Policy5', '')
         Policy6 = self.get_argument('Policy6', '')
         Policy7 = self.get_argument('Policy7', '')
@@ -77,22 +76,22 @@ class Detect(tornado.web.RequestHandler):
         Locked = self.get_argument('Locked', '')
         mRecDate = self.get_argument('mRecDate', '')
         sRecDate = self.get_argument('sRecDate', '')
+        try:
+            Controller.add(id='', sDate = sDate, mDate=mDate, FileNo=FileNo, Kootaj=Kootaj, CertNo=CertNo, sDate1=sDate1,
+                           sDate2=sDate2, Policy1=Policy1, Policy2=Policy2, Policy3=Policy3, Policy4=Policy4,
+                           Policy5=Policy5, Policy6=Policy6, Policy7=Policy7, Policy8=Policy8, Ezharname=Ezharname,
+                           PersonType=PersonType, FullName=FullName, CardNo=CardNo, CodeNo=CodeNo, Company=Company,
+                           EzFullName=EzFullName, EzOwner=EzOwner, EzAgent=EzAgent, EzCardNo=EzCardNo, EzCodeNo=EzCodeNo,
+                           TrFullName=TrFullName, TrCodeNo=TrCodeNo, TrRegNo=TrRegNo, TrNationality=TrNationality,
+                           TrManager=TrManager, TrType=TrType, ItemName=ItemName, TariffNo=TariffNo, Paid=Paid,
+                           Different=Different, Fine=Fine, DiffPaid=DiffPaid, ViType1=ViType1, ViType2=ViType2,
+                           ViType3=ViType3, ViType4=ViType4, ViType5=ViType5, ViType6=ViType6, ViType7=ViType7,
+                           ViTypeOther=ViTypeOther, StatedTariff=StatedTariff, StatedValue=StatedValue,
+                           StatedWeight=StatedWeight, DeductedTariff=DeductedTariff, DeductedValue=DeductedValue,
+                           DeductedWeight=DeductedWeight, Law=Law, Detector=Detector, DetectorOther=DetectorOther,
+                           Commitment=Commitment, Results=Results, ReceipNo=ReceipNo, Details=Details, Locked=Locked,
+                           mRecDate=mRecDate, sRecDate=sRecDate)
+        except Exception, ex:
+            return ex.message
+        return 1
 
-        Controller.add(id='', sDate = sDate, mDate=mDate, FileNo=FileNo, Kootaj=Kootaj, CertNo=CertNo, sDate1=sDate1,
-                       sDate2=sDate2, Policy1=Policy1, Policy2=Policy2, Policy3=Policy3, Policy4=Policy4,
-                       Policy5=Policy5, Policy6=Policy6, Policy7=Policy7, Policy8=Policy8, Ezharname=Ezharname,
-                       PersonType=PersonType, FullName=FullName, CardNo=CardNo, CodeNo=CodeNo, Company=Company,
-                       EzFullName=EzFullName, EzOwner=EzOwner, EzAgent=EzAgent, EzCardNo=EzCardNo, EzCodeNo=EzCodeNo,
-                       TrFullName=TrFullName, TrCodeNo=TrCodeNo, TrRegNo=TrRegNo, TrNationality=TrNationality,
-                       TrManager=TrManager, TrType=TrType, ItemName=ItemName, TariffNo=TariffNo, Paid=Paid,
-                       Different=Different, Fine=Fine, DiffPaid=DiffPaid, ViType1=ViType1, ViType2=ViType2,
-                       ViType3=ViType3, ViType4=ViType4, ViType5=ViType5, ViType6=ViType6, ViType7=ViType7,
-                       ViTypeOther=ViTypeOther, StatedTariff=StatedTariff, StatedValue=StatedValue,
-                       StatedWeight=StatedWeight, DeductedTariff=DeductedTariff, DeductedValue=DeductedValue,
-                       DeductedWeight=DeductedWeight, Law=Law, Detector=Detector, DetectorOther=DetectorOther,
-                       Commitment=Commitment, Results=Results, ReceipNo=ReceipNo, Details=Details, Locked=Locked,
-                       mRecDate=mRecDate, sRecDate=sRecDate)
-        self.write(personnel_id)
-        self.write(file_id)
-        self.write(flow)
-        self.write(returned)
