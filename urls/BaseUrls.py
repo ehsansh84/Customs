@@ -7,20 +7,20 @@
 # The patterns.
 
 from controller.BaseController import *
-from views.personnel import *
-from views.files import *
-from views.borrow import *
+# from views.personnel import *
+# from views.files import *
+# from views.borrow import *
 
 
 url_patterns = {
     (r'/', IndexHandler),
-    # (r'/form', FormHandler),
-    # (r'/Stepform', StepFormHandler),
-    # (r'/table', TableHandler),
-    # (r'/404', ErrorHandler),
-    # (r'/login', LoginHandler),
-    # (r'/violation', ViolationHandler),
-    # (r'/intViolation', IntViolationHandler),
+    (r'/form', FormHandler),
+    (r'/Stepform', StepFormHandler),
+    (r'/table', TableHandler),
+    (r'/404', ErrorHandler),
+    (r'/login', LoginHandler),
+    (r'/violation', ViolationHandler),
+    (r'/intViolation', IntViolationHandler),
 
 
     # (r'/404[/]?', PageNotFound),
