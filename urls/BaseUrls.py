@@ -21,6 +21,8 @@ url_patterns = {
     (r'/login', LoginHandler),
     (r'/violation', ViolationHandler),
     (r'/intViolation', IntViolationHandler),
+
+
     # (r'/404[/]?', PageNotFound),
     # (r'/settings/info/([^/]*)', GetSettingsInfo),
     # (r'/settings/create[/]?', CreateSetting),
@@ -28,12 +30,16 @@ url_patterns = {
     # (r'/settings/delete/([^/]*)', DeleteSettings),
     # (r'/entry_report[/]?', GetEntryReport),
     # (r'/monitor/grabber/link/live[/]?', ShowLiveLinkGrabber),
-    (r'/personnels', Personnel),
-    (r'/files', File),
-    (r'/borrow', Borrow),
 
-    (r'/get_personnel', GetPersonnel),
-    (r'/get_file', GetFile),
+
+    # (r'/personnels', Personnel),
+    # (r'/files', File),
+    # (r'/borrow', Borrow),
+
+    # (r'/get_personnel', GetPersonnel),
+    # (r'/get_file', GetFile),
+
+
 
     # (r'/files', IntViolationHandler),
     # (r'/borrow', IntViolationHandler),
