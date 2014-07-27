@@ -164,10 +164,45 @@
 {
     float: left;
     position: absolute;
-    width: 95%;
+    width: 100;
     min-height: 95%;
-    padding: 2.5%;
+    padding: 20px;
+    font-family: tahoma, "Helvetica Neue", sans-serif;
 }
+
+.wizard > .content > .body .form-group
+{
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 12px;
+    min-height: 34px;
+}
+
+.wizard > .content > .body .form-group.list{
+    background: #fff;
+    border: solid thin #ccc;
+    padding: 10px;
+}
+
+.wizard > .content > .body .form-group.list > div:not(:nth-child(2)){
+    border-right: solid thin #ccc;
+}
+
+.wizard > .content > .body .form-group .checkbox
+{
+    max-height: 34px;
+}
+.wizard > .content > .body .form-group.list > label
+{
+    border-bottom: solid thin #ccc;
+    padding-bottom: 10px;
+}
+
+.wizard > .content > .body .form-group label
+{
+    ;
+}
+
 
 .wizard > .content > .body ul
 {

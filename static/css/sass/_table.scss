@@ -1,0 +1,31 @@
+table{
+  thead{
+    background: #EEEEEE;
+    th{
+      text-align: right;
+
+      &.sortable{
+        cursor: pointer;
+
+        i{
+          float: left;
+        }
+      }
+    }
+  }
+}
+
+.pagination{
+  float: none;
+  margin: 0 auto;
+  position: relative;
+  li{
+      float: right;
+    &:first-child{
+      a{border-left: 0;}
+    }
+      a{
+        border-radius: 0 !important;
+      }
+    }
+}

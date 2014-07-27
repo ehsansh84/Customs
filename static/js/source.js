@@ -9671,7 +9671,7 @@ var form_validate = {
             return true;
         };
 
-        $('.form-group.check input',form).each(function(){
+        $('.form-group.check input.check',form).each(function(){
             if(!checker($(this))) validate = false ;
         });
         $('.form-group.check textarea',form).each(function(){
@@ -9681,14 +9681,14 @@ var form_validate = {
             if(!checker($(this))) validate = false ;
         });
 
-        $('.form-group.stringCheck input',form).each(function(){
+        $('.form-group.stringCheck input.check',form).each(function(){
             if(!stringCheck($(this))) validate = false ;
         });
         $('.form-group.stringCheck textarea',form).each(function(){
             if(!stringCheck($(this))) validate = false ;
         });
 
-        $('.form-group.email input',form).each(function(){
+        $('.form-group.email input.check',form).each(function(){
             var val = $(this).val();
             if(val != '' && !form_validate.method.emailCheck(val)){
                 $(this).val('');
@@ -9697,7 +9697,7 @@ var form_validate = {
             }
         });
 
-        $('.form-group.number input',form).each(function(){
+        $('.form-group.number input.check',form).each(function(){
             var val = $(this).val();
             if(val != '' && !form_validate.method.numberCheck(val)){
                 $(this).val('');
@@ -9706,14 +9706,6 @@ var form_validate = {
             }
         });
 
-        if (form.hasClass('place_field'))
-        {
-            if($('[name="Place3"]',form).val() == -2)
-            {
-                validate = false;
-                form_validate.add_error($('select[name="Place3"]'), 'مکان نمونه را تعیین کنید');
-            }
-        }
 
         return validate ;
 
@@ -9750,6 +9742,20 @@ $(document).on("keydown",".numberFilter",function (e) {
     }
 });
 
+function getUrlData()
+{
+    var url = location.href;
+    var values = url.split('?')[1];
+    if(values == undefined) return false;
+    var list = {} ;
+    $.each(values.split("&"), function(i, item){
+        list[item.split("=")[0] + ""] = decodeURIComponent(item.split("=")[1]);
+    });
+    return list;
+}
 
+jQuery.fn.doesExist = function () {
+    return jQuery(this).length > 0;
+};
 
 
