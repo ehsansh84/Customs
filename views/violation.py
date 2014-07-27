@@ -88,8 +88,7 @@ class Violation(tornado.web.RequestHandler):
             ViTypeOther=ViTypeOther, StatedTariff=StatedTariff, StatedValue=StatedValue, StatedWeight=StatedWeight, DeductedTariff=DeductedTariff, DeductedValue=DeductedValue,
             DeductedWeight=DeductedWeight, Law=Law, Detector=Detector, DetectorOther=DetectorOther, Commitment=Commitment, Results=Results, ReceipNo=ReceipNo,
             Details=Details, Locked=Locked, mRecDate=mRecDate, sRecDate=sRecDate)
-        pass
-
+        self.write('Inserted')
 #
 # class File(tornado.web.RequestHandler):
 #
