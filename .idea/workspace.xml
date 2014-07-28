@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/redis.py" afterPath="$PROJECT_DIR$/tools/redis.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tempp.py" afterPath="$PROJECT_DIR$/tempp.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -92,7 +91,7 @@
       <file leaf-file-name="tempp.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tempp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="141" selection-end="141" vertical-scroll-proportion="0.15156017" vertical-offset="0" max-vertical-offset="673">
+            <state line="5" column="16" selection-start="150" selection-end="150" vertical-scroll-proportion="0.12630014" vertical-offset="0" max-vertical-offset="673">
               <folding />
             </state>
           </provider>
@@ -714,7 +713,11 @@
       <created>1406521354009</created>
       <updated>1406521354009</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="ok">
+      <created>1406521695129</created>
+      <updated>1406521695129</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1050,7 +1053,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tempp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="141" selection-end="141" vertical-scroll-proportion="0.15156017" vertical-offset="0" max-vertical-offset="673">
+        <state line="5" column="16" selection-start="150" selection-end="150" vertical-scroll-proportion="0.12630014" vertical-offset="0" max-vertical-offset="673">
           <folding />
         </state>
       </provider>
