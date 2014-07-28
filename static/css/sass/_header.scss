@@ -1,0 +1,119 @@
+body{
+  background: #f7f7f7;
+  >header{
+    background: #2587b8;
+    color: #ffffff;
+    height: 80px;
+    border-bottom: #0978af solid thin;
+
+    .container{
+
+      .brand{
+        float: right;
+        color: #ffffff;
+        font-family: BYekan;
+        font-size: 20px;
+        border: solid thin #eeeeee;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 15px;
+      }
+
+      .user{
+        float: left;
+        position: relative;
+        >a.image{
+          background: #ffffff;
+          display: block;
+          height: 35px;
+          width: 35px;
+          margin-top: 20px;
+          padding: 2px;
+          cursor: pointer;
+
+          span{
+            height: 31px;
+            width: 31px;
+            display: block;
+            background: #CCCCCC;
+          }
+        }
+
+        >ul{
+          display: none;
+        }
+
+        &:hover{
+          >ul{
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #ffffff;
+            border: solid thin #eeeeee;
+
+            li{
+              &:not(:last-child){border-bottom: solid thin #eeeeee;}
+
+
+              a{
+                white-space: nowrap;
+                text-align: center;
+                display: block;
+                width: 100px;
+                line-height: 2;
+                cursor: pointer;
+                font-family: BNazanin;
+                font-size: 16px;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  >nav{
+    display: block;
+    background: #ffffff;
+    font-family: BNazanin;
+    font-size: 16px;
+    border: {
+      style: solid;
+      width: thin;
+      top-color: #83bad7;
+      bottom-color: #e6e6e6;
+      left: 0;
+      right: 0;
+    };
+
+    .container{
+      ul{
+
+      clear: both;
+      direction: rtl;
+
+      height: 50px;
+      li{
+        float: right;
+        margin-left: 20px;
+        a{
+          white-space: nowrap;
+          line-height: 50px;
+          display: block;
+          height: 50px;
+          border-bottom: solid 2px #ffffff;
+          color: #64748c;
+          text-overflow:ellipsis;
+
+          &:hover,&.active{
+            color: #ef411b;
+            border-bottom-color: #ef411b;
+          }
+        }
+      }
+    }
+    }
+  }
+}
