@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connections.py" afterPath="$PROJECT_DIR$/connections.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/redis.py" afterPath="$PROJECT_DIR$/tools/redis.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tempp.py" afterPath="$PROJECT_DIR$/tempp.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -689,7 +686,11 @@
       <created>1406488099466</created>
       <updated>1406488099466</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ok">
+      <created>1406518438772</created>
+      <updated>1406518438772</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
