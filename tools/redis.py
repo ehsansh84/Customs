@@ -26,6 +26,8 @@ class Redis:
 
     @classmethod
     def set(cls, key, value, expire=1000, type='string'):
+        Debug.dprint(text=key)
+        Debug.dprint(text=value)
         if type == 'string':
             cls.r.set(key, value, expire)
         elif type == 'list' or type == 'dic':
