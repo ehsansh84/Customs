@@ -34,6 +34,7 @@ class Redis:
             cls.r.set(key, json.dumps(value), expire)
 
 
+
     @classmethod
     def search(cls, key, field='', value=''):
         lst = json.loads(cls.r.get(key))
