@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="ok">
+    <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -131,7 +131,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -694,7 +694,11 @@
       <created>1406519227053</created>
       <updated>1406519227053</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="ok">
+      <created>1406519277901</created>
+      <updated>1406519277901</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
