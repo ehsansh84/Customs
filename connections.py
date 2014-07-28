@@ -63,4 +63,4 @@ elif redis_server == 'customs_remote':
 #     redis_password = ''
 
 
-redisInstance = redis.StrictRedis(host=redis_host, port=redis_port, db=0, password=redis_password)
+redis_instance = redis.StrictRedis(host=redis_host, port=redis_port, db=0, password=redis_password)

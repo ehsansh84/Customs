@@ -1,5 +1,5 @@
 __author__ = 'ehsan'
-from shared_connections import *
+from connections import redis_instance
 import json
 from debug import Debug
 """
@@ -10,7 +10,7 @@ Using this class:
 
 
 class Redis:
-    r = SharedConnections.redisInstance
+    r = redis_instance
 
     def __init__(self):
         pass
