@@ -46,7 +46,7 @@
                             انتخابگر کنار هر فیلد ، برای تعیین نشان دادن یا ندادن آن فیلد در نتیجه جستجو است
                         </div>
 
-                          <form id="table_search_form" role="form" class="row form-horizontal" data-fields="{% for item in FieldList %}{% if item['default'] %}{{ item['name'] }}|{ %end% }{ %end% }" >
+                          <form id="table_search_form" role="form" class="row form-horizontal" data-fields="{% for item in FieldList %}{% if item['default'] %}{{ item['name'] }}|{% end %}{% end %}" >
 
                               {% for item in FieldList %}
                               <div class="form-group col-lg-6 number">
