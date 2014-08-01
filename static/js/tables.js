@@ -150,7 +150,7 @@ $(document).on('click','.edit_object_request',function(e)
     var action = $(this).data('action');
     $('form#edit_request_form #action_no').val(action);
     $('form#edit_request_form #text').val('');
-    $('edit_request_modal').modal('show');
+    $('#edit_request_modal').modal('show');
 });
 
 $(document).on('click','.edit_request_form_submit',function(e)
