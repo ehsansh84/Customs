@@ -1,5 +1,6 @@
 __author__ = 'ehsan'
 from models.edit_request import Editrequest as Model
+from datetime import datetime
 
 
 class Editrequest():
@@ -7,7 +8,7 @@ class Editrequest():
         pass
 
     @classmethod
-    def add(cls, id='', user_id='', s_date='', m_date='', violation_id='', reason=''):
+    def add(cls, id='', user_id='', violation_id='', reason=''):
 
 
         if id != '':
@@ -18,8 +19,8 @@ class Editrequest():
 
         if obj != None:
             obj.user_id = user_id
-            obj.s_date = s_date
-            obj.m_date = m_date
+            obj.s_date = '1393-05-11'
+            obj.m_date = datetime.now()
             obj.violation_id = violation_id
             obj.reason = reason
 
