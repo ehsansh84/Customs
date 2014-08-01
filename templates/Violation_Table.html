@@ -1,0 +1,202 @@
+{% extends "../base.html" %}
+
+{% block body %}
+    <div>
+        <header>نمونه جدول</header>
+        <section>
+
+
+            <div class="actions row panel-group">
+                <div class="col-lg-12">
+                    <a class="btn btn-success" href="">
+                    ایجاد یک رکورد جدید
+                    </a>
+
+                    <a class="btn btn-primary" href="">
+                        پرینت نتیجه
+                    </a>
+                </div>
+            </div>
+
+            <div class="search">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                          جستجو
+
+                            {% if search != '' %}
+                                <small>
+                                (
+                                    تعداد کل داده های پیدا شده :
+                                    {{ records['record_count'] }}
+                                   )
+                                </small>
+                            {% end %}
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse {% if search == '' %}in{% end %}">
+                      <div class="panel-body">
+
+                        <div class="alert alert-warning fade in" role="alert">
+                          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                          <strong>توجه !</strong>
+                            انتخابگر کنار هر فیلد ، برای تعیین نشان دادن یا ندادن آن فیلد در نتیجه جستجو است
+                        </div>
+
+                          <form id="table_search_form" role="form" class="row form-horizontal" data-fields="id|fname|lname" >
+
+                              <div class="form-group col-lg-6 number">
+                                <label class="col-sm-4 control-label">
+                                    کد
+                                    <input class="field" type="checkbox" disabled checked >
+                                </label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control numberFilter check search" data-action="id" >
+                                </div>
+                              </div>
+
+                              <div class="form-group col-lg-6 stringCheck">
+                                <label class="col-sm-4 control-label">
+نام
+                                    <input class="field" type="checkbox" disabled checked >
+                                </label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control check search" data-action="fname" >
+                                </div>
+                              </div>
+
+                              <div class="form-group col-lg-6 stringCheck">
+                                <label class="col-sm-4 control-label">
+نام خانوادگی
+                                    <input class="field" type="checkbox" disabled checked >
+                                </label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control check search" data-action="lname" >
+                                </div>
+                              </div>
+
+                              <div class="form-group col-lg-6">
+                                <label class="col-sm-4 control-label">
+تاریخ ثبت نام
+                                    <input class="field" type="checkbox" data-action="date" >
+                                </label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control date search" data-action="date" >
+                                </div>
+                              </div>
+
+                              <div class="form-group col-lg-6 number">
+                                <label class="col-sm-4 control-label">
+سن
+                                    <input class="field" type="checkbox" data-action="age" >
+                                </label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control numberFilter check search" data-action="age" >
+                                </div>
+                              </div>
+
+                              <div class="form-group col-lg-6 stringCheck">
+                                <label class="col-sm-4 control-label">
+نام پدر
+                                    <input class="field" type="checkbox" data-action="dad_name" >
+                                </label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control check search" data-action="dad_name" >
+                                </div>
+                              </div>
+
+                              <input type="hidden" name="perPage" value="10" />
+                              <input type="hidden" name="page" value="1" />
+                              <input type="hidden" name="order" value="asc" />
+                              <input type="hidden" name="sort" value="id" />
+                              <input type="hidden" name="fields" value="" />
+                              <input type="hidden" data-action="fieldSearch" value="" />
+
+                              <div class="form-group col-lg-12">
+                                <div class="col-sm-offset-1 col-lg-12">
+                                  <button type="submit" class="btn btn-primary">
+                                      جستجو
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+
+
+            {% if search != '' %}
+            <div class="table-responsive" >
+                <input type="hidden" value="/shape_record" name="shape_record_address" >
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      {% for field in fields %}
+                        <th class="sortable" data-action="{{ field }}" >{{ field }}</th>
+                      {% end %}
+                        <th>عملیات</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in records['items'] %}
+                        <tr>
+                            {% for field in fields %}
+                            <td>{{ item[field] }}</td>
+                            {% end %}
+                            <td>
+                                <a class="btn btn-default" href="">
+                                    درخواست ویرایش
+                                </a>
+                            </td>
+                        </tr>
+                    {% end %}
+                  </tbody>
+                </table>
+
+
+            </div>
+
+             <ul class="pagination" data-count="{{ records['record_count'] }}" >
+            </ul>
+
+            {% end %}
+        </section>
+    </div>
+
+
+
+
+
+
+{% end %}
+
+
+
+{% block script %}
+        <script type="text/javascript" src="/static/libs/bootstrap/js/bootstrap.min.js" ></script>
+        <script type="text/javascript" src="/static/js/tables.js" ></script>
+        <script type="text/javascript" src="/static/js/template.js" ></script>
+        <script type="text/javascript">
+            $(function(){
+
+                {% if search != '' %}
+                table_show.set_inputs();
+                {% end %}
+
+                try{
+                    $(".date").persianDatepicker();
+                }catch (err){alert(err)}
+            });
+        </script>
+
+        {% module Template('pagination.html') %}
+
+
+{% end %}
