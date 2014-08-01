@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import json
+
 import tornado.httpserver
 import tornado.ioloop
 import tornado.options
 import tornado.web
+
 from controllers.personnel import Personnel as Controller
-import json
 
 
 class Personnel(tornado.web.RequestHandler):
@@ -21,7 +23,8 @@ class Personnel(tornado.web.RequestHandler):
         district = self.get_argument('district', '')
         username = self.get_argument('username', '')
         password = self.get_argument('password', '')
-        Controller.add(_id='', name=name, family=family, district=district, username=username, password=password)
+        print(personnel_id)
+        Controller.add(id='', name=name, family=family, district=district, username=username, password=password, personnel_id=personnel_id)
         self.write(personnel_id)
         self.write(name)
         self.write(family)

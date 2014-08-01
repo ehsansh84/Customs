@@ -8,6 +8,7 @@
 
 from controller.BaseController import *
 from views.violation import Violation
+from views.personnel import Personnel
 # from views.personnel import *
 # from views.files import *
 # from views.borrow import *
@@ -22,6 +23,7 @@ url_patterns = {
     (r'/login', LoginHandler),
     (r'/violation', Violation),
     (r'/int_violation', IntViolationHandler),
+    (r'/personnels', Personnel),
 
 
     # (r'/404[/]?', PageNotFound),
@@ -33,7 +35,6 @@ url_patterns = {
     # (r'/monitor/grabber/link/live[/]?', ShowLiveLinkGrabber),
 
 
-    # (r'/personnels', Personnel),
     # (r'/files', File),
     # (r'/borrow', Borrow),
 

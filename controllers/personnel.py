@@ -7,65 +7,76 @@ class Personnel():
         pass
 
     @classmethod
-    def add(cls, _id, name='', family='', personnel_id='', district='', username='', password=''):
+    def add(cls, id='', name='', family='', personnel_id='', username='', password='', district=''):
+        print('personnel id:')
+        print(personnel_id)
 
-        obj = Model(name=name, family=family, personnel_id=personnel_id, district=district, username=username,
-                    password=password)
-        # print 'PERSON'
-        print personnel_id
-        obj.set_id(_id=_id)
-        obj.create()
+        if id != '':
+            obj = Model.objects(Kootaj=id).first()
 
-    @classmethod
-    def exists(cls, username):
-        obj = Model()
-        return obj.find({'username': username})
-
-    @classmethod
-    def all(cls, _filter=None, page=-1, perpage=15, sort='family', order=1):
-        try:
+        else:
             obj = Model()
-            obj.find(_filter=_filter, page=page, perpage=perpage, sort=sort, order=order)
+
+        if obj != None:
+            obj.name = name
+            obj.family = family
+            obj.personnel_id = personnel_id
+            obj.username = username
+            obj.password = password
+            obj.district = district
+
+            obj.save()
+
+
+    @classmethod
+    def exists(cls ,kootaj):
+        obj = Model()
+        return obj.find({{'kootaj': kootaj}})
+
+    @classmethod
+    def find(cls, _filter={}, page=-1, per_page=15, sort='personnel_id', order=1):
+        try:
+            obj = Model.objects(__raw__=_filter)
 
             result = []
-            while not obj.eof:
-                result.append({'name': obj.name,
-                               'family': obj.family,
-                               'personnel_id': obj.personnel_id,
-                               'district': obj.district,
-                               'username': obj.username,
-                               'password': obj.password,
-                               '_id': obj.get_id(),
+            for item in obj:
+                result.append({
+                    'id': obj.id,
+                    'name': obj.name,
+                    'family': obj.family,
+                    'personnel_id': obj.personnel_id,
+                    'username': obj.username,
+                    'password': obj.password,
+                    'district': obj.district,
+
                                })
-                obj.next()
             return result
         except Exception, err:
             return err.message
 
     @classmethod
-    def get(cls, _id):
+    def get(cls, id):
         try:
-            obj = Model()
-            obj.set_id(_id)
-            obj.load()
-            result = {'name': obj.name,
-                      'family': obj.family,
-                      'personnel_id': obj.personnel_id,
-                      'district': obj.district,
-                      'username': obj.username,
-                      'password': obj.password,
-                      '_id': obj.get_id(),
+            obj = Model.objects.get(id=ObjectId(id))
+
+            result = {
+                    'id': obj.id,
+                    'name': obj.name,
+                    'family': obj.family,
+                    'personnel_id': obj.personnel_id,
+                    'username': obj.username,
+                    'password': obj.password,
+                    'district': obj.district,
                       }
             return result
         except Exception, err:
             return err.message
 
+    #TODO: need to implementation
     @classmethod
-    def delete(cls, _id):
+    def delete(cls, id):
         try:
-            obj = Model()
-            obj.set_id(_id)
-            obj.remove()
+            Model.objects(id=ObjectId(id)).delete()
             return True
         except Exception, err:
             return err.message

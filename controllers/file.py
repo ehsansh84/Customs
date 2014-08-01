@@ -7,53 +7,63 @@ class File():
         pass
 
     @classmethod
-    def add(cls, _id, kootaj, desc=''):
-        obj = Model(kootaj=kootaj, desc=desc)
-        obj.set_id(_id=_id)
-        obj.create()
+    def add(cls, id='', kootaj='', desc=''):
 
-    @classmethod
-    def exists(cls, kootaj):
-        obj = Model()
-        return obj.find({'kootaj': kootaj})
 
-    @classmethod
-    def all(cls, _filter=None, page=-1, perpage=15, sort='kootaj', order=1):
-        try:
+        if id != '':
+            obj = Model.objects(Kootaj=id).first()
+
+        else:
             obj = Model()
-            obj.find(_filter=_filter, page=page, perpage=perpage, sort=sort, order=order)
+
+        if obj != None:
+            obj.kootaj = kootaj
+            obj.desc = desc
+
+            obj.save()
+
+
+    @classmethod
+    def exists(cls ,kootaj):
+        obj = Model()
+        return obj.find({{'kootaj': kootaj}})
+
+    @classmethod
+    def find(cls, _filter={}, page=-1, per_page=15, sort='personnel_id', order=1):
+        try:
+            obj = Model.objects(__raw__=_filter)
 
             result = []
-            while not obj.eof:
-                result.append({'kootaj': obj.kootaj,
-                               'desc': obj.desc,
-                               '_id': obj.get_id(),
+            for item in obj:
+                result.append({
+                    'id': obj.id,
+                    'kootaj': obj.kootaj,
+                    'desc': obj.desc,
+
                                })
-                obj.next()
             return result
         except Exception, err:
             return err.message
 
     @classmethod
-    def get(cls, _id):
+    def get(cls, id):
         try:
-            obj = Model()
-            obj.set_id(_id)
-            obj.load()
-            result = {'kootaj': obj.kootaj,
-                      'desc': obj.desc,
-                      '_id': obj.get_id(),
+            obj = Model.objects.get(id=ObjectId(id))
+
+            result = {
+                    'id': obj.id,
+                    'kootaj': obj.kootaj,
+                    'desc': obj.desc,
+
                       }
             return result
         except Exception, err:
             return err.message
 
+    #TODO: need to implementation
     @classmethod
-    def delete(cls, _id):
+    def delete(cls, id):
         try:
-            obj = Model()
-            obj.set_id(_id)
-            obj.remove()
             return True
         except Exception, err:
             return err.message
