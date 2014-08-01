@@ -121,7 +121,7 @@ class ViolationSearch(tornado.web.RequestHandler):
                     record[item] = 'test'
                 records['items'].append(record)
 
-        list_of_fields = [
+        FieldList = [
             {
             'name' : "file_no",
             'label' : "شماره پرونده",
@@ -149,7 +149,7 @@ class ViolationSearch(tornado.web.RequestHandler):
                     search=search,
                     fields=fields,
                     records=records,
-                    list_of_fields=list_of_fields
+                    FieldList=FieldList
                     )
 
     def post(self, *args, **kwargs):
