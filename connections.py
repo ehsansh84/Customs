@@ -10,10 +10,10 @@ from tools.debug import Debug
 mongo_host = mongo_port = database = mongo_username = mongo_password = ''
 redis_host = redis_port = redis_username = redis_password = ''
 
-# mongo_server = 'local'
+mongo_server = 'local'
 # mongo_server = 'customs_local'
 # mongo_server = 'customs_remote'
-mongo_server = 'customs_remote_lan'
+# mongo_server = 'customs_remote_lan'
 
 # redis_server = 'local'
 # redis_server = 'customs_local'

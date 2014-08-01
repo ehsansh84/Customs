@@ -9,10 +9,8 @@ class Violation():
     @classmethod
     def add(cls, id='', s_date='', m_date='', file_no='', kootaj='', cert_no='', s_date_1='', s_date_2='', policy_1=False, policy_2=False, policy_3=False, policy_4=False, policy_5=False, policy_6=False, policy_7=False, ezharname=0, person_type=False, full_name='', card_no='', code_no='', company='', ez_full_name='', ez_owner='', ez_agent='', ez_card_no='', ez_code_no='', tr_full_name='', tr_code_no='', tr_reg_no='', tr_nationality='', tr_manager='', tr_type=False, item_name='', tariff_no='', paid=0, different=0, fine=0, diff_paid=0, vi_type_1=False, vi_type_2=False, vi_type_3=False, vi_type_4=False, vi_type_5=False, vi_type_6=False, vi_type_7=False, vi_type_other='', stated_tariff=0, stated_value=0, stated_weight=0, deducted_tariff=0, deducted_value=0, deducted_weight=0, law='', detector=0, detector_other='', results='', commitment=False, receip_no='', details='', m_rec_date='', s_rec_date='', locked=False):
 
-        print('stated_weight')
-        print(stated_weight)
-        print('vi_type_1')
-        print(vi_type_1)
+        print('stated_weight: ' + str(stated_weight))
+        print('deducted_weight: ' + str(deducted_weight))
         if id != '':
             obj = Model.objects(Kootaj=id).first()
 
