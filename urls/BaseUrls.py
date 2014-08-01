@@ -7,7 +7,7 @@
 # The patterns.
 
 from controller.BaseController import *
-from views.violation import Violation
+from views.violation import Violation, ViolationSearch
 from views.personnel import Personnel
 # from views.personnel import *
 # from views.files import *
@@ -22,6 +22,7 @@ url_patterns = {
     (r'/404', ErrorHandler),
     (r'/login', LoginHandler),
     (r'/violation', Violation),
+    (r'/violation_search', ViolationSearch),
     (r'/int_violation', IntViolationHandler),
     (r'/personnels', Personnel),
 
