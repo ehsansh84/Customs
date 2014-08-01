@@ -18,10 +18,10 @@ class Editrequest(tornado.web.RequestHandler):
         violation_id = self.get_argument('violation_id', '')
         reason = self.get_argument('reason', '')
 
-        self.write('user_id:' + str(user_id)+'<br>')
-        self.write('s_date:' + str(s_date)+'<br>')
-        self.write('m_date:' + str(m_date)+'<br>')
-        self.write('violation_id:' + str(violation_id)+'<br>')
-        self.write('reason:' + str(reason)+'<br>')
+        # self.write('user_id:' + str(user_id)+'<br>')
+        # self.write('s_date:' + str(s_date)+'<br>')
+        # self.write('m_date:' + str(m_date)+'<br>')
+        # self.write('violation_id:' + str(violation_id)+'<br>')
+        # self.write('reason:' + str(reason)+'<br>')
 
         Controller.add(id=id, user_id=user_id, s_date=s_date, m_date=m_date, violation_id=violation_id, reason=reason)
