@@ -121,36 +121,36 @@ class ViolationSearch(tornado.web.RequestHandler):
                     record[item] = 'test'
                 records['items'].append(record)
 
-            list_of_fields = [
-                {
-                'name' : "file_no",
-                'label' : "شماره پرونده",
-                'default' : True,
-                'searchable' : True,
-                # 'validation' : "" - "number" - "data" - "email"
-                'validation' : "number"
-                },
-                {
-                'name' : "kootaj",
-                'label' : "شماره کوتاژ",
-                'default' : True,
-                'searchable' : True,
-                'validation' : "number"
-                },
-                {
-                'name' : "cert_no",
-                'label' : "شماره پروانه گمرکی",
-                'default' : True,
-                'searchable' : True,
-                'validation' : "number"
-                }
-                ]
-            self.render('Violation_Table.html',
-                        search=search,
-                        fields=fields,
-                        records=records,
-                        list_of_fields=list_of_fields
-                        )
+        list_of_fields = [
+            {
+            'name' : "file_no",
+            'label' : "شماره پرونده",
+            'default' : True,
+            'searchable' : True,
+            # 'validation' : "" - "number" - "data" - "email"
+            'validation' : "number"
+            },
+            {
+            'name' : "kootaj",
+            'label' : "شماره کوتاژ",
+            'default' : True,
+            'searchable' : True,
+            'validation' : "number"
+            },
+            {
+            'name' : "cert_no",
+            'label' : "شماره پروانه گمرکی",
+            'default' : True,
+            'searchable' : True,
+            'validation' : "number"
+            }
+            ]
+        self.render('Violation_Table.html',
+                    search=search,
+                    fields=fields,
+                    records=records,
+                    list_of_fields=list_of_fields
+                    )
 
     def post(self, *args, **kwargs):
         self.write('No post method allowed')
