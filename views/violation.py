@@ -145,12 +145,12 @@ class ViolationSearch(tornado.web.RequestHandler):
                 'validation' : "number"
                 }
                 ]
-        self.render('Violation_Table.html',
-                    search=search,
-                    fields=fields,
-                    records=records,
-                    list_of_fields=list_of_fields
-                    )
+            self.render('Violation_Table.html',
+                        search=search,
+                        fields=fields,
+                        records=records,
+                        list_of_fields=list_of_fields
+                        )
 
     def post(self, *args, **kwargs):
         self.write('No post method allowed')
