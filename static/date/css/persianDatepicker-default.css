@@ -7,7 +7,6 @@
         transform: scale(1);
     }
 }
-
 @-webkit-keyframes start {
     from {
         -webkit-transform: scale(.5);
