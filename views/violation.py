@@ -81,7 +81,49 @@ class Violation(tornado.web.RequestHandler):
 class ViolationSearch(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
-        self.render('Violation_Table.html')
+        search = ''
+        fields = self.get_argument('fields', '')
+        records = {}
+
+        if fields != '':
+
+            #To determone if it's a search or not
+            search = 'search'
+
+            fields = fields.split('|')
+
+            perPage = self.get_argument('perPage', 10)
+            page = self.get_argument('page', 1)
+
+            fieldSearch = self.get_argument('fieldSearch', '')
+
+            if fieldSearch != '':
+
+                fieldSearch = fieldSearch.split('|')
+
+                values = {}
+
+                for item in fieldSearch:
+                    value = self.get_argument(item, '')
+                    if value != '':
+                        values[item] = value
+
+            records = {
+                'items': [],
+                'record_count': 30
+            }
+
+            for x in range(0, 3):
+                record = {}
+                for item in fields:
+                    record[item] = 'test'
+                records['items'].append(record)
+
+        self.render('Violation_Table.html',
+                    search=search,
+                    fields=fields,
+                    records=records
+                    )
 
     def post(self, *args, **kwargs):
         id = self.get_argument('id','')
