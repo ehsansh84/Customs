@@ -145,11 +145,18 @@ class ViolationSearch(tornado.web.RequestHandler):
             'validation' : "number"
             }
             ]
+
+        user_info = {
+            'user_id': '666',
+            'name': 'احسان',
+            'family': 'شیرزادی'
+        }
         self.render('Violation_Table.html',
                     search=search,
                     fields=fields,
                     records=records,
-                    FieldList=FieldList
+                    FieldList=FieldList,
+                    user_info=user_info
                     )
 
     def post(self, *args, **kwargs):
