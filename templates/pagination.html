@@ -1,0 +1,36 @@
+<script type="text/template" id="pagination">
+    <% if(pages != 1){ %>
+
+        <li class="first <% if( 1 == active ){ %>disabled<% } %>" >
+            <a data-action="1" href="#" class="<% if( 1 != active ){ %><%= className %><% } %>" >&laquo;</a>
+        </li>
+        <li class="prev <% if( 1 == active ){ %>disabled<% } %>" >
+            <a class="<% if( 1 != active ){ %><%= className %><% } %>" data-action="<%= (active == 1)? 1 : active - 1 %>" href="#">&#60;</a>
+        </li>
+
+        <% if(start != 1){ %>
+        <li><a class=" <%= className %> " data-action="<%= start - 1 %>" >...</a></li>
+        <% } %>
+
+        <% for(var i = start ; i < end + 1 ; i++){ %>
+        <li class="<% if( i == active ){ %>active<% } %>" ><a
+                data-action="<%= i %>"
+                class="number <% if( i != active ){ %><%= className %><% } %>"
+                ><%= i %></a></li>
+
+        <% } %>
+
+        <% if(end != pages){ %>
+        <li><a class=" <%= className %> " data-action="<%= end + 1 %>" >...</a></li>
+        <% } %>
+
+
+        <li class="next <% if( pages == active ){ %>disabled<% } %>" >
+            <a class="<% if( pages != active ){ %><%= className %><% } %>" data-action="<%= (active == pages)? pages : active + 1 %>" href="#">&#62;</a>
+        </li>
+        <li class="last <% if( pages == active ){ %>disabled<% } %>" >
+            <a class="<% if( pages != active ){ %><%= className %><% } %>"  data-action="<%= pages %>" href="#">&raquo;</a>
+        </li>
+
+    <% } %>
+</script>
