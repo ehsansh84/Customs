@@ -52,7 +52,7 @@
                               <div class="form-group col-lg-6 number">
                                 <label class="col-sm-4 control-label">
                                     {{ item['label'] }}
-                                    <input {% if item['default'] %}class="field"{% else %}disabled checked{% end %} type="checkbox"  >
+                                    <input {% if item['default'] %}disabled checked{% else %}class="field"{% end %} type="checkbox"  >
                                 </label>
                                 <div class="col-sm-8">
                                   <input type="text" class="form-control
@@ -113,7 +113,7 @@
                             <td>{{ item[field] }}</td>
                             {% end %}
                             <td>
-                                <a class="btn btn-default" href="">
+                                <a data-action="" class="btn btn-default" href="">
                                     درخواست ویرایش
                                 </a>
                             </td>
