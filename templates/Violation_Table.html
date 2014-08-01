@@ -113,7 +113,7 @@
                             <td>{{ item[field] }}</td>
                             {% end %}
                             <td>
-                                <a data-action="" class="btn btn-default" href="">
+                                <a data-action="{{ item['file_no'] }}" class="btn btn-default edit_object_request" href="">
                                     درخواست ویرایش
                                 </a>
                             </td>
@@ -142,6 +142,32 @@
 
 
 {% block script %}
+
+<!-- Modal -->
+<div class="modal fade" id="edit_request_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">درخواست ویرایش</h4>
+      </div>
+      <div class="modal-body">
+          <form role="form" action="/edit_request" method="post" id="edit_request_form" >
+            <div class="form-group">
+                <label for="text">توضیح درخواست :</label>
+                <textarea name="text" id="text" cols="30" rows="10" class="form-control"></textarea>
+              </div>
+
+              <input type="hidden" name="action_no" id="action_no" />
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary edit_request_form_submit">ارسال درخواست</button>
+      </div>
+    </div>
+  </div>
+</div>
+
         <script type="text/javascript" src="/static/libs/bootstrap/js/bootstrap.min.js" ></script>
         <script type="text/javascript" src="/static/js/tables.js" ></script>
         <script type="text/javascript" src="/static/js/template.js" ></script>

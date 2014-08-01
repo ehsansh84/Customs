@@ -117,7 +117,7 @@ $(document).on('submit','#table_search_form',function(e){
 
     $('.field[data-action]:checked',form).each(function(){
         if(fields != '') fields += '|' ;
-        fields += $(this).data('action');
+        fields += $.trim($(this).data('action'));
     });
 
     $('.search',form).each(function(){
@@ -143,7 +143,21 @@ $(document).on('submit','#table_search_form',function(e){
 });
 
 
+/// more in page
+$(document).on('click','.edit_object_request',function(e)
+{
+    e.preventDefault();
+    var action = $(this).data('action');
+    $('form#edit_request_form #action_no').val(action);
+    $('form#edit_request_form #text').val('');
+    $('edit_request_modal').modal('show');
+});
 
+$(document).on('click','.edit_request_form_submit',function(e)
+{
+    e.preventDefault();
+    $('form#edit_request_form').submit();
+});
 
 ////plugins
 
