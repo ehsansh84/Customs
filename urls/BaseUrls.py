@@ -9,6 +9,7 @@
 from controller.BaseController import *
 from views.violation import Violation, ViolationSearch
 from views.personnel import Personnel
+from views.edit_request import Editrequest
 # from views.personnel import *
 # from views.files import *
 # from views.borrow import *
@@ -25,6 +26,7 @@ url_patterns = {
     (r'/violation_search', ViolationSearch),
     (r'/int_violation', IntViolationHandler),
     (r'/personnels', Personnel),
+    (r'/edit_request', Editrequest),
 
 
     # (r'/404[/]?', PageNotFound),
