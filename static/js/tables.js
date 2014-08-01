@@ -109,6 +109,10 @@ $(document).on('submit','#table_search_form',function(e){
     }
 
     var fields = form.data('fields');
+    if(fields != "")
+    {
+        fields = fields.slice(0,-1);
+    }
     var fieldSearch = '' ;
 
     $('.field[data-action]:checked',form).each(function(){
