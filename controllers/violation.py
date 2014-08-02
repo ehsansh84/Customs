@@ -92,6 +92,7 @@ class Violation():
             obj.locked = locked
 
             obj.save()
+        print('Controller.add inside is executed')
 
 
     @classmethod

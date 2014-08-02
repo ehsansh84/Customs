@@ -91,7 +91,7 @@ class Violation(tornado.web.RequestHandler):
                        deducted_tariff=deducted_tariff, deducted_value=deducted_value, deducted_weight=deducted_weight,
                        law=law, detector=detector, detector_other=detector_other, results=results,
                        commitment=commitment, receip_no=receip_no, details=details, locked=locked)
-
+        print('Controller.add is executed')
         self.render('Violation.html')
 
 
