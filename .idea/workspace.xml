@@ -85,19 +85,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="31" selection-start="1691" selection-end="1691" vertical-scroll-proportion="-4.730769" vertical-offset="625" max-vertical-offset="1190">
+            <state line="47" column="35" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.4192771" vertical-offset="625" max-vertical-offset="1190">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connections.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="connections.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/connections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="675" selection-end="675" vertical-scroll-proportion="0.5011338" vertical-offset="102" max-vertical-offset="1394">
+            <state line="12" column="9" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1394">
               <folding />
             </state>
           </provider>
@@ -144,8 +144,8 @@
         <option value="$PROJECT_DIR$/views/violation.py" />
         <option value="$PROJECT_DIR$/controllers/edit_request.py" />
         <option value="$PROJECT_DIR$/views/edit_request.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/connections.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -858,7 +858,11 @@
       <created>1406949330849</created>
       <updated>1406949330849</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="ok">
+      <created>1406949440191</created>
+      <updated>1406949440191</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1244,16 +1248,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="31" selection-start="1691" selection-end="1691" vertical-scroll-proportion="-4.730769" vertical-offset="625" max-vertical-offset="1190">
+        <state line="12" column="9" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1394">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connections.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="675" selection-end="675" vertical-scroll-proportion="0.5011338" vertical-offset="102" max-vertical-offset="1394">
+        <state line="47" column="35" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.4192771" vertical-offset="625" max-vertical-offset="1190">
           <folding />
         </state>
       </provider>
