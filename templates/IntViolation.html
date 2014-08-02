@@ -1,411 +1,416 @@
 {% extends "base.html" %}
 
 {% block link %}
-        <link rel="stylesheet" href='{{ static_url("libs/steps/jquery.steps.css") }}' type="text/css"/>
+<link rel="stylesheet" href='{{ static_url("libs/steps/jquery.steps.css") }}' type="text/css"/>
 {% end %}
 
 {% block script %}
-        <script src='{{ static_url("libs/steps/jquery.steps.min.js") }}' type="text/javascript"></script>
-        <script>
-            $(function ()
-            {
-                try{
-                    $("#wizard").steps({
-                        headerTag: "h1",
-                        bodyTag: "section",
-                        transitionEffect: "slideLeft",
-                        onStepChanging: function (event, currentIndex, newIndex)
-                        {
-                            return form_validate.validate($('form.wizardForm .page_' + (currentIndex + 1)));
-                        },
-                        onFinishing: function (event, currentIndex)
-                        {
-                            if(form_validate.validate($('form.wizardForm .page_4')))
-                            {
-                                $('form.wizardForm').submit();
-                            }
-                        }
-                    });
-                }
-                catch (err)
-                {
-                    alert(err);
+<script src='{{ static_url("libs/steps/jquery.steps.min.js") }}' type="text/javascript"></script>
+<script>
+    $(function () {
+        try {
+            $("#wizard").steps({
+                headerTag: "h1",
+                bodyTag: "section",
+                transitionEffect: "slideLeft",
+                onStepChanging: function (event, currentIndex, newIndex) {
+                    return form_validate.validate($('form.wizardForm .page_' + (currentIndex + 1)));
+                },
+                onFinishing: function (event, currentIndex) {
+                    if (form_validate.validate($('form.wizardForm .page_4'))) {
+                        $('form.wizardForm').submit();
+                    }
                 }
             });
-        </script>
+        }
+        catch (err) {
+            alert(err);
+        }
+    });
+</script>
 {% end %}
 
 {% block body %}
-    <div>
-        <header>نمونه فرم</header>
-        <section>
-            <form method="post" action="" class="form-horizontal wizardForm" role="form">
+<div>
+<header>نمونه فرم</header>
+<section>
+<form method="post" action="" class="form-horizontal wizardForm" role="form">
 
-                <div id="wizard">
-                    <h1>
-                        صفحه اول
-                    </h1>
-                    <section class="page_1" >
-                         
-
-                       
-
-                        <div class="row">
-                            <div class="form-group col-lg-6">
-                            <label for="kootaj" class="col-sm-2 control-label">شماره کوتاژ</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="kootaj" class="form-control" id="kootaj">
-                            </div>
-                          </div>
-
-						  <div class="form-group col-lg-6">
-                            <label for="cert_no" class="col-sm-2 control-label">شماره پروانه گمرکی</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="cert_no" class="form-control" id="cert_no">
-                            </div>
-                          </div>
-
-						  <div class="form-group col-lg-6">
-                            <label for="s_date" class="col-sm-2 control-label">تاریخ</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="s_date" class="form-control" id="s_date">
-                            </div>
-                          </div>
-
-						  <div class="form-group col-lg-6">
-                            <label for="m_date" class="col-sm-2 control-label">تاریخ میلادی</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="m_date" class="form-control" id="m_date">
-                            </div>
-                          </div>
-
-						  <div class="form-group col-lg-6">
-                            <label for="int_cert_no" class="col-sm-2 control-label">شماره پروانه بین المللی</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="int_cert_no" class="form-control" id="int_cert_no">
-                            </div>
-                          </div>
-
-						  <div class="form-group col-lg-6">
-                            <label for="radif_marzi" class="col-sm-2 control-label">ردیف مرکزی</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="radif_marzi" class="form-control" id="radif_marzi">
-                            </div>
-                          </div>
-
-						  <div class="form-group">
-                            <label for="s_entry_date" class="col-sm-2 control-label">تاریخ ورود</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="s_entry_date" class="form-control" id="s_entry_date">
-                            </div>
-                          </div>
-
-						  <div class="form-group col-lg-6">
-                            <label for="m_entry_date" class="col-sm-2 control-label">تاریخ ورود میلادی</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="m_entry_date" class="form-control" id="m_entry_date">
-                            </div>
-                          </div>
-
-						  <div class="form-group col-lg-6">
-                            <label for="karne_tir_no" class="col-sm-2 control-label">شماره کارنه تیر</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="karne_tir_no" class="form-control" id="karne_tir_no">
-                            </div>
-                          </div>
-
-						  <div class="form-group col-lg-12">
-                            <div class="col-sm-6">
-                              <div class="checkbox"><label><input type="checkbox" name="ezhar_1" >ترانزیت داخلی </label></div>
-                              <div class="checkbox"><label><input type="checkbox" name="ezhar_2" >ترانزیت خارجی </label></div>
-                            </div>
-                              <div class="col-sm-6">
-                              <div class="checkbox"><label><input type="checkbox" name="ezhar_3" >کارنه تیر</label></div>
-                              <div class="checkbox"><label><input type="checkbox" name="ezhar_4" >سایر</label></div>
-                            </div>
-                          </div>
-
-                        </div>
-
-                    </section>
-                    <h1>
-صفحه دوم
-                    </h1>
-                    <section class="page_2" >
-
-                       <div class="form-group">
-                            <label for="full_name" class="col-sm-2 control-label">نام و نام خانوادگی</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="full_name" class="form-control" id="full_name">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="card_no" class="col-sm-2 control-label">شماره کارت</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="card_no" class="form-control" id="card_no">
-                            </div>
-                          </div>
-						  
-						     <div class="form-groupشماره ملی
-                            <label for="code_no" class="col-sm-2 control-label">شماره ملی</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="code_no" class="form-control" id="code_no">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="dest_address" class="col-sm-2 control-label">آدرس مقصد</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="dest_address" class="form-control" id="dest_address">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="good_bame" class="col-sm-2 control-label">نام کالا</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="good_bame" class="form-control" id="good_bame">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="net_weight" class="col-sm-2 control-label">وزن خالص</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="net_weight" class="form-control" id="net_weight">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="weight" class="col-sm-2 control-label">وزن</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="weight" class="form-control" id="weight">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="input_tariff" class="col-sm-2 control-label">تعرفه ورودی</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="input_tariff" class="form-control" id="input_tariff">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="good_count" class="col-sm-2 control-label">تعادا کالا</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="good_count" class="form-control" id="good_count">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="price" class="col-sm-2 control-label">مبلغ</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="price" class="form-control" id="price">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="truck_no" class="col-sm-2 control-label">شماره کامیون</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="truck_no" class="form-control" id="truck_no">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="driver_name" class="col-sm-2 control-label">نام راننده</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="driver_name" class="form-control" id="driver_name">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="chasis_no" class="col-sm-2 control-label">شماره شاسی</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="chasis_no" class="form-control" id="chasis_no">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="trailer_no" class="col-sm-2 control-label">شماره کشنده</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="trailer_no" class="form-control" id="trailer_no">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="truck_address" class="col-sm-2 control-label">آدرس کامیون</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="truck_address" class="form-control" id="truck_address">
-                            </div>
-                          </div>
-						  
-						     <div class="form-group">
-                            <label for="truck_type" class="col-sm-2 control-label">نوع کامیون</label>
-                            <div class="col-sm-10">
-                              <input type="text" name="truck_type" class="form-control" id="truck_type">
-                            </div>
-                          </div>
-
-						<div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input name="tranian_truck" type="checkbox"> ملیت کامیون
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                       
+<div id="wizard">
+<h1>
+    صفحه اول
+</h1>
+<section class="page_1">
 
 
-                    </section>
-                    <h1>
-                        صفحه سوم
-                    </h1>
-                    <section class="page_3" >
+    <div class="row">
+        <div class="form-group col-lg-6">
+            <label for="kootaj" class="col-sm-3 control-label">شماره کوتاژ</label>
 
-                        <div class="form-group col-sm-6">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input name="vi_type_1" type="checkbox"> تخلیه بار در اماکن گمرکی و غیر گمرکی بدون اطلاع
-                                </label>
-                              </div>
-                            </div>
-                          </div>
+            <div class="col-sm-9">
+                <input type="text" name="kootaj" class="form-control" id="kootaj">
+            </div>
+        </div>
 
-						  <div class="form-group col-sm-6">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input name="vi_type_2" type="checkbox"> اظهار خلاف
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-						  
-						  <div class="form-group col-sm-6">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input name="vi_type_3" type="checkbox"> کسر و اضافه
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-						  
-						  <div class="form-group col-sm-6">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input name="vi_type_4" type="checkbox"> تاخیر در تحویل کالا به گمرک
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-						  
-						  <div class="form-group col-sm-6">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input name="vi_type_5" type="checkbox"> قاچاق
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-						  
-						  <div class="form-group col-sm-6">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input name="vi_type_6" type="checkbox"> جعل یا استفاده از اسناد مجعول
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-						  
-						  <div class="form-group col-sm-6">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input name="vi_type_7" type="checkbox"> فک پلمپ
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-						  
-						    <div class="form-group">
-								<label for="detector" class="col-sm-2 control-label">کاشف</label>
-								<div class="col-sm-10">
-								  <input type="text" name="detector" class="form-control" id="detector">
-								</div>
-							  </div>
-							  
-							  <div class="form-group">
-								<label for="detector_other" class="col-sm-2 control-label">سایر</label>
-								<div class="col-sm-10">
-								  <input type="text" name="detector_other" class="form-control" id="detector_other">
-								</div>
-							  </div>
-							  
-							  <div class="form-group">
-								<label for="fine_receipt_no" class="col-sm-2 control-label">شماره رسید پرداخت جریمه</label>
-								<div class="col-sm-10">
-								  <input type="text" name="fine_receipt_no" class="form-control" id="fine_receipt_no">
-								</div>
-							  </div>
-							  
-							  <div class="form-group">
-								<label for="fine_price" class="col-sm-2 control-label">مبلغ جریمه</label>
-								<div class="col-sm-10">
-								  <input type="text" name="fine_price" class="form-control" id="fine_price">
-								</div>
-							  </div>
-							  
-							  <div class="form-group">
-								<label for="final_result" class="col-sm-2 control-label">نتیجه نهایی</label>
-								<div class="col-sm-10">
-								  <input type="text" name="final_result" class="form-control" id="final_result">
-								</div>
-							  </div>
-							  
-							  <div class="form-group">
-								<label for="details" class="col-sm-2 control-label">شرح</label>
-								<div class="col-sm-10">
-								  <input type="text" name="details" class="form-control" id="details">
-								</div>
-							  </div>
-							  
-							  <div class="form-group">
-								<label for="m_rec_date" class="col-sm-2 control-label">تاریخ ثبت میلادی</label>
-								<div class="col-sm-10">
-								  <input type="text" name="m_rec_date" class="form-control" id="m_rec_date">
-								</div>
-							  </div>
-							  
-							  <div class="form-group">
-								<label for="s_rec_date" class="col-sm-2 control-label">تاریخ ثبت شمسی</label>
-								<div class="col-sm-10">
-								  <input type="text" name="s_rec_date" class="form-control" id="s_rec_date">
-								</div>
-							  </div>
-						  
-						  
-						  <div class="form-group col-sm-6">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input name="locked" type="checkbox"> قفل شده
-                                </label>
-                              </div>
-                            </div>
-                          </div>
+        <div class="form-group col-lg-6">
+            <label for="cert_no" class="col-sm-4 control-label">شماره پروانه گمرکی</label>
 
-                    </section>
+            <div class="col-sm-8">
+                <input type="text" name="cert_no" class="form-control" id="cert_no">
+            </div>
+        </div>
 
-                   
+        <div class="form-group col-lg-6">
+            <label for="s_date" class="col-sm-2 control-label">تاریخ</label>
 
-                </div>
-            </form>
-        </section>
+            <div class="col-sm-10">
+                <input type="text" name="s_date" class="form-control" id="s_date">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="m_date" class="col-sm-3 control-label">تاریخ میلادی</label>
+
+            <div class="col-sm-9">
+                <input type="text" name="m_date" class="form-control" id="m_date">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="int_cert_no" class="col-sm-6 control-label">شماره پروانه بین المللی</label>
+
+            <div class="col-sm-6">
+                <input type="text" name="int_cert_no" class="form-control" id="int_cert_no">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="radif_marzi" class="col-sm-3 control-label">ردیف مرکزی</label>
+
+            <div class="col-sm-9">
+                <input type="text" name="radif_marzi" class="form-control" id="radif_marzi">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="s_entry_date" class="col-sm-4 control-label">تاریخ ورود</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="s_entry_date" class="form-control" id="s_entry_date">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="m_entry_date" class="col-sm-4 control-label">تاریخ ورود میلادی</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="m_entry_date" class="form-control" id="m_entry_date">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="karne_tir_no" class="col-sm-2 control-label">شماره کارنه تیر</label>
+
+            <div class="col-sm-10">
+                <input type="text" name="karne_tir_no" class="form-control" id="karne_tir_no">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-12 list">
+            <label class="hide" for=""></label>
+
+            <div class="col-sm-6">
+                <div class="checkbox"><label><input type="checkbox" name="ezhar_1">ترانزیت داخلی </label></div>
+                <div class="checkbox"><label><input type="checkbox" name="ezhar_2">ترانزیت خارجی </label></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="checkbox"><label><input type="checkbox" name="ezhar_3">کارنه تیر</label></div>
+                <div class="checkbox"><label><input type="checkbox" name="ezhar_4">سایر</label></div>
+            </div>
+        </div>
+
     </div>
+
+</section>
+<h1>
+    صفحه دوم
+</h1>
+<section class="page_2">
+
+    <div class="row">
+        <div class="form-group col-lg-6">
+            <label for="full_name" class="col-sm-4 control-label">نام و نام خانوادگی</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="full_name" class="form-control" id="full_name">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="card_no" class="col-sm-4 control-label">شماره کارت</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="card_no" class="form-control" id="card_no">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="code_no" class="col-sm-4 control-label">شماره ملی</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="code_no" class="form-control" id="code_no">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="dest_address" class="col-sm-4 control-label">آدرس مقصد</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="dest_address" class="form-control" id="dest_address">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="good_bame" class="col-sm-2 control-label">نام کالا</label>
+
+            <div class="col-sm-10">
+                <input type="text" name="good_bame" class="form-control" id="good_bame">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="net_weight" class="col-sm-4 control-label">وزن خالص</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="net_weight" class="form-control" id="net_weight">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="weight" class="col-sm-2 control-label">وزن</label>
+
+            <div class="col-sm-10">
+                <input type="text" name="weight" class="form-control" id="weight">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="input_tariff" class="col-sm-4 control-label">تعرفه ورودی</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="input_tariff" class="form-control" id="input_tariff">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="good_count" class="col-sm-2 control-label">تعداد کالا</label>
+
+            <div class="col-sm-10">
+                <input type="text" name="good_count" class="form-control" id="good_count">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="price" class="col-sm-2 control-label">مبلغ</label>
+
+            <div class="col-sm-10">
+                <input type="text" name="price" class="form-control" id="price">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="truck_no" class="col-sm-4 control-label">شماره کامیون</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="truck_no" class="form-control" id="truck_no">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="driver_name" class="col-sm-4 control-label">نام راننده</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="driver_name" class="form-control" id="driver_name">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="chasis_no" class="col-sm-4 control-label">شماره شاسی</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="chasis_no" class="form-control" id="chasis_no">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="trailer_no" class="col-sm-4 control-label">شماره کشنده</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="trailer_no" class="form-control" id="trailer_no">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="truck_address" class="col-sm-4 control-label">آدرس کامیون</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="truck_address" class="form-control" id="truck_address">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6">
+            <label for="truck_type" class="col-sm-4 control-label">نوع کامیون</label>
+
+            <div class="col-sm-8">
+                <input type="text" name="truck_type" class="form-control" id="truck_type">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-12 list">
+            <div class="col-sm-6">
+                <div class="checkbox">
+                    <label>
+                        <input name="tranian_truck" type="checkbox"> ملیت کامیون
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<h1>
+    صفحه سوم
+</h1>
+<section class="page_3">
+
+    <div class="row">
+        <div class="form-group col-sm-12 list">
+            <label class="hide" ></label>
+        <div class="col-sm-6">
+            <div class="checkbox">
+                <label>
+                    <input name="vi_type_1" type="checkbox"> تخلیه بار در اماکن گمرکی و غیر گمرکی بدون اطلاع
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input name="vi_type_2" type="checkbox"> اظهار خلاف
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input name="vi_type_3" type="checkbox"> کسر و اضافه
+                </label>
+            </div>
+             <div class="checkbox">
+                <label>
+                    <input name="vi_type_4" type="checkbox"> تاخیر در تحویل کالا به گمرک
+                </label>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="checkbox">
+                <label>
+                    <input name="vi_type_5" type="checkbox"> قاچاق
+                </label>
+            </div>
+             <div class="checkbox">
+                <label>
+                    <input name="vi_type_6" type="checkbox"> جعل یا استفاده از اسناد مجعول
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input name="vi_type_7" type="checkbox"> فک پلمپ
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="form-group col-lg-6">
+        <label for="detector" class="col-sm-4 control-label">کاشف</label>
+
+        <div class="col-sm-8">
+            <input type="text" name="detector" class="form-control" id="detector">
+        </div>
+    </div>
+
+    <div class="form-group col-lg-6">
+        <label for="detector_other" class="col-sm-2 control-label">سایر</label>
+
+        <div class="col-sm-10">
+            <input type="text" name="detector_other" class="form-control" id="detector_other">
+        </div>
+    </div>
+
+    <div class="form-group col-lg-6">
+        <label for="fine_receipt_no" class="col-sm-5 control-label">شماره رسید پرداخت جریمه</label>
+
+        <div class="col-sm-7">
+            <input type="text" name="fine_receipt_no" class="form-control" id="fine_receipt_no">
+        </div>
+    </div>
+
+    <div class="form-group col-lg-6">
+        <label for="fine_price" class="col-sm-4 control-label">مبلغ جریمه</label>
+
+        <div class="col-sm-8">
+            <input type="text" name="fine_price" class="form-control" id="fine_price">
+        </div>
+    </div>
+
+    <div class="form-group col-lg-6">
+        <label for="final_result" class="col-sm-4 control-label">نتیجه نهایی</label>
+
+        <div class="col-sm-8">
+            <input type="text" name="final_result" class="form-control" id="final_result">
+        </div>
+    </div>
+
+    <div class="form-group col-lg-6">
+        <label for="details" class="col-sm-2 control-label">شرح</label>
+
+        <div class="col-sm-10">
+            <input type="text" name="details" class="form-control" id="details">
+        </div>
+    </div>
+
+    <div class="form-group col-lg-6">
+        <label for="m_rec_date" class="col-sm-5 control-label">تاریخ ثبت میلادی</label>
+
+        <div class="col-sm-7">
+            <input type="text" name="m_rec_date" class="form-control" id="m_rec_date">
+        </div>
+    </div>
+
+    <div class="form-group col-lg-6">
+        <label for="s_rec_date" class="col-sm-5 control-label">تاریخ ثبت شمسی</label>
+
+        <div class="col-sm-7">
+            <input type="text" name="s_rec_date" class="form-control" id="s_rec_date">
+        </div>
+    </div>
+
+
+    <div class="form-group col-sm-12 list">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input name="locked" type="checkbox"> قفل شده
+                </label>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+
+</div>
+</form>
+</section>
+</div>
 {% end %}
