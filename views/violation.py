@@ -77,7 +77,20 @@ class Violation(tornado.web.RequestHandler):
         locked = self.get_argument('locked', False)
 
 
-        Controller.add(id=id, s_date=s_date, m_date=m_date, file_no=file_no, kootaj=kootaj, cert_no=cert_no, s_date_1=s_date_1, s_date_2=s_date_2, policy_1=policy_1, policy_2=policy_2, policy_3=policy_3, policy_4=policy_4, policy_5=policy_5, policy_6=policy_6, policy_7=policy_7, ezharname=ezharname, person_type=person_type, full_name=full_name, card_no=card_no, code_no=code_no, company=company, ez_full_name=ez_full_name, ez_owner=ez_owner, ez_agent=ez_agent, ez_card_no=ez_card_no, ez_code_no=ez_code_no, tr_full_name=tr_full_name, tr_code_no=tr_code_no, tr_reg_no=tr_reg_no, tr_nationality=tr_nationality, tr_manager=tr_manager, tr_type=tr_type, item_name=item_name, tariff_no=tariff_no, paid=paid, different=different, fine=fine, diff_paid=diff_paid, vi_type_1=vi_type_1, vi_type_2=vi_type_2, vi_type_3=vi_type_3, vi_type_4=vi_type_4, vi_type_5=vi_type_5, vi_type_6=vi_type_6, vi_type_7=vi_type_7, vi_type_other=vi_type_other, stated_tariff=stated_tariff, stated_value=stated_value, stated_weight=stated_weight, deducted_tariff=deducted_tariff, deducted_value=deducted_value, deducted_weight=deducted_weight, law=law, detector=detector, detector_other=detector_other, results=results, commitment=commitment, receip_no=receip_no, details=details, m_rec_date=m_rec_date, s_rec_date=s_rec_date, locked=locked)
+        Controller.add(id=id, s_date=s_date, m_date=m_date, file_no=file_no, kootaj=kootaj, cert_no=cert_no,
+                       s_date_1=s_date_1, s_date_2=s_date_2, policy_1=policy_1, policy_2=policy_2, policy_3=policy_3,
+                       policy_4=policy_4, policy_5=policy_5, policy_6=policy_6, policy_7=policy_7, ezharname=ezharname,
+                       person_type=person_type, full_name=full_name, card_no=card_no, code_no=code_no, company=company,
+                       ez_full_name=ez_full_name, ez_owner=ez_owner, ez_agent=ez_agent, ez_card_no=ez_card_no,
+                       ez_code_no=ez_code_no, tr_full_name=tr_full_name, tr_code_no=tr_code_no, tr_reg_no=tr_reg_no,
+                       tr_nationality=tr_nationality, tr_manager=tr_manager, tr_type=tr_type, item_name=item_name,
+                       tariff_no=tariff_no, paid=paid, different=different, fine=fine, diff_paid=diff_paid,
+                       vi_type_1=vi_type_1, vi_type_2=vi_type_2, vi_type_3=vi_type_3, vi_type_4=vi_type_4,
+                       vi_type_5=vi_type_5, vi_type_6=vi_type_6, vi_type_7=vi_type_7, vi_type_other=vi_type_other,
+                       stated_tariff=stated_tariff, stated_value=stated_value, stated_weight=stated_weight,
+                       deducted_tariff=deducted_tariff, deducted_value=deducted_value, deducted_weight=deducted_weight,
+                       law=law, detector=detector, detector_other=detector_other, results=results,
+                       commitment=commitment, receip_no=receip_no, details=details, locked=locked)
 
 
 class ViolationSearch(tornado.web.RequestHandler):
