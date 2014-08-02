@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/edit_requests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/edit_request.py" afterPath="$PROJECT_DIR$/views/edit_request.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -83,7 +81,7 @@
       <file leaf-file-name="edit_request.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/edit_request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="36" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.6430206" vertical-offset="178" max-vertical-offset="680">
+            <state line="32" column="0" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.6819222" vertical-offset="178" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -875,7 +873,11 @@
       <created>1406973096935</created>
       <updated>1406973096935</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="ok">
+      <created>1406989467793</created>
+      <updated>1406989467793</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1215,7 +1217,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/edit_request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="36" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.6430206" vertical-offset="178" max-vertical-offset="680">
+        <state line="32" column="0" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.6819222" vertical-offset="178" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
