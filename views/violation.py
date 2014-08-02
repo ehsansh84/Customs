@@ -92,6 +92,9 @@ class Violation(tornado.web.RequestHandler):
                        law=law, detector=detector, detector_other=detector_other, results=results,
                        commitment=commitment, receip_no=receip_no, details=details, locked=locked)
 
+        self.render('Violation.html')
+
+
 
 class ViolationSearch(tornado.web.RequestHandler):
 
