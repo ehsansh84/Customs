@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/edit_requests.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/edit_request.py" afterPath="$PROJECT_DIR$/views/edit_request.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -34,7 +36,7 @@
       <file leaf-file-name="BaseUrls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1020">
+            <state line="29" column="34" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
@@ -78,6 +80,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="edit_request.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/edit_request.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="36" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.6430206" vertical-offset="178" max-vertical-offset="680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connections.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="connections.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/connections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="509" selection-end="509" vertical-scroll-proportion="0.18340611" vertical-offset="120" max-vertical-offset="1394">
+            <state line="12" column="23" selection-start="482" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1394">
               <folding />
             </state>
           </provider>
@@ -143,11 +154,11 @@
         <option value="$PROJECT_DIR$/models/edit_request.py" />
         <option value="$PROJECT_DIR$/controllers/edit_request.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/views/edit_request.py" />
         <option value="$PROJECT_DIR$/urls/BaseUrls.py" />
         <option value="$PROJECT_DIR$/views/violation.py" />
         <option value="$PROJECT_DIR$/controllers/violation.py" />
         <option value="$PROJECT_DIR$/connections.py" />
+        <option value="$PROJECT_DIR$/views/edit_request.py" />
       </list>
     </option>
   </component>
@@ -240,6 +251,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Customs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Customs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -268,11 +293,11 @@
       <recent name="D:\Developer Center\Gomrok\Customs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Developer Center\Gomrok\Customs\templates" />
       <recent name="D:\Developer Center\Gomrok\Customs\views" />
       <recent name="D:\Developer Center\Gomrok\Customs\controllers" />
       <recent name="D:\Developer Center\Gomrok\Customs\models" />
       <recent name="D:\Developer Center\Gomrok\Customs\views\old" />
-      <recent name="D:\Developer Center\Gomrok\Customs\controllers\old" />
     </key>
   </component>
   <component name="RestoreUpdateTree">
@@ -846,7 +871,11 @@
       <created>1406972360023</created>
       <updated>1406972360023</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="ok">
+      <created>1406973096935</created>
+      <updated>1406973096935</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1031,7 +1060,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/BaseController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="73" selection-end="73" vertical-scroll-proportion="-0.34772727" vertical-offset="204" max-vertical-offset="1122" />
+        <state line="3" column="10" selection-start="73" selection-end="73" vertical-scroll-proportion="-0.34772727" vertical-offset="204" max-vertical-offset="1122">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/personnel.py">
@@ -1138,24 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/edit_request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="21" selection-start="740" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="748">
-          <folding>
-            <marker date="1406949732900" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1406949732900" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1406949732900" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="10" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0" vertical-offset="625" max-vertical-offset="1190">
@@ -1188,7 +1201,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="509" selection-end="509" vertical-scroll-proportion="0.18340611" vertical-offset="120" max-vertical-offset="1394">
+        <state line="12" column="23" selection-start="482" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="34" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/edit_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="36" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.6430206" vertical-offset="178" max-vertical-offset="680">
           <folding />
         </state>
       </provider>

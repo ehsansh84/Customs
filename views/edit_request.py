@@ -24,7 +24,7 @@ class Editrequest(tornado.web.RequestHandler):
 class EditrequestList(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
-        self.render('Editrequest.html')
+        self.render('edit_requests.html')
 
     def post(self, *args, **kwargs):
         user_id = self.get_argument('user_id', '999')
