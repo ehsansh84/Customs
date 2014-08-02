@@ -9,7 +9,7 @@
 from controller.BaseController import *
 from views.violation import Violation, ViolationSearch
 from views.personnel import Personnel
-from views.edit_request import Editrequest
+from views.edit_request import Editrequest, EditrequestList
 # from views.personnel import *
 # from views.files import *
 # from views.borrow import *
@@ -27,6 +27,7 @@ url_patterns = {
     (r'/int_violation', IntViolationHandler),
     (r'/personnels', Personnel),
     (r'/edit_request', Editrequest),
+    (r'/edit_requests', EditrequestList),
 
 
     # (r'/404[/]?', PageNotFound),
@@ -36,7 +37,6 @@ url_patterns = {
     # (r'/settings/delete/([^/]*)', DeleteSettings),
     # (r'/entry_report[/]?', GetEntryReport),
     # (r'/monitor/grabber/link/live[/]?', ShowLiveLinkGrabber),
-
 
     # (r'/files', File),
     # (r'/borrow', Borrow),
