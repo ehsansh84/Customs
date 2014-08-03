@@ -38,3 +38,13 @@ class EditrequestList(tornado.web.RequestHandler):
 
         # Controller.add(user_id=user_id, violation_id=violation_id, reason=reason)
         pass
+
+
+class EditRequestEnd(tornado.web.RequestHandler):
+
+    def get(self, *args, **kwargs):
+        self.write('No get method allowed')
+
+    def post(self, *args, **kwargs):
+        pass
+
