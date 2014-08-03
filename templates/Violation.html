@@ -28,7 +28,7 @@
                     });
 
 
-                    $(".sdate").persianDatepicker();
+
 
                 }
                 catch (err)
@@ -473,7 +473,10 @@
 
         <script type="text/javascript">
             $(function(){
-
+                try{
+                    $(".sdate").persianDatepicker();
+                }
+                catch (err){}
             });
         </script>
 {% end %}
