@@ -8,7 +8,7 @@ import tornado.ioloop
 import tornado.options
 import tornado.web
 
-from controllers.old.file import File as Controller
+# from controllers.old.file import File as Controller
 import os
 
 
