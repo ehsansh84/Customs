@@ -5458,7 +5458,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 
 .close {
-    float: right;
+    float: left;
     font-size: 21px;
     font-weight: 700;
     line-height: 1;

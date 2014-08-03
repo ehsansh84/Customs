@@ -1,9 +1,126 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends "../base.html" %}
 
-</body>
-</html>
+{% block body %}
+    <div>
+        <header>
+            درخواست ها
+        </header>
+        <section>
+
+
+            <form class="hide" method="get" id="table_search_form" action="">
+                <input type="hidden" name="perPage" value="10" />
+                <input type="hidden" name="page" value="1" />
+            </form>
+
+
+
+            <div class="table-responsive" >
+                <input type="hidden" value="/shape_record" name="shape_record_address" >
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                        <th>کد</th>
+                        <th>متن درخواست</th>
+                        <th>تاریخ</th>
+                        <th>مربوط به </th>
+                        <th>عملیات</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                        <tr>
+
+                            <td>1</td>
+                            <td>
+                                رخواست ویرایش الکی دارم
+                            </td>
+                            <td>
+                                13 بهمن 91
+                            </td>
+                            <td>
+                                فایل 13941
+                            </td>
+
+                            <td>
+                                <a class="btn btn-success open_request_modal" data-action="1" href="">
+                                    تایید
+                                </a>
+
+                                <a class="btn btn-danger open_request_modal" data-action="2" href="">
+                                    رد
+                                </a>
+                            </td>
+                        </tr>
+
+                  </tbody>
+                </table>
+
+
+            </div>
+
+             <ul class="pagination" data-count="20" >
+            </ul>
+
+
+        </section>
+    </div>
+
+
+
+
+<div class="modal fade" id="request_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">درخواست ویرایش</h4>
+      </div>
+      <div class="modal-body">
+          <form role="form" action="/edit_request" method="post" id="request_form" >
+            <div class="form-group">
+                <label for="text">
+                    توضیح :
+                </label>
+                <textarea name="text" id="text" cols="30" rows="10" class="form-control"></textarea>
+              </div>
+
+              <input type="hidden" name="action_no" id="action_no" />
+              <input type="hidden" name="action_num" id="action_num" />
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary edit_request_form_submit">
+            تایید
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% end %}
+
+
+
+{% block script %}
+        <script type="text/javascript" src="/static/libs/bootstrap/js/bootstrap.min.js" ></script>
+        <script type="text/javascript" src="/static/js/request_table.js" ></script>
+        <script type="text/javascript" src="/static/js/template.js" ></script>
+        <script type="text/javascript">
+            $(function(){
+
+
+                table_show.set_inputs();
+
+
+
+            });
+        </script>
+
+        {% module Template('pagination.html') %}
+
+
+{% end %}
