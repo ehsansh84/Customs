@@ -28,6 +28,7 @@ class Violation():
             obj = Model()
 
         if obj != None:
+            vi_type_1 = True
             obj.s_date = s_date
             #TODO it should use m_date
             obj.m_date = datetime.now()
@@ -92,6 +93,7 @@ class Violation():
             obj.s_rec_date = '1393-05-11'
             obj.locked = locked
             Debug.dprint(vi_type_1)
+
             obj.save()
         print('Controller.add inside is executed')
 
