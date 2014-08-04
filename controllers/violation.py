@@ -19,6 +19,16 @@ class Violation():
             stated_weight=0, deducted_tariff=0, deducted_value=0, deducted_weight=0, law='', detector=0,
             detector_other='', results='', commitment=False, receip_no='', details='', locked=False):
 
+
+        #TODO Something for this
+        vi_type_1 = True if vi_type_1 == 'on' else False
+        vi_type_2 = True if vi_type_2 == 'on' else False
+        vi_type_3 = True if vi_type_3 == 'on' else False
+        vi_type_4 = True if vi_type_4 == 'on' else False
+        vi_type_5 = True if vi_type_5 == 'on' else False
+        vi_type_6 = True if vi_type_6 == 'on' else False
+        vi_type_7 = True if vi_type_7 == 'on' else False
+
         print('stated_weight: ' + str(stated_weight))
         print('deducted_weight: ' + str(deducted_weight))
         if id != '':
