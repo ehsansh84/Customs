@@ -1,6 +1,7 @@
 __author__ = 'ehsan'
 from models.violation import Violation as Model
 from datetime import datetime
+from tools.debug import Debug
 
 
 class Violation():
