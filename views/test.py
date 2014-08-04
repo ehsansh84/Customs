@@ -16,5 +16,6 @@ class Pull(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
         self.write(os.path.dirname(os.path.realpath(__file__)))
+        self.write('<br>')
         os.system("cd ..")
         self.write(os.path.dirname(os.path.realpath(__file__)))
