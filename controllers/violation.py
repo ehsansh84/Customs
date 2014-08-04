@@ -29,6 +29,14 @@ class Violation():
         vi_type_6 = True if vi_type_6 == 'on' else False
         vi_type_7 = True if vi_type_7 == 'on' else False
 
+        policy_1 = True if policy_1 == 'on' else False
+        policy_2 = True if policy_2 == 'on' else False
+        policy_3 = True if policy_3 == 'on' else False
+        policy_4 = True if policy_4 == 'on' else False
+        policy_5 = True if policy_5 == 'on' else False
+        policy_6 = True if policy_6 == 'on' else False
+        policy_7 = True if policy_7 == 'on' else False
+
         print('stated_weight: ' + str(stated_weight))
         print('deducted_weight: ' + str(deducted_weight))
         if id != '':
