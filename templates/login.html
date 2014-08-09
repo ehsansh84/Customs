@@ -2,11 +2,11 @@
 <link rel="stylesheet" href='{{ static_url("libs/icons/css/font-awesome.min.css") }}' type="text/css"/>
 <link rel="stylesheet" href='{{ static_url("css/login.css") }}' type="text/css"/>
 
-<form>
+<form method="post" action="/login">
     <h1>سیستم مدیریت تخلفات</h1>
     <div>
-        <input type="text" placeholder="نام کاربری" name="" id=""/>
-        <input type="password" placeholder="گذرواژه" name="" id=""/>
+        <input type="text" placeholder="نام کاربری" name="username" id="username"/>
+        <input type="password" placeholder="گذرواژه" name="password" id="password"/>
         <button type="submit" >
             <i class="fa fa-check" ></i>
         </button>
