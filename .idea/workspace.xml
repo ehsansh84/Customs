@@ -44,7 +44,7 @@
       <file leaf-file-name="test.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="49" selection-start="730" selection-end="730" vertical-scroll-proportion="0.69572955" vertical-offset="0" max-vertical-offset="562">
+            <state line="15" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.3024911" vertical-offset="0" max-vertical-offset="562">
               <folding />
             </state>
           </provider>
@@ -827,7 +827,11 @@
       <created>1407611445553</created>
       <updated>1407611445553</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="ok">
+      <created>1407611778400</created>
+      <updated>1407611778400</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1163,7 +1167,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="49" selection-start="730" selection-end="730" vertical-scroll-proportion="0.69572955" vertical-offset="0" max-vertical-offset="562">
+        <state line="15" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.3024911" vertical-offset="0" max-vertical-offset="562">
           <folding />
         </state>
       </provider>
