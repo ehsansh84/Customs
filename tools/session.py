@@ -21,8 +21,8 @@ class Session:
     @classmethod
     def set(cls, handler, name, value):
         # Debug.dprint(text='INSIDE SESSION SET')
-        # Debug.dprint(text='name: ' + name, type='data')
-        # Debug.dprint(text='value: ' + str(value), type='data')
+        Debug.dprint(text='name: ' + name, type='data')
+        Debug.dprint(text='value: ' + str(value), type='data')
         session = SessionManager(handler)
         session.set(name=name, value=value)
         # Debug.dprint(text='INSIDE SESSION SET I GET')
