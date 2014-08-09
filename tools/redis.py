@@ -10,7 +10,7 @@ Using this class:
 
 
 class Redis:
-    r = redis_instance
+    r = connection.redis_instance
 
     def __init__(self):
         pass
