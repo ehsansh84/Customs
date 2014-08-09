@@ -29,6 +29,6 @@ class Zzz(tornado.web.RequestHandler):
         # redis_instance.set(name='name', value='EHSAN')
         # self.write(redis_instance.get(name='name'))
 
-        Session.set( handler=self, name='name', value='EHSAN Omg')
-        self.write(Session.get(handler=self, name='name'))
+        Session.set(handler=self, name='name', value='EHSAN Omg')
+        self.write(str(Session.get(handler=self, name='name')))
 
