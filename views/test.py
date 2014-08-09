@@ -10,8 +10,8 @@ import tornado.web
 
 # from controllers.old.file import File as Controller
 import os
-# from tools.redis import Redis
-from connections import redis_instance
+from tools.redis import Redis
+# from connections import redis_instance
 
 
 class Pull(tornado.web.RequestHandler):
@@ -28,6 +28,6 @@ class Zzz(tornado.web.RequestHandler):
         # redis_instance.set(name='name', value='EHSAN')
         # self.write(redis_instance.get(name='name'))
 
-        redis_instance.set(name='name', value='EHSAN')
-        self.write(redis_instance.get(name='name'))
+        Redis.set(key='name', value='EHSAN Shirzadi')
+        self.write(Redis.get(key='name'))
 
