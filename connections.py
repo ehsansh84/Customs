@@ -73,5 +73,7 @@ elif redis_server == 'office':
 # Debug.dprint(text=redis_port, type='data')
 Debug.dprint(text='Mongo host')
 Debug.dprint(text=mongo_host, type='data')
-# redis_instance = redis.StrictRedis(host=redis_host, port=redis_port, db=0, password=redis_password)
+Debug.dprint(text='Redis host')
+Debug.dprint(text=redis_host, type='data')
+redis_instance = redis.StrictRedis(host=redis_host, port=redis_port, db=0, password=redis_password)
 # redisInstance = redis.StrictRedis(host=redis_host, port=redis_port, db=0, password=redis_password)
