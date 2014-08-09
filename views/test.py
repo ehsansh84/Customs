@@ -25,7 +25,9 @@ class Pull(tornado.web.RequestHandler):
 class Zzz(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
-        self.write('Begin\n\n')
+        # redis_instance.set(name='name', value='EHSAN')
+        # self.write(redis_instance.get(name='name'))
+
         redis_instance.set(name='name', value='EHSAN')
         self.write(redis_instance.get(name='name'))
-        # self.write(Redis.get(key='name'))
+

@@ -25,13 +25,23 @@ class Redis:
 
 
     @classmethod
-    def set(cls, key, value, expire=1000, type='string'):
+    def set(cls, key, value, type='string'):
         Debug.dprint(text=key)
         Debug.dprint(text=value)
         if type == 'string':
-            redis_instance.set(key, value, expire)
+            redis_instance.set(key, value)
         elif type == 'list' or type == 'dic':
-            redis_instance.set(key, json.dumps(value), expire)
+            redis_instance.set(key, json.dumps(value))
+
+
+    # @classmethod
+    # def set(cls, key, value, expire=1000, type='string'):
+    #     Debug.dprint(text=key)
+    #     Debug.dprint(text=value)
+    #     if type == 'string':
+    #         redis_instance.set(key, value, expire)
+    #     elif type == 'list' or type == 'dic':
+    #         redis_instance.set(key, json.dumps(value), expire)
 
 
 
