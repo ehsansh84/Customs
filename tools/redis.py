@@ -10,14 +10,14 @@ Using this class:
 
 
 class Redis:
-    r = connection.redis_instance
+    # r = connections.redis_instance
 
     def __init__(self):
         pass
 
     @classmethod
     def get(cls, key, type='string'):
-        result = cls.r.get(key)
+        result = redis_instance.get(key)
         if type == 'string':
             return result
         elif type == 'list' or type == 'dic':
@@ -29,15 +29,15 @@ class Redis:
         Debug.dprint(text=key)
         Debug.dprint(text=value)
         if type == 'string':
-            cls.r.set(key, value, expire)
+            redis_instance.set(key, value, expire)
         elif type == 'list' or type == 'dic':
-            cls.r.set(key, json.dumps(value), expire)
+            redis_instance.set(key, json.dumps(value), expire)
 
 
 
     @classmethod
     def search(cls, key, field='', value=''):
-        lst = json.loads(cls.r.get(key))
+        lst = json.loads(redis_instance.get(key))
         for item in lst:
             if item[field] == value:
                 return item
