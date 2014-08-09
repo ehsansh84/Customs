@@ -17,7 +17,7 @@ mongo_server = 'local'
 
 # redis_server = 'local'
 # redis_server = 'customs_local'
-redis_server = 'office'
+redis_server = 'local'
 
 database = 'Customs'
 

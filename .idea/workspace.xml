@@ -71,7 +71,7 @@
       <file leaf-file-name="connections.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/connections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="26" selection-start="2331" selection-end="2331" vertical-scroll-proportion="0.9074733" vertical-offset="799" max-vertical-offset="1428">
+            <state line="19" column="21" selection-start="672" selection-end="672" vertical-scroll-proportion="-0.15124555" vertical-offset="391" max-vertical-offset="1428">
               <folding />
             </state>
           </provider>
@@ -809,7 +809,11 @@
       <created>1407610399866</created>
       <updated>1407610399866</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="ok">
+      <created>1407610627427</created>
+      <updated>1407610627427</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1143,7 +1147,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="26" selection-start="2331" selection-end="2331" vertical-scroll-proportion="0.9074733" vertical-offset="799" max-vertical-offset="1428">
+        <state line="19" column="21" selection-start="672" selection-end="672" vertical-scroll-proportion="-0.15124555" vertical-offset="391" max-vertical-offset="1428">
           <folding />
         </state>
       </provider>
