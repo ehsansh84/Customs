@@ -63,7 +63,7 @@ class LoginHandler(tornado.web.RequestHandler):
         # self.write(str(Redis.get(key='acc_type')))
         # self.write(Session.get(handler=self, name='acc_type'))
 
-        self.redirect('/')
+        self.redirect('/violation')
 
 
 class IntViolationHandler(tornado.web.RequestHandler):
