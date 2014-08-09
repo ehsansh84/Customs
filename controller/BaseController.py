@@ -58,10 +58,12 @@ class LoginHandler(tornado.web.RequestHandler):
             self.render('login.html')
 
         # Session.set(handler=self, name='acc_type', value='admin')
-        self.write(username)
-        self.write(password)
-        self.write(str(Redis.get(key='acc_type')))
+        # self.write(username)
+        # self.write(password)
+        # self.write(str(Redis.get(key='acc_type')))
         # self.write(Session.get(handler=self, name='acc_type'))
+
+        self.redirect('/')
 
 
 class IntViolationHandler(tornado.web.RequestHandler):
