@@ -54,7 +54,8 @@ class LoginHandler(tornado.web.RequestHandler):
         elif username == 'user' and password == '111111':
             Redis.set(key='acc_type', value='user')
         else:
-            Redis.set(key='acc_type', value='no acc')
+            # Redis.set(key='acc_type', value='no acc')
+            self.render('login.html')
 
         # Session.set(handler=self, name='acc_type', value='admin')
         self.write(username)
