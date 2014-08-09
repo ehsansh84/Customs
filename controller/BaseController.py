@@ -47,6 +47,8 @@ class LoginHandler(tornado.web.RequestHandler):
     def post(self, *args, **kwargs):
         username = self.get_argument('username', '')
         password = self.get_argument('password', '')
+        self.write(username)
+        self.write(password)
 
 
 class IntViolationHandler(tornado.web.RequestHandler):
