@@ -10,7 +10,7 @@ import tornado.web
 
 # from controllers.old.file import File as Controller
 import os
-from tools.redis import Redis
+# from tools.redis import Redis
 # from connections import redis_instance
 from tools.session import Session
 
