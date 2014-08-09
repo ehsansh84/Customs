@@ -10,7 +10,8 @@ import tornado.web
 # import time
 # from pycket.session import SessionManager
 # from tornado.options import define, options
-from tools.session import Session
+# from tools.session import Session
+from tools.redis import Redis
 
 
 # home page
@@ -48,11 +49,16 @@ class LoginHandler(tornado.web.RequestHandler):
     def post(self, *args, **kwargs):
         username = self.get_argument('username', '')
         password = self.get_argument('password', '')
-        # if username == 'admin' and password == '123':
-        Session.set(handler=self, name='acc_type', value='admin')
+        if username == 'admin' and password == '123':
+            Redis.set(key='acc_type', value='admin')
+        elif username == 'user' and password == '111111':
+            Redis.set(key='acc_type', value='user')
+
+        # Session.set(handler=self, name='acc_type', value='admin')
         self.write(username)
         self.write(password)
-        self.write(Session.get(handler=self, name='acc_type'))
+        self.write(Redis.get(key='acc_type'))
+        # self.write(Session.get(handler=self, name='acc_type'))
 
 
 class IntViolationHandler(tornado.web.RequestHandler):
