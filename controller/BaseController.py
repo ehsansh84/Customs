@@ -10,6 +10,7 @@ import tornado.web
 # import time
 # from pycket.session import SessionManager
 # from tornado.options import define, options
+from tools.session import Session
 
 
 # home page
@@ -47,8 +48,11 @@ class LoginHandler(tornado.web.RequestHandler):
     def post(self, *args, **kwargs):
         username = self.get_argument('username', '')
         password = self.get_argument('password', '')
+        # if username == 'admin' and password == '123':
+        Session.set(handler=self, name='acc_type', value='admin')
         self.write(username)
         self.write(password)
+        self.write(Session.get(handler=self, name='acc_type'))
 
 
 class IntViolationHandler(tornado.web.RequestHandler):
