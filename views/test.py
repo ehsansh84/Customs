@@ -10,6 +10,7 @@ import tornado.web
 
 # from controllers.old.file import File as Controller
 import os
+from tools.redis import Redis
 
 
 class Pull(tornado.web.RequestHandler):
@@ -19,3 +20,10 @@ class Pull(tornado.web.RequestHandler):
         self.write('<br>')
         os.system("mkdir ehsan")
         self.write(os.path.dirname(os.path.realpath(__file__)))
+
+class Zzz(tornado.web.RequestHandler):
+
+    def get(self, *args, **kwargs):
+        self.write('Begin\n\n')
+        Redis.set(key='name', value='ehsan', expire=1000)
+        self.write(Redis.get(key='ehsan'))

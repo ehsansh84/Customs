@@ -13,7 +13,7 @@ from views.edit_request import Editrequest, EditrequestList, EditRequestEnd
 # from views.personnel import *
 # from views.files import *
 # from views.borrow import *
-from views.test import Pull
+from views.test import *
 
 
 url_patterns = {
@@ -33,6 +33,7 @@ url_patterns = {
 
 
     (r'/pull', Pull),
+    (r'/zzz', Zzz),
 
 
     # (r'/404[/]?', PageNotFound),
