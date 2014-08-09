@@ -28,4 +28,4 @@ class Zzz(tornado.web.RequestHandler):
         self.write('Begin\n\n')
         # Redis.set(key='name', value='ehsan', expire=1000)
         # self.write(redis_instance.get(name='name'))
-        self.write(Redis.get(name='name'))
+        self.write(Redis.get(key='name'))
