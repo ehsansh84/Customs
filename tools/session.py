@@ -10,8 +10,8 @@ class Session:
     @classmethod
     def get(cls, handler, name):
         session = SessionManager(handler)
-        Debug.dprint(text='name: ' + name, type='data')
-        Debug.dprint(text='value: ' + str(session.get(name)), type='data')
+        Debug.dprint(text='name: ' + name, type='custom')
+        Debug.dprint(text='value: ' + str(session.get(name)), type='error')
         # print "Session name is: " + name
         # print "Do we have a session? " + str(session.get(name))
         # if cls.exists(handler, name):
