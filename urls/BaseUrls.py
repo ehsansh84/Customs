@@ -22,7 +22,6 @@ url_patterns = {
     (r'/Stepform', StepFormHandler),
     (r'/table', TableHandler),
     (r'/404', ErrorHandler),
-    (r'/login', LoginHandler),
     (r'/violation', Violation),
     (r'/violation_search', ViolationSearch),
     (r'/int_violation', IntViolationHandler),
@@ -30,7 +29,9 @@ url_patterns = {
     (r'/edit_request', Editrequest),
     (r'/edit_request_end', Editrequest),
     (r'/edit_requests', EditrequestList),
+
     (r'/logout', Logout),
+    (r'/login', LoginHandler),
 
 
     (r'/pull', Pull),
