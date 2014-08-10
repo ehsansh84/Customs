@@ -11,6 +11,8 @@ from tools.redis import Redis
 class Violation(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
+        self.write('ok')
+        self.write(Redis.get(key='acc_type'))
         acc_type = Redis.get(key='acc_type')
         if acc_type != 'admin':
             self.render('Violation.html')
