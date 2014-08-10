@@ -3,6 +3,7 @@ import tornado.ioloop
 import tornado.options
 import tornado.web
 from controllers.edit_request import Editrequest as Controller
+from tools.redis import Redis
 
 
 class Editrequest(tornado.web.RequestHandler):
@@ -38,6 +39,13 @@ class EditrequestList(tornado.web.RequestHandler):
 
         # Controller.add(user_id=user_id, violation_id=violation_id, reason=reason)
         pass
+
+
+class Logout(tornado.web.RequestHandler):
+
+    def get(self, *args, **kwargs):
+        Redis.set(key='acc_type', value='')
+        self.render('login.html')
 
 
 class EditRequestEnd(tornado.web.RequestHandler):
