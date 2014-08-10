@@ -3,14 +3,20 @@ import tornado.ioloop
 import tornado.options
 import tornado.web
 from controllers.int_violation import Intviolation as Controller
+from tools.redis import Redis
 
 
 class Intviolation(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
-        self.render('Intviolation.html')
+        acc_type = Redis.get(key='acc_type')
+        if acc_type != 'admin':
+            self.render('Intviolation.html')
+        else:
+            self.redirect('/login')
 
     def post(self, *args, **kwargs):
+
         id = self.get_argument('id','')
         kootaj = self.get_argument('kootaj', '')
         cert_no = self.get_argument('cert_no', '')
