@@ -14,7 +14,8 @@ class Violation(tornado.web.RequestHandler):
         acc_type = Redis.get(key='acc_type')
         if acc_type == 'admin':
             permissions = Redis.get(key='permissions')
-            self.render('Violation.html', permissions=permissions, type='list')
+            self.write(permissions)
+            # self.render('Violation.html', permissions=permissions, type='list')
         else:
             self.redirect('/login')
 
@@ -99,7 +100,8 @@ class Violation(tornado.web.RequestHandler):
                        law=law, detector=detector, detector_other=detector_other, results=results,
                        commitment=commitment, receip_no=receip_no, details=details, locked=locked)
         print('Controller.add is executed')
-        self.render('Violation.html')
+        # self.render('Violation.html')
+        self.redirect('/violation')
 
 
 
