@@ -14,7 +14,7 @@ class Violation(tornado.web.RequestHandler):
         self.write('ok')
         self.write(Redis.get(key='acc_type'))
         acc_type = Redis.get(key='acc_type')
-        if acc_type != 'admin':
+        if acc_type == 'admin':
             self.render('Violation.html')
         else:
             self.redirect('/login')
