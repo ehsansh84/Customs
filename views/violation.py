@@ -105,81 +105,88 @@ class Violation(tornado.web.RequestHandler):
 class ViolationSearch(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
-        search = ''
-        fields = self.get_argument('fields', '')
-        records = {}
+        acc_type = Redis.get(key='acc_type')
+        if acc_type == 'admin':
+            search = ''
+            fields = self.get_argument('fields', '')
+            records = {}
 
-        if fields != '':
+            if fields != '':
 
-            #To determone if it's a search or not
-            search = 'search'
+                #To determone if it's a search or not
+                search = 'search'
 
-            fields = fields.split('|')
+                fields = fields.split('|')
 
-            perPage = self.get_argument('perPage', 10)
-            page = self.get_argument('page', 1)
+                perPage = self.get_argument('perPage', 10)
+                page = self.get_argument('page', 1)
 
-            fieldSearch = self.get_argument('fieldSearch', '')
+                fieldSearch = self.get_argument('fieldSearch', '')
 
-            if fieldSearch != '':
+                if fieldSearch != '':
 
-                fieldSearch = fieldSearch.split('|')
+                    fieldSearch = fieldSearch.split('|')
 
-                values = {}
+                    values = {}
 
-                for item in fieldSearch:
-                    value = self.get_argument(item, '')
-                    if value != '':
-                        values[item] = value
+                    for item in fieldSearch:
+                        value = self.get_argument(item, '')
+                        if value != '':
+                            values[item] = value
 
-            records = {
-                'items': [],
-                'record_count': 30
+                records = {
+                    'items': [],
+                    'record_count': 30
+                }
+
+                for x in range(0, 3):
+                    record = {}
+                    for item in fields:
+                        record[item] = 'test'
+                    records['items'].append(record)
+
+            FieldList = [
+                {
+                'name' : "file_no",
+                'label' : "شماره پرونده",
+                'default' : True,
+                'searchable' : True,
+                # 'validation' : "" - "number" - "data" - "email"
+                'validation' : "number"
+                },
+                {
+                'name' : "kootaj",
+                'label' : "شماره کوتاژ",
+                'default' : True,
+                'searchable' : True,
+                'validation' : "number"
+                },
+                {
+                'name' : "cert_no",
+                'label' : "شماره پروانه گمرکی",
+                'default' : True,
+                'searchable' : True,
+                'validation' : "number"
+                }
+                ]
+
+            user_info = {
+                'user_id': '666',
+                'name': 'احسان',
+                'family': 'شیرزادی'
             }
+            self.render('Violation_Table.html',
+                        search=search,
+                        fields=fields,
+                        records=records,
+                        FieldList=FieldList,
+                        user_info=user_info
+                        )
+        else:
+            self.redirect('/login')
 
-            for x in range(0, 3):
-                record = {}
-                for item in fields:
-                    record[item] = 'test'
-                records['items'].append(record)
 
-        FieldList = [
-            {
-            'name' : "file_no",
-            'label' : "شماره پرونده",
-            'default' : True,
-            'searchable' : True,
-            # 'validation' : "" - "number" - "data" - "email"
-            'validation' : "number"
-            },
-            {
-            'name' : "kootaj",
-            'label' : "شماره کوتاژ",
-            'default' : True,
-            'searchable' : True,
-            'validation' : "number"
-            },
-            {
-            'name' : "cert_no",
-            'label' : "شماره پروانه گمرکی",
-            'default' : True,
-            'searchable' : True,
-            'validation' : "number"
-            }
-            ]
 
-        user_info = {
-            'user_id': '666',
-            'name': 'احسان',
-            'family': 'شیرزادی'
-        }
-        self.render('Violation_Table.html',
-                    search=search,
-                    fields=fields,
-                    records=records,
-                    FieldList=FieldList,
-                    user_info=user_info
-                    )
 
     def post(self, *args, **kwargs):
         self.write('No post method allowed')
