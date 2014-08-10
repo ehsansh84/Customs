@@ -30,7 +30,7 @@ url_patterns = {
     (r'/edit_request', Editrequest),
     (r'/edit_request_end', Editrequest),
     (r'/edit_requests', EditrequestList),
-    (r'/logout', EditrequestList),
+    (r'/logout', Logout),
 
 
     (r'/pull', Pull),
