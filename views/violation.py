@@ -12,14 +12,9 @@ class Violation(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
         acc_type = Redis.get(key='acc_type')
-        permissions = {'main': True,
-                       'violation': True,
-                       'int_violation': True,
-                       'login':True,
-                       'logout': True,
-                       'report': True}
         if acc_type == 'admin':
-            self.render('Violation.html', permissions=permissions)
+            permissions = Redis.get(key='permissions')
+            self.render('Violation.html', permissions=permissions, type='list')
         else:
             self.redirect('/login')
 
@@ -113,6 +108,7 @@ class ViolationSearch(tornado.web.RequestHandler):
     def get(self, *args, **kwargs):
         acc_type = Redis.get(key='acc_type')
         if acc_type == 'admin':
+            permissions = Redis.get(key='permissions', type='list')
             search = ''
             fields = self.get_argument('fields', '')
             records = {}
@@ -186,7 +182,8 @@ class ViolationSearch(tornado.web.RequestHandler):
                         fields=fields,
                         records=records,
                         FieldList=FieldList,
-                        user_info=user_info
+                        user_info=user_info,
+                        permissions=permissions
                         )
         else:
             self.redirect('/login')

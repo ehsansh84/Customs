@@ -57,7 +57,7 @@ class LoginHandler(tornado.web.RequestHandler):
                           'login':True,
                           'logout': True,
                           'report': True}
-            Redis.set(key='permission', value='admin', type='list')
+            Redis.set(key='permissions', value=permission, type='list')
         elif username == 'user' and password == '111111':
             Redis.set(key='acc_type', value='user')
             permission = {'main': True,

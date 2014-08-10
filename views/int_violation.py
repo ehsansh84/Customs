@@ -11,7 +11,8 @@ class Intviolation(tornado.web.RequestHandler):
     def get(self, *args, **kwargs):
         acc_type = Redis.get(key='acc_type')
         if acc_type != 'admin':
-            self.render('Intviolation.html')
+            permissions = Redis.get(key='permissions')
+            self.render('Intviolation.html', permissions=permissions, type='list')
         else:
             self.redirect('/login')
 
