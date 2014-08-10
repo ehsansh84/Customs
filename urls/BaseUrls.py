@@ -14,7 +14,7 @@ from views.edit_request import Editrequest, EditrequestList, EditRequestEnd
 # from views.files import *
 # from views.borrow import *
 from views.test import *
-
+from views.general import *
 
 url_patterns = {
     (r'/', IndexHandler),

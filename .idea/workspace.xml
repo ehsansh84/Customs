@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/general.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/edit_request.py" afterPath="$PROJECT_DIR$/views/edit_request.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/personnel.py" afterPath="$PROJECT_DIR$/views/personnel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls/BaseUrls.py" afterPath="$PROJECT_DIR$/urls/BaseUrls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -63,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseUrls.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BaseUrls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="31" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
+            <state line="17" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="0.19495413" vertical-offset="204" max-vertical-offset="1139">
               <folding>
                 <element signature="e#92#131#0" expanded="true" />
               </folding>
@@ -94,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="general.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="general.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/general.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.38990825" vertical-offset="0" max-vertical-offset="436">
+            <state line="16" column="33" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
               <folding>
                 <element signature="e#69#94#0" expanded="true" />
               </folding>
@@ -179,10 +177,10 @@
         <option value="$PROJECT_DIR$/controller/BaseController.py" />
         <option value="$PROJECT_DIR$/views/int_violation.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/urls/BaseUrls.py" />
         <option value="$PROJECT_DIR$/views/edit_request.py" />
         <option value="$PROJECT_DIR$/views/personnel.py" />
         <option value="$PROJECT_DIR$/views/general.py" />
+        <option value="$PROJECT_DIR$/urls/BaseUrls.py" />
       </list>
     </option>
   </component>
@@ -990,7 +988,11 @@
       <created>1407660805013</created>
       <updated>1407660805013</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="ok">
+      <created>1407660880483</created>
+      <updated>1407660880483</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1316,15 +1318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="31" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
-          <folding>
-            <element signature="e#92#131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/edit_request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="1003">
@@ -1341,6 +1334,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/general.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="33" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding>
+            <element signature="e#69#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/files.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="0" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
@@ -1348,11 +1350,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/general.py">
+    <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.38990825" vertical-offset="0" max-vertical-offset="436">
+        <state line="17" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="0.19495413" vertical-offset="204" max-vertical-offset="1139">
           <folding>
-            <element signature="e#69#94#0" expanded="true" />
+            <element signature="e#92#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
