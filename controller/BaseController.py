@@ -66,6 +66,7 @@ class LoginHandler(tornado.web.RequestHandler):
                           'login':True,
                           'logout': True,
                           'report': True}
+            Redis.set(key='permissions', value=permission, type='list')
         else:
             # Redis.set(key='acc_type', value='no acc')
             self.render('login.html')
