@@ -41,11 +41,6 @@ class EditrequestList(tornado.web.RequestHandler):
         pass
 
 
-class Logout(tornado.web.RequestHandler):
-
-    def get(self, *args, **kwargs):
-        Redis.set(key='acc_type', value='')
-        self.render('login.html')
 
 
 class EditRequestEnd(tornado.web.RequestHandler):
