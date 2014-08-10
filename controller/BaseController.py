@@ -69,7 +69,11 @@ class LoginHandler(tornado.web.RequestHandler):
 class IntViolationHandler(tornado.web.RequestHandler):
 
     def get(self):
-        self.render('IntViolation.html')
+        acc_type = Redis.get(key='acc_type')
+        if acc_type == 'admin':
+            self.render('IntViolation.html')
+        else:
+            self.redirect('/login')
 
 class ErrorReportHandler(tornado.web.RequestHandler):
 
