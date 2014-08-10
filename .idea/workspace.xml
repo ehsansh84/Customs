@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/violation.py" afterPath="$PROJECT_DIR$/views/violation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/BaseController.py" afterPath="$PROJECT_DIR$/controller/BaseController.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -55,7 +55,7 @@
       <file leaf-file-name="BaseUrls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="34" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
+            <state line="19" column="19" selection-start="479" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
               <folding>
                 <element signature="e#92#131#0" expanded="true" />
               </folding>
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseController.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BaseController.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/BaseController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="1832" selection-end="2004" vertical-scroll-proportion="0.0" vertical-offset="1033" max-vertical-offset="1547">
+            <state line="20" column="26" selection-start="463" selection-end="463" vertical-scroll-proportion="0.4715447" vertical-offset="166" max-vertical-offset="1547">
               <folding>
                 <element signature="e#63#88#0" expanded="true" />
               </folding>
@@ -74,13 +74,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="violation.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="violation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="22" selection-start="8125" selection-end="8125" vertical-scroll-proportion="0.401084" vertical-offset="2997" max-vertical-offset="3366">
+            <state line="192" column="0" selection-start="8225" selection-end="8225" vertical-scroll-proportion="0.0" vertical-offset="2997" max-vertical-offset="3366">
               <folding>
                 <element signature="e#46#71#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="40" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="714">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,8 +139,8 @@
         <option value="$PROJECT_DIR$/views/personnel.py" />
         <option value="$PROJECT_DIR$/views/general.py" />
         <option value="$PROJECT_DIR$/urls/BaseUrls.py" />
-        <option value="$PROJECT_DIR$/controller/BaseController.py" />
         <option value="$PROJECT_DIR$/views/violation.py" />
+        <option value="$PROJECT_DIR$/controller/BaseController.py" />
       </list>
     </option>
   </component>
@@ -963,7 +972,11 @@
       <created>1407661237967</created>
       <updated>1407661237967</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="ok">
+      <created>1407661316922</created>
+      <updated>1407661316922</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1213,13 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="17" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="7" selection-start="737" selection-end="737" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
@@ -1307,9 +1313,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/violation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="0" selection-start="8225" selection-end="8225" vertical-scroll-proportion="0.0" vertical-offset="2997" max-vertical-offset="3366">
+          <folding>
+            <element signature="e#46#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="40" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="34" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
+        <state line="19" column="19" selection-start="479" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
           <folding>
             <element signature="e#92#131#0" expanded="true" />
           </folding>
@@ -1318,18 +1340,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/BaseController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="1832" selection-end="2004" vertical-scroll-proportion="0.0" vertical-offset="1033" max-vertical-offset="1547">
+        <state line="20" column="26" selection-start="463" selection-end="463" vertical-scroll-proportion="0.4715447" vertical-offset="166" max-vertical-offset="1547">
           <folding>
             <element signature="e#63#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/violation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="22" selection-start="8125" selection-end="8125" vertical-scroll-proportion="0.401084" vertical-offset="2997" max-vertical-offset="3366">
-          <folding>
-            <element signature="e#46#71#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -18,7 +18,7 @@ from tools.redis import Redis
 class IndexHandler(tornado.web.RequestHandler):
 
     def get(self):
-        self.render('home.html')
+        self.render('login.html')
 
 # home page
 class FormHandler(tornado.web.RequestHandler):
