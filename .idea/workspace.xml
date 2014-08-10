@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls/BaseUrls.py" afterPath="$PROJECT_DIR$/urls/BaseUrls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/violation.py" afterPath="$PROJECT_DIR$/views/violation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -41,15 +41,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="32" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="session.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/session.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -61,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseUrls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BaseUrls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="0.19495413" vertical-offset="204" max-vertical-offset="1139">
+            <state line="25" column="23" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
               <folding>
                 <element signature="e#92#131#0" expanded="true" />
               </folding>
@@ -72,64 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_request.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/edit_request.py">
+      <file leaf-file-name="violation.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="1003">
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="personnel.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/personnel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="0" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="918">
+            <state line="19" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.64498645" vertical-offset="0" max-vertical-offset="3162">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="general.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/general.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="33" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-              <folding>
-                <element signature="e#69#94#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="files.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/files.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="0" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseController.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/BaseController.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="12" selection-start="1321" selection-end="1360" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1479">
-              <folding>
-                <element signature="e#63#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="int_violation.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/int_violation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="48" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="2091">
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -166,7 +104,6 @@
         <option value="$PROJECT_DIR$/models/violation.py" />
         <option value="$PROJECT_DIR$/models/edit_request.py" />
         <option value="$PROJECT_DIR$/controllers/edit_request.py" />
-        <option value="$PROJECT_DIR$/views/violation.py" />
         <option value="$PROJECT_DIR$/controllers/violation.py" />
         <option value="$PROJECT_DIR$/connections.py" />
         <option value="$PROJECT_DIR$/tools/redis.py" />
@@ -181,14 +118,15 @@
         <option value="$PROJECT_DIR$/views/personnel.py" />
         <option value="$PROJECT_DIR$/views/general.py" />
         <option value="$PROJECT_DIR$/urls/BaseUrls.py" />
+        <option value="$PROJECT_DIR$/views/violation.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="x" value="1432" />
+    <option name="y" value="74" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -992,28 +930,32 @@
       <created>1407660880483</created>
       <updated>1407660880483</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="ok">
+      <created>1407660946077</created>
+      <updated>1407660946077</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="1432" y="74" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3282313" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19241774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3282313" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.264574" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2031722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1230,11 +1172,6 @@
         <state line="27" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="1.3161291" vertical-offset="51" max-vertical-offset="3315" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/violation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="21" selection-start="3816" selection-end="3816" vertical-scroll-proportion="0.048710603" vertical-offset="1326" max-vertical-offset="3145" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/edit_request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="23" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445" />
@@ -1293,24 +1230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/BaseController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="12" selection-start="1321" selection-end="1360" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1479">
-          <folding>
-            <element signature="e#63#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/int_violation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="48" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="2091">
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="26" selection-start="2064" selection-end="2070" vertical-scroll-proportion="-9.307693" vertical-offset="625" max-vertical-offset="1224">
@@ -1318,44 +1237,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/edit_request.py">
+    <entry file="file://$PROJECT_DIR$/views/int_violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="1003">
+        <state line="16" column="0" selection-start="272" selection-end="444" vertical-scroll-proportion="0.53432834" vertical-offset="93" max-vertical-offset="2091">
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/personnel.py">
+    <entry file="file://$PROJECT_DIR$/controller/BaseController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/general.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+        <state line="65" column="13" selection-start="1732" selection-end="1732" vertical-scroll-proportion="1.2126436" vertical-offset="683" max-vertical-offset="1479">
           <folding>
-            <element signature="e#69#94#0" expanded="true" />
+            <element signature="e#63#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="0" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+        <state line="9" column="0" selection-start="0" selection-end="150" vertical-scroll-proportion="0.41463414" vertical-offset="0" max-vertical-offset="884">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/general.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="33" selection-start="347" selection-end="347" vertical-scroll-proportion="0.73712736" vertical-offset="0" max-vertical-offset="374">
+          <folding>
+            <element signature="e#69#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/personnel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1557" selection-end="1557" vertical-scroll-proportion="1.0983146" vertical-offset="425" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/edit_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.45528457" vertical-offset="546" max-vertical-offset="1003">
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="0.19495413" vertical-offset="204" max-vertical-offset="1139">
+        <state line="25" column="23" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
           <folding>
             <element signature="e#92#131#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/violation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.64498645" vertical-offset="0" max-vertical-offset="3162">
+          <folding />
         </state>
       </provider>
     </entry>
