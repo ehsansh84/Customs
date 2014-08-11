@@ -29,7 +29,8 @@ class Zzz(tornado.web.RequestHandler):
         # redis_instance.set(name='name', value='EHSAN')
         # self.write(redis_instance.get(name='name'))
         session = SessionManager(self)
-        session.set('key', 'OMG')
+        # session.set('key', 'OMG')
+        session['key'] = 'OMG'
         self.write('done')
         #
         # Session.set(handler=self, name='name', value='EHSAN Omg')
@@ -41,7 +42,7 @@ class Yyy(tornado.web.RequestHandler):
         # redis_instance.set(name='name', value='EHSAN')
         # self.write(redis_instance.get(name='name'))
         session = SessionManager(self)
-        self.write(str(session.get('key')))
+        self.write(str(session['key']))
         #
         # Session.set(handler=self, name='name', value='EHSAN Omg')
         # self.write(str(Session.get(handler=self, name='name')))
