@@ -22,7 +22,11 @@ url_patterns = {
     (r'/Stepform', StepFormHandler),
     (r'/table', TableHandler),
     (r'/404', ErrorHandler),
+
     (r'/violation', Violation),
+    (r'/violation_data', Violation),
+
+
     (r'/violation_search', ViolationSearch),
     (r'/int_violation', IntViolationHandler),
     (r'/personnels', Personnel),
