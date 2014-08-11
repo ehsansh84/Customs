@@ -55,4 +55,4 @@ class Data(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
         records = Violation.find()
-        self.write(records)
+        self.write(str(records))
