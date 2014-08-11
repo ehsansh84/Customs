@@ -193,7 +193,7 @@ class Violation():
             #         'locked': obj.locked,
             #
             #                    })
-            return 'Shit'#obj
+            return list(obj)
         # except Exception, err:
         #     return 'ERROR IS: '+err.message
 
