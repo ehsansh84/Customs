@@ -122,7 +122,7 @@ class ViolationSearch(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
         acc_type = Redis.get(key='acc_type')
-        if acc_type == 'admin':
+        if acc_type == 'admin' or acc_type == 'user':
             permissions = Redis.get(key='permissions', type='list')
             search = ''
             fields = self.get_argument('fields', '')

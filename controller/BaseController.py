@@ -68,7 +68,7 @@ class LoginHandler(tornado.web.RequestHandler):
                           'logout': True,
                           'report': True}
             Redis.set(key='permissions', value=permission, type='list')
-            self.redirect('/yyy')
+            self.redirect('/violation_search')
         else:
             # Redis.set(key='acc_type', value='no acc')
             self.render('login.html')
