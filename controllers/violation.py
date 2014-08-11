@@ -123,7 +123,7 @@ class Violation():
 
     @classmethod
     def find(cls, _filter={}, page=-1, per_page=15, sort='personnel_id', order=1):
-        try:
+        # try:
             obj = Model.objects(__raw__=_filter)
 
             result = []
@@ -194,8 +194,8 @@ class Violation():
             #
             #                    })
             return obj
-        except Exception, err:
-            return 'ERROR IS: '+err.message
+        # except Exception, err:
+        #     return 'ERROR IS: '+err.message
 
     @classmethod
     def get(cls, id):
