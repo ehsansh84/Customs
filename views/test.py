@@ -55,6 +55,6 @@ class Yyy(tornado.web.RequestHandler):
 class Data(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
-        records = Model.objects()
+        records = Model.objects.all()
         # records = Violation.find()
         self.write(str(records))
