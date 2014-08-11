@@ -13,7 +13,7 @@ class Violation(tornado.web.RequestHandler):
     def get(self, *args, **kwargs):
         acc_type = Redis.get(key='acc_type')
         if acc_type == 'admin':
-            permissions = Redis.get(key='permissions')
+            permissions = Redis.get(key='permissions', type='list')
             # self.write(permissions)
             self.render('Violation.html', permissions=permissions, type='list')
         else:
