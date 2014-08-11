@@ -195,7 +195,7 @@ class Violation():
             #                    })
             return obj
         except Exception, err:
-            return err.message
+            return 'ERROR IS: '+err.message
 
     @classmethod
     def get(cls, id):
