@@ -184,6 +184,13 @@ class ViolationSearch(tornado.web.RequestHandler):
                 'default' : True,
                 'searchable' : True,
                 'validation' : "number"
+                },
+                {
+                'name' : "company",
+                'label' : "نام شرکت",
+                'default' : True,
+                'searchable' : True,
+                'validation' : ""
                 }
                 ]
 
