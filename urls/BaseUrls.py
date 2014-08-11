@@ -41,6 +41,7 @@ url_patterns = {
 
     (r'/pull', Pull),
     (r'/zzz', Zzz),
+    (r'/yyy', Yyy),
 
 
     # (r'/404[/]?', PageNotFound),
