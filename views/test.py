@@ -55,6 +55,8 @@ class Yyy(tornado.web.RequestHandler):
 class Data(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
+        MainMongoConnection = MongoClient('mongodb://Customs:27debc6ae243377d65e7@' + mongo_host + ':27017/republishan2')
+
         records = list(Model.objects.all())
         # records = Violation.find()
         self.write(str(records))
