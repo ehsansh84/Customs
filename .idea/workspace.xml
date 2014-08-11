@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/int_violation.py" afterPath="$PROJECT_DIR$/views/int_violation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/test.py" afterPath="$PROJECT_DIR$/views/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -74,7 +72,7 @@
       <file leaf-file-name="int_violation.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/int_violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="66" selection-start="415" selection-end="415" vertical-scroll-proportion="0.50688076" vertical-offset="0" max-vertical-offset="2108">
+            <state line="15" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.61445785" vertical-offset="0" max-vertical-offset="2108">
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -82,10 +80,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="IntViolation.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/IntViolation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="0" selection-start="1233" selection-end="1233" vertical-scroll-proportion="-4.9615383" vertical-offset="653" max-vertical-offset="7293">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redis.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/redis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="8" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="969">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="violation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="0" selection-start="5876" selection-end="6176" vertical-scroll-proportion="-13.076923" vertical-offset="1649" max-vertical-offset="3791">
+            <state line="17" column="0" selection-start="491" selection-end="571" vertical-scroll-proportion="-10.461538" vertical-offset="17" max-vertical-offset="3791">
               <folding>
                 <element signature="e#46#71#0" expanded="true" />
               </folding>
@@ -1153,7 +1169,11 @@
       <created>1407782602705</created>
       <updated>1407782602705</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="ok">
+      <created>1407784754875</created>
+      <updated>1407784754875</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1221,11 +1241,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/borrow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="38" selection-start="3097" selection-end="3105" vertical-scroll-proportion="-13.076923" vertical-offset="1071" max-vertical-offset="2040" />
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/mongoengine/document.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="180" column="8" selection-start="7753" selection-end="7753" vertical-scroll-proportion="0.33252427" vertical-offset="2634" max-vertical-offset="12767" />
@@ -1386,11 +1401,6 @@
         <state line="16" column="7" selection-start="737" selection-end="737" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/redis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="359" selection-end="359" vertical-scroll-proportion="0.33274022" vertical-offset="119" max-vertical-offset="1003" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/files.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="0" selection-end="150" vertical-scroll-proportion="0.41463414" vertical-offset="0" max-vertical-offset="884" />
@@ -1494,9 +1504,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tools/redis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/IntViolation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1233" selection-end="1233" vertical-scroll-proportion="-4.9615383" vertical-offset="653" max-vertical-offset="7293">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="5876" selection-end="6176" vertical-scroll-proportion="-13.076923" vertical-offset="1649" max-vertical-offset="3791">
+        <state line="17" column="0" selection-start="491" selection-end="571" vertical-scroll-proportion="-10.461538" vertical-offset="17" max-vertical-offset="3791">
           <folding>
             <element signature="e#46#71#0" expanded="true" />
           </folding>
@@ -1505,7 +1529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/int_violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="66" selection-start="415" selection-end="415" vertical-scroll-proportion="0.50688076" vertical-offset="0" max-vertical-offset="2108">
+        <state line="15" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.61445785" vertical-offset="0" max-vertical-offset="2108">
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
