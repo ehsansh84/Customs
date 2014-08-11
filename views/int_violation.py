@@ -2,7 +2,7 @@ import tornado.httpserver
 import tornado.ioloop
 import tornado.options
 import tornado.web
-from controllers.int_violation import Intviolation as Controller
+# from controllers.int_violation import Intviolation as Controller
 from tools.redis import Redis
 
 

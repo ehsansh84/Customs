@@ -16,6 +16,8 @@ from views.edit_request import Editrequest, EditrequestList, EditRequestEnd
 from views.test import *
 from views.general import *
 from views.violation import *
+from views.int_violation import *
+
 
 url_patterns = {
     (r'/', IndexHandler),
@@ -29,7 +31,7 @@ url_patterns = {
 
 
     (r'/violation_search', ViolationSearch),
-    (r'/int_violation', IntViolationHandler),
+    (r'/int_violation', Intviolation),
     (r'/personnels', Personnel),
     (r'/edit_request', Editrequest),
     (r'/edit_request_end', Editrequest),

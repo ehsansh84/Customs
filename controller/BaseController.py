@@ -80,15 +80,15 @@ class LoginHandler(tornado.web.RequestHandler):
         # self.write(Session.get(handler=self, name='acc_type'))
 
 
-
-class IntViolationHandler(tornado.web.RequestHandler):
-
-    def get(self):
-        acc_type = Redis.get(key='acc_type')
-        if acc_type == 'admin':
-            self.render('IntViolation.html')
-        else:
-            self.redirect('/login')
+#
+# class IntViolationHandler(tornado.web.RequestHandler):
+#
+#     def get(self):
+#         acc_type = Redis.get(key='acc_type')
+#         if acc_type == 'admin':
+#             self.render('IntViolation.html')
+#         else:
+#             self.redirect('/login')
 
 class ErrorReportHandler(tornado.web.RequestHandler):
 
