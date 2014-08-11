@@ -12,8 +12,8 @@ import tornado.web
 import os
 # from tools.redis import Redis
 # from connections import redis_instance
-from tools.session import Session
-
+# from tools.session import Session
+from pycket.session import SessionManager
 
 class Pull(tornado.web.RequestHandler):
 
@@ -28,7 +28,9 @@ class Zzz(tornado.web.RequestHandler):
     def get(self, *args, **kwargs):
         # redis_instance.set(name='name', value='EHSAN')
         # self.write(redis_instance.get(name='name'))
-
-        Session.set(handler=self, name='name', value='EHSAN Omg')
-        self.write(str(Session.get(handler=self, name='name')))
-
+        session = SessionManager(self)
+        session.set(name='name', value='OMG')
+        self.write(session.get(self, 'name'))
+        #
+        # Session.set(handler=self, name='name', value='EHSAN Omg')
+        # self.write(str(Session.get(handler=self, name='name')))
