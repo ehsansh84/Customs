@@ -58,6 +58,7 @@ class LoginHandler(tornado.web.RequestHandler):
                           'logout': True,
                           'report': True}
             Redis.set(key='permissions', value=permission, type='list')
+            self.redirect('/violation')
         elif username == 'user' and password == '111111':
             Redis.set(key='acc_type', value='user')
             permission = {'main': True,
@@ -67,6 +68,7 @@ class LoginHandler(tornado.web.RequestHandler):
                           'logout': True,
                           'report': True}
             Redis.set(key='permissions', value=permission, type='list')
+            self.redirect('/violation_search')
         else:
             # Redis.set(key='acc_type', value='no acc')
             self.render('login.html')
@@ -77,7 +79,6 @@ class LoginHandler(tornado.web.RequestHandler):
         # self.write(str(Redis.get(key='acc_type')))
         # self.write(Session.get(handler=self, name='acc_type'))
 
-        self.redirect('/violation')
 
 
 class IntViolationHandler(tornado.web.RequestHandler):
