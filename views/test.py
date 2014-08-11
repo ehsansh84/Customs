@@ -14,6 +14,8 @@ import os
 # from connections import redis_instance
 # from tools.session import Session
 from pycket.session import SessionManager
+from controllers.violation import Violation
+
 
 class Pull(tornado.web.RequestHandler):
 
@@ -48,3 +50,9 @@ class Yyy(tornado.web.RequestHandler):
         #
         # Session.set(handler=self, name='name', value='EHSAN Omg')
         # self.write(str(Session.get(handler=self, name='name')))
+
+class Data(tornado.web.RequestHandler):
+
+    def get(self, *args, **kwargs):
+        records = Violation.find()
+        self.write(records)
