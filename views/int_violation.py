@@ -12,7 +12,7 @@ class Intviolation(tornado.web.RequestHandler):
         acc_type = Redis.get(key='acc_type')
         if acc_type == 'admin':
             permissions = Redis.get(key='permissions', type='list')
-            self.render('Intviolation.html', permissions=permissions)
+            self.render('IntViolation.html', permissions=permissions)
         else:
             # self.write('Data')
             # self.write(acc_type)
