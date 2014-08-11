@@ -14,7 +14,9 @@ class Intviolation(tornado.web.RequestHandler):
             permissions = Redis.get(key='permissions', type='list')
             self.render('Intviolation.html', permissions=permissions)
         else:
-            self.redirect('/login')
+            self.write('Data')
+            self.write(acc_type)
+            # self.redirect('/login')
 
     def post(self, *args, **kwargs):
 
