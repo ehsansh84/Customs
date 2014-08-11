@@ -129,7 +129,7 @@ class Violation():
             result = []
             for item in obj:
                 result.append({
-                    'id': obj.id,
+                    # 'id': obj.id,
                     's_date': obj.s_date,
                     'm_date': obj.m_date,
                     'file_no': obj.file_no,
