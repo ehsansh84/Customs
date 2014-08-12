@@ -127,7 +127,8 @@ class Violation():
         collection = db['violation']
         records = collection.find()
         result = []
-        for item in records:
+        # for item in records:
+        for item in range(5):
             # result.append({'kootaj': item['kootaj']})
             result.append('Ehsan')
             # obj = Model.objects(__raw__=_filter)
@@ -199,8 +200,8 @@ class Violation():
             #         'locked': obj.locked,
             #
             #                    })
-            # return result
-            return collection.find().count()
+            return result
+            # return collection.find().count()
         # except Exception, err:
         #     return 'ERROR IS: '+err.message
 
