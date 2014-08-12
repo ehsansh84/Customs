@@ -48,7 +48,7 @@ class Violation():
         if obj != None:
             vi_type_1 = True
             obj.s_date = s_date
-            #TODO it should use m_date
+            #TODO it should use s_date
             obj.m_date = datetime.now()
             obj.file_no = file_no
             obj.kootaj = kootaj
@@ -108,7 +108,7 @@ class Violation():
             obj.details = details
             obj.m_rec_date = datetime.now()
             #TODO: Hard Code! convert not to shanmsi
-            obj.s_rec_date = '1393-05-11'
+            obj.s_rec_date = '1393-05-17'
             obj.locked = locked
             Debug.dprint(vi_type_1)
 

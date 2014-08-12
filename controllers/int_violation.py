@@ -20,11 +20,13 @@ class Intviolation():
             obj.kootaj = kootaj
             obj.cert_no = cert_no
             obj.s_date = s_date
-            obj.m_date = m_date
+            #TODO it should use s_date
+            obj.m_date = datetime.now()
             obj.int_cert_no = int_cert_no
             obj.radif_marzi = radif_marzi
             obj.s_entry_date = s_entry_date
-            obj.m_entry_date = m_entry_date
+            #TODO it should use s_entry_date
+            obj.m_entry_date = datetime.now()
             obj.karne_tir_no = karne_tir_no
             obj.ezhar_1 = ezhar_1
             obj.ezhar_2 = ezhar_2
@@ -61,8 +63,9 @@ class Intviolation():
             obj.fine_price = fine_price
             obj.final_result = final_result
             obj.details = details
-            obj.m_rec_date = m_rec_date
-            obj.s_rec_date = s_rec_date
+            obj.m_rec_date = datetime.now()
+            #TODO: Hard Code! convert not to shanmsi
+            obj.s_rec_date = '1393-05-17'
             obj.locked = locked
 
             obj.save()
