@@ -59,7 +59,7 @@ class Data(tornado.web.RequestHandler):
         client = MongoClient('localhost', 27017)
         db = client.Customs
         collection = db['violation']
-        records = collection.find()
+        records = collection.find().count()
         # records = list(Model.objects.all())
         # records = Violation.find()
         self.write('ok?')
