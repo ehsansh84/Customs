@@ -61,6 +61,8 @@ class Data(tornado.web.RequestHandler):
         collection = db['intviolation']
         # records = collection.find().count()
         records = collection.find()
+        for item in records:
+            self.write('OK')
         # records = list(Model.objects.all())
         # records = Violation.find()
         self.write('ok?')
