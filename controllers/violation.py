@@ -2,7 +2,7 @@ __author__ = 'ehsan'
 from models.violation import Violation as Model
 from datetime import datetime
 from tools.debug import Debug
-
+from connections import db
 
 class Violation():
     def __init__(self):
@@ -124,7 +124,14 @@ class Violation():
     @classmethod
     def find(cls, _filter={}, page=-1, per_page=15, sort='personnel_id', order=1):
         # try:
-            obj = Model.objects(__raw__=_filter)
+        collection = db['intviolation']
+        records = collection.find()
+        result = []
+        for item in records:
+            temp = {'kootaj': item['kootaj']}
+
+            result.append(temp)
+            # obj = Model.objects(__raw__=_filter)
 
             result = []
             # for item in obj:
@@ -193,7 +200,7 @@ class Violation():
             #         'locked': obj.locked,
             #
             #                    })
-            return list(obj)
+            return result
         # except Exception, err:
         #     return 'ERROR IS: '+err.message
 

@@ -2,6 +2,7 @@ __author__ = 'ehsan'
 # from pymongo import MongoClient
 import redis
 from tools.debug import Debug
+from pymongo import MongoClient
 # host = '127.0.0.1'
 # mongo_connection = MongoClient('mongodb://username:password@' + host + ':27017/republishan2')
 # mongo_connection = MongoClient('mongodb://' + host + ':27017/tempdb')
@@ -78,3 +79,5 @@ Debug.dprint(text=redis_host, type='data')
 redis_instance = redis.StrictRedis(host=redis_host, port=redis_port, db=0)
 # redis_instance = redis.StrictRedis(host=redis_host, port=redis_port, db=0, password=redis_password)
 # redisInstance = redis.StrictRedis(host=redis_host, port=redis_port, db=0, password=redis_password)
+client = MongoClient('localhost', 27017)
+db = client.Customs

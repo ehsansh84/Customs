@@ -17,7 +17,7 @@ from pycket.session import SessionManager
 # from controllers.violation import Violation
 from models.violation import Violation as Model
 from pymongo import MongoClient
-
+from controllers.violation import Violation as Controller
 
 class Pull(tornado.web.RequestHandler):
 
@@ -56,14 +56,14 @@ class Yyy(tornado.web.RequestHandler):
 class Data(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
-        client = MongoClient('localhost', 27017)
-        db = client.Customs
-        collection = db['intviolation']
-        # records = collection.find().count()
-        records = collection.find()
-        for item in records:
-            self.write(str(item))
-        # records = list(Model.objects.all())
-        # records = Violation.find()
-        self.write('ok?')
+        # client = MongoClient('localhost', 27017)
+        # db = client.Customs
+        # collection = db['intviolation']
+        # # records = collection.find().count()
+        # records = collection.find()
+        # for item in records:
+        #     self.write(str(item))
+        #
+        # self.write('ok?')
+        records = Controller.find()
         self.write(str(records))

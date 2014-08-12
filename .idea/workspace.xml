@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connections.py" afterPath="$PROJECT_DIR$/connections.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/test.py" afterPath="$PROJECT_DIR$/views/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/violation.py" afterPath="$PROJECT_DIR$/controllers/violation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/violation.py" afterPath="$PROJECT_DIR$/views/violation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -44,7 +47,7 @@
       <file leaf-file-name="test.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="32" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.8333333" vertical-offset="663" max-vertical-offset="1173">
+            <state line="67" column="30" selection-start="2157" selection-end="2157" vertical-scroll-proportion="0.7083333" vertical-offset="765" max-vertical-offset="1173">
               <folding />
             </state>
           </provider>
@@ -53,8 +56,30 @@
       <file leaf-file-name="connections.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/connections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="27" selection-start="743" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1445">
+            <state line="82" column="19" selection-start="2574" selection-end="2574" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1513">
+              <folding>
+                <element signature="e#55#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="violation.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/violation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="2091" max-vertical-offset="3774">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="violation.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/violation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="8" selection-start="4998" selection-end="4998" vertical-scroll-proportion="0.0" vertical-offset="2125" max-vertical-offset="4981">
+              <folding>
+                <element signature="e#21#68#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +115,6 @@
         <option value="$PROJECT_DIR$/models/violation.py" />
         <option value="$PROJECT_DIR$/models/edit_request.py" />
         <option value="$PROJECT_DIR$/controllers/edit_request.py" />
-        <option value="$PROJECT_DIR$/connections.py" />
         <option value="$PROJECT_DIR$/tools/redis.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/main.py" />
@@ -99,14 +123,15 @@
         <option value="$PROJECT_DIR$/views/edit_request.py" />
         <option value="$PROJECT_DIR$/views/personnel.py" />
         <option value="$PROJECT_DIR$/views/general.py" />
-        <option value="$PROJECT_DIR$/views/violation.py" />
         <option value="$PROJECT_DIR$/controller/BaseController.py" />
         <option value="$PROJECT_DIR$/urls/BaseUrls.py" />
         <option value="$PROJECT_DIR$/templates/Violation.html" />
         <option value="$PROJECT_DIR$/templates/IntViolation.html" />
         <option value="$PROJECT_DIR$/views/int_violation.py" />
-        <option value="$PROJECT_DIR$/controllers/violation.py" />
         <option value="$PROJECT_DIR$/controllers/int_violation.py" />
+        <option value="$PROJECT_DIR$/connections.py" />
+        <option value="$PROJECT_DIR$/views/violation.py" />
+        <option value="$PROJECT_DIR$/controllers/violation.py" />
         <option value="$PROJECT_DIR$/views/test.py" />
       </list>
     </option>
@@ -201,20 +226,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Customs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Customs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1405,7 +1416,11 @@
       <created>1407858244363</created>
       <updated>1407858244363</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="ok">
+      <created>1407858266718</created>
+      <updated>1407858266718</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1714,26 +1729,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/violation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.5614525" vertical-offset="190" max-vertical-offset="4828">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/redis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="8" selection-start="359" selection-end="359" vertical-scroll-proportion="0.35539216" vertical-offset="127" max-vertical-offset="969">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/violation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="19" selection-start="768" selection-end="768" vertical-scroll-proportion="0.80104715" vertical-offset="119" max-vertical-offset="3791">
-          <folding>
-            <element signature="e#46#71#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1760,14 +1759,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="27" selection-start="743" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1445">
+        <state line="82" column="19" selection-start="2574" selection-end="2574" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1513">
+          <folding>
+            <element signature="e#55#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/violation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="2091" max-vertical-offset="3774">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/violation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="8" selection-start="4998" selection-end="4998" vertical-scroll-proportion="0.0" vertical-offset="2125" max-vertical-offset="4981">
+          <folding>
+            <element signature="e#21#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="32" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.8333333" vertical-offset="663" max-vertical-offset="1173">
+        <state line="67" column="30" selection-start="2157" selection-end="2157" vertical-scroll-proportion="0.7083333" vertical-offset="765" max-vertical-offset="1173">
           <folding />
         </state>
       </provider>
