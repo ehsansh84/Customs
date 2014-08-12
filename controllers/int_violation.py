@@ -1,5 +1,5 @@
 __author__ = 'ehsan'
-from models.IntViolation import Intviolation as Model
+from models.int_violation import Intviolation as Model
 
 
 class Intviolation():
