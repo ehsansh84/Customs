@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Violation.html" afterPath="$PROJECT_DIR$/templates/Violation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -66,7 +67,7 @@
       <file leaf-file-name="Violation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Violation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="402" selection-end="402" vertical-scroll-proportion="0.41129032" vertical-offset="0" max-vertical-offset="8568">
+            <state line="153" column="96" selection-start="7756" selection-end="7756" vertical-scroll-proportion="0.46975806" vertical-offset="2368" max-vertical-offset="8585">
               <folding />
             </state>
           </provider>
@@ -1224,7 +1225,11 @@
       <created>1407829781064</created>
       <updated>1407829781065</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="ok">
+      <created>1407829893286</created>
+      <updated>1407829893286</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1589,7 +1594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Violation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="402" selection-end="402" vertical-scroll-proportion="0.41129032" vertical-offset="0" max-vertical-offset="8568">
+        <state line="153" column="96" selection-start="7756" selection-end="7756" vertical-scroll-proportion="0.46975806" vertical-offset="2368" max-vertical-offset="8585">
           <folding />
         </state>
       </provider>
