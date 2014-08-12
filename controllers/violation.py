@@ -124,13 +124,11 @@ class Violation():
     @classmethod
     def find(cls, _filter={}, page=-1, per_page=15, sort='personnel_id', order=1):
         # try:
-        collection = db['intviolation']
+        collection = db['violation']
         records = collection.find()
         result = []
         for item in records:
-            temp = {'kootaj': item['kootaj']}
-
-            result.append(temp)
+            result.append({'kootaj': item['kootaj']})
             # obj = Model.objects(__raw__=_filter)
 
             # result = []
