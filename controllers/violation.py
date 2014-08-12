@@ -199,7 +199,8 @@ class Violation():
             #         'locked': obj.locked,
             #
             #                    })
-            return result
+            # return result
+            return collection.find().count()
         # except Exception, err:
         #     return 'ERROR IS: '+err.message
 
