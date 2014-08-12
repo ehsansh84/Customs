@@ -58,7 +58,7 @@
       <file leaf-file-name="IntViolation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/IntViolation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="265" column="71" selection-start="9435" selection-end="9435" vertical-scroll-proportion="0.23214285" vertical-offset="4427" max-vertical-offset="7667">
+            <state line="315" column="72" selection-start="11321" selection-end="11321" vertical-scroll-proportion="0.33333334" vertical-offset="5253" max-vertical-offset="7667">
               <folding />
             </state>
           </provider>
@@ -1394,7 +1394,11 @@
       <created>1407852565742</created>
       <updated>1407852565742</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="ok">
+      <created>1407853356576</created>
+      <updated>1407853356576</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1759,7 +1763,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/IntViolation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="265" column="71" selection-start="9435" selection-end="9435" vertical-scroll-proportion="0.23214285" vertical-offset="4427" max-vertical-offset="7667">
+        <state line="315" column="72" selection-start="11321" selection-end="11321" vertical-scroll-proportion="0.33333334" vertical-offset="5253" max-vertical-offset="7667">
           <folding />
         </state>
       </provider>
