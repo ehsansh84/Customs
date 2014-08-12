@@ -129,6 +129,6 @@ class Intviolation(tornado.web.RequestHandler):
                        vi_type_7=vi_type_7, detector=detector, detector_other=detector_other,
                        fine_receipt_no=fine_receipt_no, fine_price=fine_price, final_result=final_result,
                        details=details, m_rec_date=m_rec_date, s_rec_date=s_rec_date, locked=locked)
-        self.write(vi_type_4)
-        self.write(vi_type_3)
+        self.write(str(vi_type_4))
+        self.write(str(vi_type_3))
         # self.redirect('/int_violation')
