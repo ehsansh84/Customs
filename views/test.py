@@ -62,4 +62,5 @@ class Data(tornado.web.RequestHandler):
         records = collection.find()
         # records = list(Model.objects.all())
         # records = Violation.find()
+        self.write('ok?')
         self.write(str(records))
