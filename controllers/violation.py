@@ -133,7 +133,7 @@ class Violation():
             result.append(temp)
             # obj = Model.objects(__raw__=_filter)
 
-            result = []
+            # result = []
             # for item in obj:
             #     result.append({
             #         'id': obj.id,
