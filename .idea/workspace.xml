@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/IntViolation.html" afterPath="$PROJECT_DIR$/templates/IntViolation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/int_violation.py" afterPath="$PROJECT_DIR$/views/int_violation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -32,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="int_violation.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="int_violation.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/int_violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="39" selection-start="6738" selection-end="6738" vertical-scroll-proportion="0.0" vertical-offset="1989" max-vertical-offset="2380">
+            <state line="119" column="0" selection-start="6140" selection-end="7439" vertical-scroll-proportion="0.087855294" vertical-offset="1989" max-vertical-offset="2380">
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntViolation.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IntViolation.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/IntViolation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="0" selection-start="4622" selection-end="4622" vertical-scroll-proportion="0.7777778" vertical-offset="1972" max-vertical-offset="7769">
+            <state line="129" column="14" selection-start="4621" selection-end="4621" vertical-scroll-proportion="-2.728395" vertical-offset="1972" max-vertical-offset="7769">
               <folding />
             </state>
           </provider>
@@ -166,8 +166,8 @@
         <option value="$PROJECT_DIR$/controllers/violation.py" />
         <option value="$PROJECT_DIR$/controllers/int_violation.py" />
         <option value="$PROJECT_DIR$/templates/Violation.html" />
-        <option value="$PROJECT_DIR$/views/int_violation.py" />
         <option value="$PROJECT_DIR$/templates/IntViolation.html" />
+        <option value="$PROJECT_DIR$/views/int_violation.py" />
       </list>
     </option>
   </component>
@@ -1417,7 +1417,11 @@
       <created>1407855046117</created>
       <updated>1407855046117</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="ok">
+      <created>1407855097859</created>
+      <updated>1407855097859</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1770,19 +1774,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/int_violation.py">
+    <entry file="file://$PROJECT_DIR$/templates/IntViolation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="39" selection-start="6738" selection-end="6738" vertical-scroll-proportion="0.0" vertical-offset="1989" max-vertical-offset="2380">
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state line="129" column="14" selection-start="4621" selection-end="4621" vertical-scroll-proportion="-2.728395" vertical-offset="1972" max-vertical-offset="7769">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/IntViolation.html">
+    <entry file="file://$PROJECT_DIR$/views/int_violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="0" selection-start="4622" selection-end="4622" vertical-scroll-proportion="0.7777778" vertical-offset="1972" max-vertical-offset="7769">
-          <folding />
+        <state line="119" column="0" selection-start="6140" selection-end="7439" vertical-scroll-proportion="0.087855294" vertical-offset="1989" max-vertical-offset="2380">
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

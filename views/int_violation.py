@@ -117,18 +117,18 @@ class Intviolation(tornado.web.RequestHandler):
         # self.write('s_rec_date:' + str(s_rec_date)+'<br>')
         # self.write('locked:' + str(locked)+'<br>')
 
-        # Controller.add(id=id, kootaj=kootaj, cert_no=cert_no, s_date=s_date, m_date=m_date, int_cert_no=int_cert_no,
-        #                radif_marzi=radif_marzi, s_entry_date=s_entry_date, m_entry_date=m_entry_date,
-        #                karne_tir_no=karne_tir_no, ezhar_1=ezhar_1, ezhar_2=ezhar_2, ezhar_3=ezhar_3, ezhar_4=ezhar_4,
-        #                person_type=person_type, full_name=full_name, card_no=card_no, code_no=code_no,
-        #                dest_address=dest_address, good_name=good_name, net_weight=net_weight, weight=weight,
-        #                input_tariff=input_tariff, good_count=good_count, price=price, truck_no=truck_no,
-        #                driver_name=driver_name, chasis_no=chasis_no, trailer_no=trailer_no, iranian_truck=iranian_truck,
-        #                truck_address=truck_address, truck_type=truck_type, vi_type_1=vi_type_1, vi_type_2=vi_type_2,
-        #                vi_type_3=vi_type_3, vi_type_4=vi_type_4, vi_type_5=vi_type_5, vi_type_6=vi_type_6,
-        #                vi_type_7=vi_type_7, detector=detector, detector_other=detector_other,
-        #                fine_receipt_no=fine_receipt_no, fine_price=fine_price, final_result=final_result,
-        #                details=details, m_rec_date=m_rec_date, s_rec_date=s_rec_date, locked=locked)
+        Controller.add(id=id, kootaj=kootaj, cert_no=cert_no, s_date=s_date, m_date=m_date, int_cert_no=int_cert_no,
+                       radif_marzi=radif_marzi, s_entry_date=s_entry_date, m_entry_date=m_entry_date,
+                       karne_tir_no=karne_tir_no, ezhar_1=ezhar_1, ezhar_2=ezhar_2, ezhar_3=ezhar_3, ezhar_4=ezhar_4,
+                       person_type=person_type, full_name=full_name, card_no=card_no, code_no=code_no,
+                       dest_address=dest_address, good_name=good_name, net_weight=net_weight, weight=weight,
+                       input_tariff=input_tariff, good_count=good_count, price=price, truck_no=truck_no,
+                       driver_name=driver_name, chasis_no=chasis_no, trailer_no=trailer_no, iranian_truck=iranian_truck,
+                       truck_address=truck_address, truck_type=truck_type, vi_type_1=vi_type_1, vi_type_2=vi_type_2,
+                       vi_type_3=vi_type_3, vi_type_4=vi_type_4, vi_type_5=vi_type_5, vi_type_6=vi_type_6,
+                       vi_type_7=vi_type_7, detector=detector, detector_other=detector_other,
+                       fine_receipt_no=fine_receipt_no, fine_price=fine_price, final_result=final_result,
+                       details=details, m_rec_date=m_rec_date, s_rec_date=s_rec_date, locked=locked)
         self.write(str(vi_type_4))
         self.write(str(vi_type_3))
         # self.redirect('/int_violation')
