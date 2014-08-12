@@ -8,12 +8,17 @@ class Intviolation():
         pass
 
     @classmethod
-    def add(cls, id='', kootaj='', cert_no='', s_date='', m_date='', int_cert_no='', radif_marzi='', s_entry_date='', m_entry_date='', karne_tir_no='', ezhar_1=False, ezhar_2=False, ezhar_3=False, ezhar_4=False, person_type=False, full_name='', card_no='', code_no='', dest_address='', good_name='', net_weight='', weight='', input_tariff='', good_count=0, price=0, truck_no='', driver_name='', chasis_no='', trailer_no='', iranian_truck=False, truck_address='', truck_type=0, vi_type_1=False, vi_type_2=False, vi_type_3=False, vi_type_4=False, vi_type_5=False, vi_type_6=False, vi_type_7=False, detector=0, detector_other='', fine_receipt_no='', fine_price=0, final_result=0, details='', m_rec_date='', s_rec_date='', locked=False):
+    def add(cls, id='', kootaj='', cert_no='', s_date='', m_date='', int_cert_no='', radif_marzi='', s_entry_date='',
+            m_entry_date='', karne_tir_no='', ezhar_1=False, ezhar_2=False, ezhar_3=False, ezhar_4=False,
+            person_type=False, full_name='', card_no='', code_no='', dest_address='', good_name='', net_weight='',
+            weight='', input_tariff='', good_count=0, price=0, truck_no='', driver_name='', chasis_no='', trailer_no='',
+            iranian_truck=False, truck_address='', truck_type=0, vi_type_1=False, vi_type_2=False, vi_type_3=False,
+            vi_type_4=False, vi_type_5=False, vi_type_6=False, vi_type_7=False, detector=0, detector_other='',
+            fine_receipt_no='', fine_price=0, final_result=0, details='', m_rec_date='', s_rec_date='', locked=False):
 
 
         if id != '':
             obj = Model.objects(Kootaj=id).first()
-
         else:
             obj = Model()
 
