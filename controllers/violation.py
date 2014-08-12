@@ -128,7 +128,8 @@ class Violation():
         records = collection.find()
         result = []
         for item in records:
-            result.append({'kootaj': item['kootaj']})
+            # result.append({'kootaj': item['kootaj']})
+            result.append('Ehsan')
             # obj = Model.objects(__raw__=_filter)
 
             # result = []
