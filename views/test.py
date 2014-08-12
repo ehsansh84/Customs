@@ -65,5 +65,18 @@ class Data(tornado.web.RequestHandler):
         #     self.write(str(item))
         #
         # self.write('ok?')
-        records = Controller.find()
+
+
+
+        # records = Controller.find()
+        collection = db['violation']
+        records = collection.find()
+        result = []
+        # for item in records:
+        for item in range(5):
+            # result.append({'kootaj': item['kootaj']})
+            result.append('Ehsan')
+
         self.write(str(records))
+        self.write('\n\n<br><br>')
+        self.write(str(result))
