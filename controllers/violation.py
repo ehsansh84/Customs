@@ -123,87 +123,100 @@ class Violation():
 
     @classmethod
     def find(cls, _filter={}, page=-1, per_page=15, sort='personnel_id', order=1):
-        # try:
-        collection = db['violation']
+        #TODO: This shit should be rewrite!
+        collection = db.violation
         records = collection.find()
         result = []
-        # for item in records:
-        for item in range(5):
-            # result.append({'kootaj': item['kootaj']})
-            result.append('Ehsan')
-            # obj = Model.objects(__raw__=_filter)
+        for item in records:
+            result.append({
+                'kootaj': item['kootaj'],
+                'file_no': item['file_no'],
+                'cert_no': item['cert_no'],
+                'company': item['company'],
+            })
+        return result
 
-            # result = []
-            # for item in obj:
-            #     result.append({
-            #         'id': obj.id,
-            #         's_date': obj.s_date,
-            #         'm_date': obj.m_date,
-            #         'file_no': obj.file_no,
-            #         'kootaj': obj.kootaj,
-            #         'cert_no': obj.cert_no,
-            #         's_date_1': obj.s_date_1,
-            #         's_date_2': obj.s_date_2,
-            #         'policy_1': obj.policy_1,
-            #         'policy_2': obj.policy_2,
-            #         'policy_3': obj.policy_3,
-            #         'policy_4': obj.policy_4,
-            #         'policy_5': obj.policy_5,
-            #         'policy_6': obj.policy_6,
-            #         'policy_7': obj.policy_7,
-            #         'ezharname': obj.ezharname,
-            #         'person_type': obj.person_type,
-            #         'full_name': obj.full_name,
-            #         'card_no': obj.card_no,
-            #         'code_no': obj.code_no,
-            #         'company': obj.company,
-            #         'ez_full_name': obj.ez_full_name,
-            #         'ez_owner': obj.ez_owner,
-            #         'ez_agent': obj.ez_agent,
-            #         'ez_card_no': obj.ez_card_no,
-            #         'ez_code_no': obj.ez_code_no,
-            #         'tr_full_name': obj.tr_full_name,
-            #         'tr_code_no': obj.tr_code_no,
-            #         'tr_reg_no': obj.tr_reg_no,
-            #         'tr_nationality': obj.tr_nationality,
-            #         'tr_manager': obj.tr_manager,
-            #         'tr_type': obj.tr_type,
-            #         'item_name': obj.item_name,
-            #         'tariff_no': obj.tariff_no,
-            #         'paid': obj.paid,
-            #         'different': obj.different,
-            #         'fine': obj.fine,
-            #         'diff_paid': obj.diff_paid,
-            #         'vi_type_1': obj.vi_type_1,
-            #         'vi_type_2': obj.vi_type_2,
-            #         'vi_type_3': obj.vi_type_3,
-            #         'vi_type_4': obj.vi_type_4,
-            #         'vi_type_5': obj.vi_type_5,
-            #         'vi_type_6': obj.vi_type_6,
-            #         'vi_type_7': obj.vi_type_7,
-            #         'vi_type_other': obj.vi_type_other,
-            #         'stated_tariff': obj.stated_tariff,
-            #         'stated_value': obj.stated_value,
-            #         'stated_weight': obj.stated_weight,
-            #         'deducted_tariff': obj.deducted_tariff,
-            #         'deducted_value': obj.deducted_value,
-            #         'deducted_weight': obj.deducted_weight,
-            #         'law': obj.law,
-            #         'detector': obj.detector,
-            #         'detector_other': obj.detector_other,
-            #         'results': obj.results,
-            #         'commitment': obj.commitment,
-            #         'receip_no': obj.receip_no,
-            #         'details': obj.details,
-            #         'm_rec_date': obj.m_rec_date,
-            #         's_rec_date': obj.s_rec_date,
-            #         'locked': obj.locked,
-            #
-            #                    })
-            return result
-            # return collection.find().count()
-        # except Exception, err:
-        #     return 'ERROR IS: '+err.message
+        # # try:
+        # collection = db['violation']
+        # records = collection.find()
+        # result = []
+        # # for item in records:
+        # for item in range(5):
+        #     # result.append({'kootaj': item['kootaj']})
+        #     result.append('Ehsan')
+        #     # obj = Model.objects(__raw__=_filter)
+        #
+        #     # result = []
+        #     # for item in obj:
+        #     #     result.append({
+        #     #         'id': obj.id,
+        #     #         's_date': obj.s_date,
+        #     #         'm_date': obj.m_date,
+        #     #         'file_no': obj.file_no,
+        #     #         'kootaj': obj.kootaj,
+        #     #         'cert_no': obj.cert_no,
+        #     #         's_date_1': obj.s_date_1,
+        #     #         's_date_2': obj.s_date_2,
+        #     #         'policy_1': obj.policy_1,
+        #     #         'policy_2': obj.policy_2,
+        #     #         'policy_3': obj.policy_3,
+        #     #         'policy_4': obj.policy_4,
+        #     #         'policy_5': obj.policy_5,
+        #     #         'policy_6': obj.policy_6,
+        #     #         'policy_7': obj.policy_7,
+        #     #         'ezharname': obj.ezharname,
+        #     #         'person_type': obj.person_type,
+        #     #         'full_name': obj.full_name,
+        #     #         'card_no': obj.card_no,
+        #     #         'code_no': obj.code_no,
+        #     #         'company': obj.company,
+        #     #         'ez_full_name': obj.ez_full_name,
+        #     #         'ez_owner': obj.ez_owner,
+        #     #         'ez_agent': obj.ez_agent,
+        #     #         'ez_card_no': obj.ez_card_no,
+        #     #         'ez_code_no': obj.ez_code_no,
+        #     #         'tr_full_name': obj.tr_full_name,
+        #     #         'tr_code_no': obj.tr_code_no,
+        #     #         'tr_reg_no': obj.tr_reg_no,
+        #     #         'tr_nationality': obj.tr_nationality,
+        #     #         'tr_manager': obj.tr_manager,
+        #     #         'tr_type': obj.tr_type,
+        #     #         'item_name': obj.item_name,
+        #     #         'tariff_no': obj.tariff_no,
+        #     #         'paid': obj.paid,
+        #     #         'different': obj.different,
+        #     #         'fine': obj.fine,
+        #     #         'diff_paid': obj.diff_paid,
+        #     #         'vi_type_1': obj.vi_type_1,
+        #     #         'vi_type_2': obj.vi_type_2,
+        #     #         'vi_type_3': obj.vi_type_3,
+        #     #         'vi_type_4': obj.vi_type_4,
+        #     #         'vi_type_5': obj.vi_type_5,
+        #     #         'vi_type_6': obj.vi_type_6,
+        #     #         'vi_type_7': obj.vi_type_7,
+        #     #         'vi_type_other': obj.vi_type_other,
+        #     #         'stated_tariff': obj.stated_tariff,
+        #     #         'stated_value': obj.stated_value,
+        #     #         'stated_weight': obj.stated_weight,
+        #     #         'deducted_tariff': obj.deducted_tariff,
+        #     #         'deducted_value': obj.deducted_value,
+        #     #         'deducted_weight': obj.deducted_weight,
+        #     #         'law': obj.law,
+        #     #         'detector': obj.detector,
+        #     #         'detector_other': obj.detector_other,
+        #     #         'results': obj.results,
+        #     #         'commitment': obj.commitment,
+        #     #         'receip_no': obj.receip_no,
+        #     #         'details': obj.details,
+        #     #         'm_rec_date': obj.m_rec_date,
+        #     #         's_rec_date': obj.s_rec_date,
+        #     #         'locked': obj.locked,
+        #     #
+        #     #                    })
+        #     return result
+        #     # return collection.find().count()
+        # # except Exception, err:
+        # #     return 'ERROR IS: '+err.message
 
     @classmethod
     def get(cls, id):
