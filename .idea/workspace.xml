@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/violation.py" afterPath="$PROJECT_DIR$/views/violation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -64,7 +63,7 @@
       <file leaf-file-name="violation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="21" selection-start="5474" selection-end="5474" vertical-scroll-proportion="0.0" vertical-offset="1740" max-vertical-offset="5168">
+            <state line="136" column="21" selection-start="5474" selection-end="5474" vertical-scroll-proportion="0.0" vertical-offset="1839" max-vertical-offset="5168">
               <folding />
             </state>
           </provider>
@@ -1356,7 +1355,11 @@
       <created>1407938575071</created>
       <updated>1407938575071</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="ok">
+      <created>1407938586357</created>
+      <updated>1407938586357</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1676,16 +1679,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/test.py">
+    <entry file="file://$PROJECT_DIR$/controllers/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2272" selection-end="2640" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1564">
+        <state line="136" column="21" selection-start="5474" selection-end="5474" vertical-scroll-proportion="0.0" vertical-offset="1839" max-vertical-offset="5168">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/violation.py">
+    <entry file="file://$PROJECT_DIR$/views/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="21" selection-start="5474" selection-end="5474" vertical-scroll-proportion="0.0" vertical-offset="1740" max-vertical-offset="5168">
+        <state line="86" column="0" selection-start="2272" selection-end="2640" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1564">
           <folding />
         </state>
       </provider>
