@@ -160,7 +160,7 @@ class ViolationSearch(tornado.web.RequestHandler):
                     for item in fields:
                         record[item] = 'test'
                     records['items'].append(record)
-                records['item'] = Controller.find()
+                # records['item'] = Controller.find()
 
 
             FieldList = [
