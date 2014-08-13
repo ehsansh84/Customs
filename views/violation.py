@@ -155,12 +155,12 @@ class ViolationSearch(tornado.web.RequestHandler):
                     'record_count': 30
                 }
 
-                for x in range(0, 3):
-                    record = {}
-                    for item in fields:
-                        record[item] = 'test'
-                    records['items'].append(record)
-                # records['item'] = Controller.find()
+                # for x in range(0, 3):
+                #     record = {}
+                #     for item in fields:
+                #         record[item] = 'test'
+                #     records['items'].append(record)
+                records['item'] = Controller.find()
 
 
             FieldList = [
