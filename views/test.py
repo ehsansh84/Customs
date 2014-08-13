@@ -78,7 +78,12 @@ class Data(tornado.web.RequestHandler):
         result = []
         for item in records:
         # for item in range(5):
-            result.append({'kootaj': item['kootaj']})
+            result.append({
+                'kootaj': item['kootaj'],
+                'file_no': item['file_no'],
+                'cert_no': item['cert_no'],
+                'company': item['company'],
+            })
             # result.append(item['kootaj'])
             # result.append('Ehsan')
 
