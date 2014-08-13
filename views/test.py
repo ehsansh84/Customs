@@ -15,9 +15,11 @@ import os
 # from tools.session import Session
 from pycket.session import SessionManager
 # from controllers.violation import Violation
-from models.violation import Violation as Model
-from pymongo import MongoClient
-from controllers.violation import Violation as Controller
+# from models.violation import Violation as Model
+# from pymongo import MongoClient
+# from controllers.violation import Violation as Controller
+from connections import db
+
 
 class Pull(tornado.web.RequestHandler):
 

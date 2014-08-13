@@ -46,7 +46,7 @@
       <file leaf-file-name="test.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="22" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.870229" vertical-offset="722" max-vertical-offset="1411">
+            <state line="21" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="-0.7908397" vertical-offset="790" max-vertical-offset="1445">
               <folding />
             </state>
           </provider>
@@ -1311,7 +1311,11 @@
       <created>1407937853578</created>
       <updated>1407937853578</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="ok">
+      <created>1407937923847</created>
+      <updated>1407937923847</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1576,7 +1580,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="30" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241" />
+        <state line="49" column="30" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Violation.html">
@@ -1647,7 +1653,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="22" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.870229" vertical-offset="722" max-vertical-offset="1411">
+        <state line="21" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="-0.7908397" vertical-offset="790" max-vertical-offset="1445">
           <folding />
         </state>
       </provider>
