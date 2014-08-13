@@ -24,6 +24,8 @@ class Intviolation():
         vi_type_6 = True if vi_type_6 == 'on' else False
         vi_type_7 = True if vi_type_7 == 'on' else False
 
+        iranian_truck = True if iranian_truck == 'on' else False
+
         if id != '':
             obj = Model.objects(Kootaj=id).first()
         else:
