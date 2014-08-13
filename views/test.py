@@ -76,7 +76,8 @@ class Data(tornado.web.RequestHandler):
         collection = db.violation
         records = collection.find()
         result = []
-        for item in range(5):
+        for item in records:
+        # for item in range(5):
             # result.append({'kootaj': item['kootaj']})
             result.append('Ehsan')
 
