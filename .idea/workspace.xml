@@ -35,7 +35,7 @@
       <file leaf-file-name="violation.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="213" column="12" selection-start="9188" selection-end="9188" vertical-scroll-proportion="0.6366412" vertical-offset="3204" max-vertical-offset="3859">
+            <state line="162" column="30" selection-start="7572" selection-end="7572" vertical-scroll-proportion="0.7923664" vertical-offset="2235" max-vertical-offset="3859">
               <folding>
                 <element signature="e#46#71#0" expanded="true" />
               </folding>
@@ -64,7 +64,7 @@
       <file leaf-file-name="violation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="270" column="30" selection-start="11565" selection-end="11565" vertical-scroll-proportion="0.0" vertical-offset="4105" max-vertical-offset="5168">
+            <state line="270" column="30" selection-start="11565" selection-end="11565" vertical-scroll-proportion="0.0" vertical-offset="3442" max-vertical-offset="5168">
               <folding />
             </state>
           </provider>
@@ -1396,7 +1396,11 @@
       <created>1407940180713</created>
       <updated>1407940180713</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="ok">
+      <created>1407940251124</created>
+      <updated>1407940251124</updated>
+    </task>
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1732,7 +1736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="12" selection-start="9188" selection-end="9188" vertical-scroll-proportion="0.6366412" vertical-offset="3204" max-vertical-offset="3859">
+        <state line="162" column="30" selection-start="7572" selection-end="7572" vertical-scroll-proportion="0.7923664" vertical-offset="2235" max-vertical-offset="3859">
           <folding>
             <element signature="e#46#71#0" expanded="true" />
           </folding>
