@@ -200,14 +200,16 @@ class ViolationSearch(tornado.web.RequestHandler):
                 'name': 'احسان',
                 'family': 'شیرزادی'
             }
-            self.render('Violation_Table.html',
-                        search=search,
-                        fields=fields,
-                        records=records,
-                        FieldList=FieldList,
-                        user_info=user_info,
-                        permissions=permissions
-                        )
+
+            self.write(records)
+            # self.render('Violation_Table.html',
+            #             search=search,
+            #             fields=fields,
+            #             records=records,
+            #             FieldList=FieldList,
+            #             user_info=user_info,
+            #             permissions=permissions
+            #             )
         else:
             self.redirect('/login')
 
