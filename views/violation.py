@@ -161,6 +161,7 @@ class ViolationSearch(tornado.web.RequestHandler):
                 #         record[item] = 'test'
                 #     records['items'].append(record)
                 records['item'] = Controller.find()
+                records['record_count'] = len(records['item'])
 
 
             FieldList = [
