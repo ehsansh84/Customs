@@ -79,7 +79,8 @@ class Data(tornado.web.RequestHandler):
         for item in records:
         # for item in range(5):
             # result.append({'kootaj': item['kootaj']})
-            result.append('Ehsan')
+            result.append(item['kootaj'])
+            # result.append('Ehsan')
 
         self.write(str(records))
         self.write('\n\n<br><br>')
