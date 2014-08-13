@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="ok">
+    <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/test.py" afterPath="$PROJECT_DIR$/views/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -46,7 +46,16 @@
       <file leaf-file-name="test.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="28" selection-start="2517" selection-end="2517" vertical-scroll-proportion="0.870229" vertical-offset="722" max-vertical-offset="1411">
+            <state line="81" column="22" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.870229" vertical-offset="722" max-vertical-offset="1411">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connections.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connections.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="0" selection-start="2555" selection-end="2555" vertical-scroll-proportion="0.0" vertical-offset="824" max-vertical-offset="1479">
               <folding />
             </state>
           </provider>
@@ -1298,7 +1307,11 @@
       <created>1407937520927</created>
       <updated>1407937520927</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="ok">
+      <created>1407937853578</created>
+      <updated>1407937853578</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1595,13 +1608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="19" selection-start="2574" selection-end="2574" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/int_violation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3876">
@@ -1632,9 +1638,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="2555" selection-end="2555" vertical-scroll-proportion="0.0" vertical-offset="824" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="28" selection-start="2517" selection-end="2517" vertical-scroll-proportion="0.870229" vertical-offset="722" max-vertical-offset="1411">
+        <state line="81" column="22" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.870229" vertical-offset="722" max-vertical-offset="1411">
           <folding />
         </state>
       </provider>

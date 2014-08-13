@@ -71,13 +71,13 @@ class Data(tornado.web.RequestHandler):
         # records = Controller.find()
         # collection = db['violation']
         # for item in records:
-        # collection = db.violation
-        # records = collection.find()
+        collection = db.violation
+        records = collection.find()
         result = []
         for item in range(5):
             # result.append({'kootaj': item['kootaj']})
             result.append('Ehsan')
 
-        # self.write(str(records))
+        self.write(str(records))
         self.write('\n\n<br><br>')
         self.write(str(result))
