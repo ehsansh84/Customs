@@ -69,7 +69,8 @@ class Data(tornado.web.RequestHandler):
 
 
         # records = Controller.find()
-        collection = db['violation']
+        collection = db.violation
+        # collection = db['violation']
         records = collection.find()
         result = []
         # for item in records:

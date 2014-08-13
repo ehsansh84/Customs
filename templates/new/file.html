@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div>
+        <header>
+            فایل
+        </header>
+        <section>
+            <form class="form-horizontal" role="form">
+
+
+                <div class="form-group col-lg-12">
+                    <label for="kootaj" class="col-sm-1 control-label">
+                        شماره کوتاژ
+                    </label>
+                    <div class="col-sm-11">
+                      <input type="text" name="kootaj" class="form-control" id="kootaj">
+                    </div>
+
+              </div>
+
+                <div class="form-group col-lg-12">
+                    <label for="explain" class="col-sm-1 control-label">
+                        توضیح
+                    </label>
+                    <div class="col-sm-11">
+                      <textarea name="explain" class="form-control" id="explain"></textarea>
+                    </div>
+
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary">ثبت</button>
+                </div>
+              </div>
+            </form>
+        </section>
+    </div>
+
+{% end %}
