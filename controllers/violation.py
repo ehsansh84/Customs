@@ -132,7 +132,7 @@ class Violation():
                 'kootaj': item['kootaj'],
                 'file_no': item['file_no'],
                 'cert_no': item['cert_no'],
-                'company': item['company'],
+                'company': item['kootaj'],
             })
         return result
 
