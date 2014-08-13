@@ -142,6 +142,8 @@ body > section {
 
 form .form-group:last-child {
   margin-bottom: 0; }
+form label {
+  font-weight: bold; }
 
 table thead {
   background: #EEEEEE; }
