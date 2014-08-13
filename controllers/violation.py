@@ -129,10 +129,10 @@ class Violation():
         result = []
         for item in records:
             result.append({
-                'kootaj': item['kootaj'],
-                'file_no': item['file_no'],
-                'cert_no': item['cert_no'],
-                'company': item['kootaj'],
+                'kootaj': str(item['kootaj']),
+                'file_no': str(item['file_no']),
+                'cert_no': str(item['cert_no']),
+                'company': str(item['kootaj']),
             })
         return result
 
