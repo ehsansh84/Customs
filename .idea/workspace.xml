@@ -36,7 +36,7 @@
       <file leaf-file-name="violation.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="32" selection-start="7575" selection-end="7575" vertical-scroll-proportion="0.5714286" vertical-offset="2482" max-vertical-offset="3825">
+            <state line="122" column="0" selection-start="6266" selection-end="6331" vertical-scroll-proportion="0.1904762" vertical-offset="1921" max-vertical-offset="3825">
               <folding />
             </state>
           </provider>
@@ -92,7 +92,7 @@
       <file leaf-file-name="BaseUrls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0" vertical-offset="854" max-vertical-offset="1258">
+            <state line="32" column="30" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
@@ -1524,7 +1524,11 @@
       <created>1408175238485</created>
       <updated>1408175238485</updated>
     </task>
-    <option name="localTasksCounter" value="240" />
+    <task id="LOCAL-00240" summary="ok">
+      <created>1408175304248</created>
+      <updated>1408175304248</updated>
+    </task>
+    <option name="localTasksCounter" value="241" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1800,13 +1804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0" vertical-offset="854" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/records/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.05059524" vertical-offset="0" max-vertical-offset="336">
@@ -1874,9 +1871,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="30" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="32" selection-start="7575" selection-end="7575" vertical-scroll-proportion="0.5714286" vertical-offset="2482" max-vertical-offset="3825">
+        <state line="122" column="0" selection-start="6266" selection-end="6331" vertical-scroll-proportion="0.1904762" vertical-offset="1921" max-vertical-offset="3825">
           <folding />
         </state>
       </provider>
