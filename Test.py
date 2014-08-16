@@ -22,7 +22,10 @@ __author__ = 'ehsan'
 #         },
 #             upsert=True, multi=False)
 
-from models.personnel import Personnel
-a = Personnel()
-a.name = 'ehsan'
-a.create()
+# from models.personnel import Personnel
+# a = Personnel()
+# a.name = 'ehsan'
+# a.create()
+
+from controllers.violation import Violation as Controller
+print Controller.find()
