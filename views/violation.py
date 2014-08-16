@@ -120,8 +120,8 @@ class ViolationData(tornado.web.RequestHandler):
 
 class ViolationSearch(tornado.web.RequestHandler):
     def get(self, *args, **kwargs):
-        self.write('Data')
-        self.write(str(list(Controller.find())))
+        # self.write('Data')
+        # self.write(str(list(Controller.find())))
         acc_type = Redis.get(key='acc_type')
         if acc_type == 'admin' or acc_type == 'user':
             permissions = Redis.get(key='permissions', type='list')
@@ -205,15 +205,15 @@ class ViolationSearch(tornado.web.RequestHandler):
                 'family': 'شیرزادی'
             }
 
-            self.write(records)
-            # self.render('Violation_Table.html',
-            #             search=search,
-            #             fields=fields,
-            #             records=records,
-            #             FieldList=FieldList,
-            #             user_info=user_info,
-            #             permissions=permissions
-            #             )
+            # self.write(records)
+            self.render('Violation_Table.html',
+                        search=search,
+                        fields=fields,
+                        records=records,
+                        FieldList=FieldList,
+                        user_info=user_info,
+                        permissions=permissions
+                        )
         else:
             self.redirect('/login')
 
