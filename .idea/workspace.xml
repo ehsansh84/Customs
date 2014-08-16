@@ -36,7 +36,7 @@
       <file leaf-file-name="violation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="13" selection-start="8811" selection-end="8811" vertical-scroll-proportion="0.0" vertical-offset="3302" max-vertical-offset="3774">
+            <state line="211" column="46" selection-start="9160" selection-end="9160" vertical-scroll-proportion="0.0" vertical-offset="3200" max-vertical-offset="3774">
               <folding />
             </state>
           </provider>
@@ -90,7 +90,7 @@
       <file leaf-file-name="connections.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/connections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="729" selection-end="729" vertical-scroll-proportion="0.35416666" vertical-offset="255" max-vertical-offset="1513">
+            <state line="83" column="32" selection-start="2579" selection-end="2579" vertical-scroll-proportion="0.89880955" vertical-offset="1075" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
@@ -1473,7 +1473,11 @@
       <created>1408170126747</created>
       <updated>1408170126747</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="ok">
+      <created>1408170315690</created>
+      <updated>1408170315690</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1810,14 +1814,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="13" selection-start="8811" selection-end="8811" vertical-scroll-proportion="0.0" vertical-offset="3302" max-vertical-offset="3774">
+        <state line="211" column="46" selection-start="9160" selection-end="9160" vertical-scroll-proportion="0.0" vertical-offset="3200" max-vertical-offset="3774">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="729" selection-end="729" vertical-scroll-proportion="0.35416666" vertical-offset="255" max-vertical-offset="1513">
+        <state line="83" column="32" selection-start="2579" selection-end="2579" vertical-scroll-proportion="0.89880955" vertical-offset="1075" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
