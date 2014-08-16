@@ -2,13 +2,16 @@
 # -*- coding: utf-8 -*-
 __author__ = 'ehsan'
 import json
-from models.detect import Detect
-obj = Detect()
+from models.violation import Violation
+obj = Violation()
 for i in range(21):
     print i
     with open('d:/records/path'+str(i)+'.txt', 'r') as fobj:
         data = json.load(fobj)
-    obj = Detect()
+    obj = Violation()
+    print data['sDate'],
+    print data['Kootaj'],
+    print data['CertNo']
     obj.sDate = data['sDate']
     obj.FileNo = data['FileNo']
     obj.Kootaj = data['Kootaj']

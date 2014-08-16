@@ -20,7 +20,7 @@ mongo_server = 'local'
 # redis_server = 'customs_local'
 redis_server = 'local'
 
-database = 'Customs'
+database = 'local'
 
 
 if mongo_server == 'local':
