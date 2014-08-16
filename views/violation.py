@@ -121,7 +121,7 @@ class ViolationData(tornado.web.RequestHandler):
 class ViolationSearch(tornado.web.RequestHandler):
     def get(self, *args, **kwargs):
         self.write('Data')
-        self.write(str(Controller.find()))
+        self.write(str(list(Controller.find())))
         acc_type = Redis.get(key='acc_type')
         if acc_type == 'admin' or acc_type == 'user':
             permissions = Redis.get(key='permissions', type='list')
