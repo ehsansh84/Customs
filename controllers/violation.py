@@ -158,8 +158,8 @@ class Violation():
                     'company': e.message,
                 })
 
-        # return records
-        return result
+        return records
+        # return result
         # return 'ok'
 
         # # try:
