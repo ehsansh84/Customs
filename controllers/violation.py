@@ -131,7 +131,7 @@ class Violation():
 
 
         collection = db.violation
-        records = list(collection.find())
+        records = collection.find()
         result = []
         for item in records:
             try:
