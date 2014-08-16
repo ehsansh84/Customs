@@ -134,7 +134,8 @@ class Violation():
                 'cert_no': str(item['cert_no']),
                 'company': str(item['kootaj']),
             })
-        return result
+        # return result
+        return 'ok'
 
         # # try:
         # collection = db['violation']
