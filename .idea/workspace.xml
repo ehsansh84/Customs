@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/__init__.py" afterPath="$PROJECT_DIR$/models/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connections.py" afterPath="$PROJECT_DIR$/connections.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/violation.py" afterPath="$PROJECT_DIR$/models/violation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -56,7 +54,7 @@
       <file leaf-file-name="connections.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/connections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="22" selection-start="839" selection-end="839" vertical-scroll-proportion="0.8095238" vertical-offset="170" max-vertical-offset="1530">
+            <state line="85" column="19" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.6458333" vertical-offset="1194" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -1521,7 +1519,11 @@
       <created>1408173553854</created>
       <updated>1408173553854</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="ok">
+      <created>1408174454900</created>
+      <updated>1408174454900</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1871,7 +1873,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="839" selection-end="839" vertical-scroll-proportion="0.8095238" vertical-offset="170" max-vertical-offset="1530">
+        <state line="85" column="19" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.6458333" vertical-offset="1194" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>

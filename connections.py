@@ -81,6 +81,6 @@ Debug.dprint(text=redis_host, type='data')
 redis_instance = redis.StrictRedis(host=redis_host, port=redis_port, db=0)
 # redis_instance = redis.StrictRedis(host=redis_host, port=redis_port, db=0, password=redis_password)
 # redisInstance = redis.StrictRedis(host=redis_host, port=redis_port, db=0, password=redis_password)
-client = MongoClient('127.0.0.1', 27017)
-# client = MongoClient('192.1.8.14', 27017)
+# client = MongoClient('127.0.0.1', 27017)
+client = MongoClient('192.1.8.14', 27017)
 db = client.Customs
