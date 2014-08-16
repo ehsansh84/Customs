@@ -1,0 +1,73 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+__author__ = 'ehsan'
+import json
+from models.detect import Detect
+obj = Detect()
+for i in range(21):
+    print i
+    with open('d:/records/path'+str(i)+'.txt', 'r') as fobj:
+        data = json.load(fobj)
+    obj = Detect()
+    obj.sDate = data['sDate']
+    obj.FileNo = data['FileNo']
+    obj.Kootaj = data['Kootaj']
+    obj.CertNo = data['CertNo']
+    obj.sDate1 = data['sDate1']
+    obj.sDate2 = data['sDate2']
+    obj.Policy1 = data['Policy1']
+    obj.Policy2 = data['Policy2']
+    obj.Policy3 = data['Policy3']
+    obj.Policy4 = data['Policy4']
+    obj.Policy5 = data['Policy5']
+    obj.Policy6 = data['Policy6']
+    obj.Policy7 = data['Policy7']
+    obj.Policy8 = data['Policy8']
+    obj.Ezharname = data['Ezharname']
+    obj.PersonType = data['PersonType']
+    obj.FullName = data['FullName']
+    obj.CardNo = data['CardNo']
+    obj.CodeNo = data['CodeNo']
+    obj.Company = data['Company']
+    obj.EzFullName = data['EzFullName']
+    obj.EzOwner = data['EzOwner']
+    obj.EzAgent = data['EzAgent']
+    obj.EzCardNo = data['EzCardNo']
+    obj.EzCodeNo = data['EzCodeNo']
+    obj.TrFullName = data['TrFullName']
+    obj.TrCodeNo = data['TrCodeNo']
+    obj.TrRegNo = data['TrRegNo']
+    obj.TrNationality = data['TrNationality']
+    obj.TrManager = data['TrManager']
+    obj.TrType = data['TrType']
+    obj.ItemName = data['ItemName']
+    obj.TariffNo = data['TariffNo']
+    obj.Paid = data['Paid']
+    obj.Defferent = data['Defferent']
+    obj.Fine = data['Fine']
+    obj.Locked = data['Locked']
+    obj.Details = data['Details']
+    obj.ReceipNo = data['ReceipNo']
+    obj.Results = data['Results']
+    obj.Commitment = data['Commitment']
+    obj.DetectorOther = data['DetectorOther']
+    obj.Law = data['Law']
+    obj.DeductedValue = data['DeductedValue']
+    obj.DeductedTariff = data['DeductedTariff']
+    obj.StatedValue = data['StatedValue']
+    obj.StatedTariff = data['StatedTariff']
+    obj.ViTypeOther = data['ViTypeOther']
+    obj.ViType1 = data['ViType1']
+    obj.ViType2 = data['ViType2']
+    obj.ViType3 = data['ViType3']
+    obj.ViType4 = data['ViType4']
+    obj.ViType5 = data['ViType5']
+    obj.ViType6 = data['ViType6']
+    obj.ViType7 = data['ViType7']
+
+    obj.Detector = data['Detector']
+    obj.StatedWeight = data['StatedWeight']
+    obj.DeductedWeight = data['DeductedWeight']
+    obj.DiffPaid = data['DiffPaid']
+    obj.Ezharname = data['Ezharname']
+    obj.save()

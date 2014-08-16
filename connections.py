@@ -23,7 +23,8 @@ redis_server = 'local'
 database = 'Customs'
 
 if mongo_server == 'local':
-    mongo_host = '127.0.0.1'
+    mongo_host = '192.1.8.14'
+    # mongo_host = '127.0.0.1'
     mongo_port = 27017
     mongo_username = ''
     mongo_password = ''
