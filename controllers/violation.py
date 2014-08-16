@@ -139,7 +139,10 @@ class Violation():
                     'kootaj': str(item['kootaj']),
                     'file_no': str(item['file_no']),
                     'cert_no': str(item['cert_no']),
-                    'company': str(item['kootaj']),
+                    'card_no': str(item['card_no']),
+                    'code_no': str(item['code_no']),
+                    'tariff_no': str(item['tariff_no']),
+                    'full_name': str(item['full_name']),
                 })
             except:
                 result.append({
