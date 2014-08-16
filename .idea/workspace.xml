@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/violation.py" afterPath="$PROJECT_DIR$/views/violation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Violation_Table.html" afterPath="$PROJECT_DIR$/templates/Violation_Table.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -33,10 +33,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="violation.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="violation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="248" column="12" selection-start="10159" selection-end="10159" vertical-scroll-proportion="0.89880955" vertical-offset="3829" max-vertical-offset="4369">
+            <state line="240" column="40" selection-start="9841" selection-end="9856" vertical-scroll-proportion="0.0" vertical-offset="3940" max-vertical-offset="4369">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Violation_Table.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/Violation_Table.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="63" selection-start="263" selection-end="263" vertical-scroll-proportion="0.265625" vertical-offset="102" max-vertical-offset="3315">
               <folding />
             </state>
           </provider>
@@ -105,7 +114,7 @@
       <file leaf-file-name="BaseUrls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="30" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1258">
+            <state line="32" column="37" selection-start="791" selection-end="791" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
@@ -163,14 +172,13 @@
         <option value="$PROJECT_DIR$/scripts/sql_to_mongo_converter.py" />
         <option value="$PROJECT_DIR$/controllers/violation.py" />
         <option value="$PROJECT_DIR$/views/violation.py" />
+        <option value="$PROJECT_DIR$/templates/Violation_Table.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -240,25 +248,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Customs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Customs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="records" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1683,11 +1673,15 @@
       <created>1408179416518</created>
       <updated>1408179416518</updated>
     </task>
-    <option name="localTasksCounter" value="272" />
+    <task id="LOCAL-00272" summary="ok">
+      <created>1408179470574</created>
+      <updated>1408179470574</updated>
+    </task>
+    <option name="localTasksCounter" value="273" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1695,14 +1689,14 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34863946" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3583916" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26177284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26963747" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34863946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27293578" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3583916" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1896,11 +1890,6 @@
         <state line="130" column="23" selection-start="7362" selection-end="7362" vertical-scroll-proportion="0.0" vertical-offset="1989" max-vertical-offset="2380" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Violation_Table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.3895349" vertical-offset="699" max-vertical-offset="3315" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="40" selection-start="240" selection-end="240" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="714" />
@@ -1991,13 +1980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="30" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="674" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="901">
@@ -2039,9 +2021,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="37" selection-start="791" selection-end="791" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="248" column="12" selection-start="10159" selection-end="10159" vertical-scroll-proportion="0.89880955" vertical-offset="3829" max-vertical-offset="4369">
+        <state line="240" column="40" selection-start="9841" selection-end="9856" vertical-scroll-proportion="0.0" vertical-offset="3940" max-vertical-offset="4369">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Violation_Table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="63" selection-start="263" selection-end="263" vertical-scroll-proportion="0.265625" vertical-offset="102" max-vertical-offset="3315">
           <folding />
         </state>
       </provider>
