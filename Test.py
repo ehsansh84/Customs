@@ -39,7 +39,7 @@ from tools.debug import Debug
 client = MongoClient('192.1.8.14', 27017)
 db = client.Customs
 collection = db.violation
-records =  list(collection.find())
+records =  list(collection.find()['full_name'])
 # records =  json.dumps(list(collection.find()))
 # records = collection.find().count()
 Debug.dprint(records)
