@@ -36,7 +36,7 @@
       <file leaf-file-name="violation.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="13" selection-start="9272" selection-end="9272" vertical-scroll-proportion="0.89880955" vertical-offset="3285" max-vertical-offset="3825">
+            <state line="226" column="45" selection-start="9492" selection-end="9492" vertical-scroll-proportion="0.5952381" vertical-offset="3557" max-vertical-offset="4369">
               <folding />
             </state>
           </provider>
@@ -1639,7 +1639,11 @@
       <created>1408176942483</created>
       <updated>1408176942483</updated>
     </task>
-    <option name="localTasksCounter" value="261" />
+    <task id="LOCAL-00261" summary="ok">
+      <created>1408177010709</created>
+      <updated>1408177010709</updated>
+    </task>
+    <option name="localTasksCounter" value="262" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1997,7 +2001,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="13" selection-start="9272" selection-end="9272" vertical-scroll-proportion="0.89880955" vertical-offset="3285" max-vertical-offset="3825">
+        <state line="226" column="45" selection-start="9492" selection-end="9492" vertical-scroll-proportion="0.5952381" vertical-offset="3557" max-vertical-offset="4369">
           <folding />
         </state>
       </provider>

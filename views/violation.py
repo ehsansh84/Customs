@@ -196,7 +196,39 @@ class ViolationSearch(tornado.web.RequestHandler):
                 'default' : True,
                 'searchable' : True,
                 'validation' : ""
-                }
+                },
+
+
+
+
+                {
+                'name' : "card_no",
+                'label' : "شماره کارت",
+                'default' : True,
+                'searchable' : True,
+                'validation' : ""
+                },
+                {
+                'name' : "code_no",
+                'label' : "شماره کد",
+                'default' : True,
+                'searchable' : True,
+                'validation' : ""
+                },
+                {
+                'name' : "tariff_no",
+                'label' : "شماره تعرفه",
+                'default' : True,
+                'searchable' : True,
+                'validation' : ""
+                },
+                {
+                'name' : "full_name",
+                'label' : "نام و نام خانوادگی",
+                'default' : True,
+                'searchable' : True,
+                'validation' : ""
+                },
                 ]
 
             user_info = {
