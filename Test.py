@@ -33,6 +33,7 @@ __author__ = 'ehsan'
 # print Controller.find()
 # print Controller.find()
 # from connections import db
+from pymongo import MongoClient
 client = MongoClient('192.1.8.14', 27017)
 db = client.Customs
 collection = db.violation
