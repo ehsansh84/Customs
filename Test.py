@@ -36,6 +36,6 @@ __author__ = 'ehsan'
 from pymongo import MongoClient
 client = MongoClient('192.1.8.14', 27017)
 db = client.Customs
-collection = db.detect
+collection = db.violation
 records = collection.find().count()
 print records
