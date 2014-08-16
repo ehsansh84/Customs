@@ -43,4 +43,5 @@ records =  list(collection.find())
 # records =  list(collection.find())
 # records =  json.dumps(list(collection.find()))
 # records = collection.find().count()
-Debug.dprint(records['full_name'])
+for item in records:
+    Debug.dprint(item['full_name'])
