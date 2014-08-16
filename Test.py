@@ -27,5 +27,12 @@ __author__ = 'ehsan'
 # a.name = 'ehsan'
 # a.create()
 
-from controllers.violation import Violation as Controller
-print Controller.find()
+
+
+# from controllers.violation import Violation as Controller
+# print Controller.find()
+# print Controller.find()
+
+collection = db.violation
+records = collection.find().count()
+print records
