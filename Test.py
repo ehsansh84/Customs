@@ -32,7 +32,7 @@ __author__ = 'ehsan'
 # from controllers.violation import Violation as Controller
 # print Controller.find()
 # print Controller.find()
-
+from connections import db
 collection = db.violation
 records = collection.find().count()
 print records
