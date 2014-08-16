@@ -37,5 +37,6 @@ from pymongo import MongoClient
 client = MongoClient('192.1.8.14', 27017)
 db = client.Customs
 collection = db.violation
-records = collection.find().count()
+records = collection.find()
+# records = collection.find().count()
 print records
