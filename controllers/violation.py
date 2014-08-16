@@ -150,6 +150,10 @@ class Violation():
                     'file_no': 'Error',
                     'cert_no': 'Error',
                     'company': 'Error',
+                    'card_no': 'Error',
+                    'code_no': 'Error',
+                    'tariff_no': 'Error',
+                    'full_name': 'Error',
                 })
 
         # return records
