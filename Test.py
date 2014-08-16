@@ -32,7 +32,9 @@ __author__ = 'ehsan'
 # from controllers.violation import Violation as Controller
 # print Controller.find()
 # print Controller.find()
-from connections import db
+# from connections import db
+client = MongoClient('192.1.8.14', 27017)
+db = client.Customs
 collection = db.violation
 records = collection.find().count()
 print records
