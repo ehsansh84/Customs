@@ -147,19 +147,28 @@ class Violation():
                 })
             except Exception,e:
                 result.append({
-                    'kootaj': e.message,
-                    'file_no': e.message,
-                    'cert_no': e.message,
-                    'company': e.message,
-                    'card_no': e.message,
-                    'code_no': e.message,
-                    'tariff_no': e.message,
-                    'full_name': e.message,
-                    'company': e.message,
+                    'kootaj': 'Empty',
+                    'file_no': 'Empty',
+                    'cert_no': 'Empty',
+                    'company': 'Empty',
+                    'card_no': 'Empty',
+                    'code_no': 'Empty',
+                    'tariff_no': 'Empty',
+                    'full_name': 'Empty',
+                    'company': 'Empty',
+                    # 'kootaj': e.message,
+                    # 'file_no': e.message,
+                    # 'cert_no': e.message,
+                    # 'company': e.message,
+                    # 'card_no': e.message,
+                    # 'code_no': e.message,
+                    # 'tariff_no': e.message,
+                    # 'full_name': e.message,
+                    # 'company': e.message,
                 })
 
-        return records
-        # return result
+        # return records
+        return result
         # return 'ok'
 
         # # try:
