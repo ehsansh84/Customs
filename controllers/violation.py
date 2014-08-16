@@ -143,7 +143,8 @@ class Violation():
                     'company': 'Error',
                 })
 
-        return result
+        return records
+        # return result
         # return 'ok'
 
         # # try:
