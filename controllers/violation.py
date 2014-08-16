@@ -145,17 +145,17 @@ class Violation():
                     'full_name': str(item['full_name']),
                     'company': str(item['company']),
                 })
-            except:
+            except Exception,e:
                 result.append({
-                    'kootaj': 'Error',
-                    'file_no': 'Error',
-                    'cert_no': 'Error',
-                    'company': 'Error',
-                    'card_no': 'Error',
-                    'code_no': 'Error',
-                    'tariff_no': 'Error',
-                    'full_name': 'Error',
-                    'company': 'Error',
+                    'kootaj': e.message,
+                    'file_no': e.message,
+                    'cert_no': e.message,
+                    'company': e.message,
+                    'card_no': e.message,
+                    'code_no': e.message,
+                    'tariff_no': e.message,
+                    'full_name': e.message,
+                    'company': e.message,
                 })
 
         # return records
