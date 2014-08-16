@@ -143,6 +143,7 @@ class Violation():
                     'code_no': str(item['code_no']),
                     'tariff_no': str(item['tariff_no']),
                     'full_name': str(item['full_name']),
+                    'company': str(item['company']),
                 })
             except:
                 result.append({
@@ -154,6 +155,7 @@ class Violation():
                     'code_no': 'Error',
                     'tariff_no': 'Error',
                     'full_name': 'Error',
+                    'company': 'Error',
                 })
 
         # return records
