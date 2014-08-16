@@ -6,7 +6,8 @@ from models.violation import Violation
 obj = Violation()
 for i in range(21):
     # print i
-    with open('d:/records/path'+str(i)+'.txt', 'r') as fobj:
+    with open('records/path'+str(i)+'.txt', 'r') as fobj:
+    # with open('d:/records/path'+str(i)+'.txt', 'r') as fobj:
         data = json.load(fobj)
     obj = Violation()
     print data['sDate'],
