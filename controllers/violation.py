@@ -143,8 +143,8 @@ class Violation():
                     'company': 'Error',
                 })
 
-        # return result
-        return 'ok'
+        return result
+        # return 'ok'
 
         # # try:
         # collection = db['violation']
