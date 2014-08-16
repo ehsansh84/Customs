@@ -128,12 +128,21 @@ class Violation():
         records = collection.find()
         result = []
         for item in records:
-            result.append({
-                'kootaj': str(item['kootaj']),
-                'file_no': str(item['file_no']),
-                'cert_no': str(item['cert_no']),
-                'company': str(item['kootaj']),
-            })
+            try:
+                result.append({
+                    'kootaj': str(item['kootaj']),
+                    'file_no': str(item['file_no']),
+                    'cert_no': str(item['cert_no']),
+                    'company': str(item['kootaj']),
+                })
+            except:
+                result.append({
+                    'kootaj': 'Error',
+                    'file_no': 'Error',
+                    'cert_no': 'Error',
+                    'company': 'Error',
+                })
+
         # return result
         return 'ok'
 
