@@ -35,9 +35,11 @@ __author__ = 'ehsan'
 # from connections import db
 import json
 from pymongo import MongoClient
+from tools.debug import Debug
 client = MongoClient('192.1.8.14', 27017)
 db = client.Customs
 collection = db.violation
-records =  json.dumps(list(collection.find()))
+records =  list(collection.find())
+# records =  json.dumps(list(collection.find()))
 # records = collection.find().count()
-print records
+Debug.dprint(records)
