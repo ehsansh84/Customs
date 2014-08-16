@@ -18,7 +18,7 @@ for i in range(21):
     # print obj.cert_no
     obj.s_date = data['sDate']
     obj.file_no = data['FileNo']
-    obj.kooq = data['Kootaj']
+    obj.kootaj = data['Kootaj']
     obj.cert_no = data['CertNo']
     obj.sDate1 = data['sDate1']
     obj.s_date_2 = data['sDate2']

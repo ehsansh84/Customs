@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test.py" afterPath="$PROJECT_DIR$/Test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/sql_to_mongo_converter.py" afterPath="$PROJECT_DIR$/scripts/sql_to_mongo_converter.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/violation.py" afterPath="$PROJECT_DIR$/controllers/violation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -17,7 +17,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Customs$main.coverage" NAME="main Coverage Results" MODIFIED="1408167313058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Customs$sql_to_mongo_converter.coverage" NAME="sql_to_mongo_converter Coverage Results" MODIFIED="1408175708249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Customs$sql_to_mongo_converter.coverage" NAME="sql_to_mongo_converter Coverage Results" MODIFIED="1408176850572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Customs$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1406787624994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Customs$personnel.coverage" NAME="personnel Coverage Results" MODIFIED="1406786430331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/controllers" />
     <SUITE FILE_PATH="coverage/Customs$tempp.coverage" NAME="tempp Coverage Results" MODIFIED="1406820507735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -66,10 +66,19 @@
       <file leaf-file-name="violation.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="33" selection-start="5314" selection-end="5314" vertical-scroll-proportion="0.7619048" vertical-offset="1972" max-vertical-offset="5508">
+            <state line="152" column="21" selection-start="5960" selection-end="5960" vertical-scroll-proportion="0.7470238" vertical-offset="2333" max-vertical-offset="5508">
               <folding>
                 <element signature="e#21#68#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="path0.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/records/path0.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="76" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,7 +95,7 @@
       <file leaf-file-name="sql_to_mongo_converter.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/sql_to_mongo_converter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="18" selection-start="2021" selection-end="2021" vertical-scroll-proportion="-2.7692308" vertical-offset="948" max-vertical-offset="1445">
+            <state line="79" column="14" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.0" vertical-offset="1041" max-vertical-offset="1445">
               <folding>
                 <element signature="e#67#78#0" expanded="true" />
               </folding>
@@ -151,9 +160,9 @@
         <option value="$PROJECT_DIR$/scripts/sql_to_mongo_converter" />
         <option value="$PROJECT_DIR$/models/violation.py" />
         <option value="$PROJECT_DIR$/connections.py" />
-        <option value="$PROJECT_DIR$/scripts/sql_to_mongo_converter.py" />
         <option value="$PROJECT_DIR$/views/violation.py" />
         <option value="$PROJECT_DIR$/Test.py" />
+        <option value="$PROJECT_DIR$/scripts/sql_to_mongo_converter.py" />
         <option value="$PROJECT_DIR$/controllers/violation.py" />
       </list>
     </option>
@@ -233,6 +242,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Customs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Customs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="records" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1605,7 +1632,11 @@
       <created>1408176297111</created>
       <updated>1408176297111</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="ok">
+      <created>1408176677176</created>
+      <updated>1408176677176</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1673,11 +1704,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/old/personnel_old.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="451" selection-end="644" vertical-scroll-proportion="0.6568182" vertical-offset="0" max-vertical-offset="3298" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/old/personnel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="14" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1326" />
@@ -1918,15 +1944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/sql_to_mongo_converter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="18" selection-start="2021" selection-end="2021" vertical-scroll-proportion="-2.7692308" vertical-offset="948" max-vertical-offset="1445">
-          <folding>
-            <element signature="e#67#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urls/BaseUrls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="30" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1258">
@@ -1957,9 +1974,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/records/path0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="76" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/sql_to_mongo_converter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="14" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.0" vertical-offset="1041" max-vertical-offset="1445">
+          <folding>
+            <element signature="e#67#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="33" selection-start="5314" selection-end="5314" vertical-scroll-proportion="0.7619048" vertical-offset="1972" max-vertical-offset="5508">
+        <state line="152" column="21" selection-start="5960" selection-end="5960" vertical-scroll-proportion="0.7470238" vertical-offset="2333" max-vertical-offset="5508">
           <folding>
             <element signature="e#21#68#0" expanded="true" />
           </folding>
