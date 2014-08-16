@@ -136,14 +136,22 @@ class Violation():
         for item in records:
             try:
                 result.append({
-                    'kootaj': str(item['kootaj']),
-                    'file_no': str(item['file_no']),
-                    'cert_no': str(item['cert_no']),
-                    'card_no': str(item['card_no']),
-                    'code_no': str(item['code_no']),
-                    'tariff_no': str(item['tariff_no']),
-                    'full_name': str(item['full_name']),
-                    'company': str(item['company']),
+                    'kootaj': item['kootaj'],
+                    'file_no': item['file_no'],
+                    'cert_no': item['cert_no'],
+                    'card_no': item['card_no'],
+                    'code_no': item['code_no'],
+                    'tariff_no': item['tariff_no'],
+                    'full_name': item['full_name'],
+                    'company': item['company'],
+                    # 'kootaj': str(item['kootaj']),
+                    # 'file_no': str(item['file_no']),
+                    # 'cert_no': str(item['cert_no']),
+                    # 'card_no': str(item['card_no']),
+                    # 'code_no': str(item['code_no']),
+                    # 'tariff_no': str(item['tariff_no']),
+                    # 'full_name': str(item['full_name']),
+                    # 'company': str(item['company']),
                 })
             except Exception,e:
                 result.append({
