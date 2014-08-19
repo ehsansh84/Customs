@@ -64,8 +64,9 @@
                                       {% else %}
                                       "
                                       {% end %}
-                                          {% if !item['searchable'] %}
-                                        disabled
+                                          {% if item['searchable'] %}
+                                          {% else %}
+                                            disabled
                                           {% end %}
 
                                           >
