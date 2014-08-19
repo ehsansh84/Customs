@@ -101,8 +101,9 @@ class Violation(tornado.web.RequestHandler):
                        commitment=commitment, receip_no=receip_no, details=details, locked=locked)
         print('Controller.add is executed')
         # self.render('Violation.html')
-        self.redirect('/violation')
-
+        # self.redirect('/violation')
+        self.write(policy_5)
+        self.write(person_type)
 
 
 class ViolationData(tornado.web.RequestHandler):
