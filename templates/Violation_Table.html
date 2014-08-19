@@ -60,9 +60,10 @@
                                       {% if item['validation'] == 'number' %}numberFilter{% end %}
                                       {% if item['validation'] == 'email' %}email{% end %}
                                       {% if item['validation'] == 'date' %}date{% end %}
-                                      check search" data-action="{{ item['name'] }}
-                                      {% end %}
+                                      check search" data-action="{{ item['name'] }}"
+                                      {% else %}
                                       "
+                                      {% end %}
                                           {% if !item['searchable'] %}
                                         disabled
                                           {% end %}

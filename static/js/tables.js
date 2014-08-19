@@ -124,7 +124,7 @@ $(document).on('submit','#table_search_form',function(e){
         var val = $(this).val();
         if($.trim(val) != '')
         {
-            var name = $(this).data('action') ;
+            var name = $.trim($(this).data('action')) ;
             $(this).attr('name',name);
             if(fieldSearch != '') fieldSearch += '|' ;
             fieldSearch +=  name;
