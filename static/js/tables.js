@@ -15,6 +15,10 @@ var table_show = {
         {
             field = fields[field];
             $('.field[data-action="'+field+'"]',form).attr('checked','checked');
+
+            var label = $('.search_field[data-name="'+field+'"]').data('label');
+
+            $('#main_table thead th[data-action="'+field+'"]').html(label);
         }
 
         var fieldSearch = values['fieldSearch'];
