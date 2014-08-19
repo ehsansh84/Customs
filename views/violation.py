@@ -151,7 +151,7 @@ class ViolationSearch(tornado.web.RequestHandler):
                         value = {}
                         value['name'] = item
                         value['value'] = self.get_argument(item, '')
-                        if value != '':
+                        if value['value'] != '':
                             values.append(value)
 
                 records = {
