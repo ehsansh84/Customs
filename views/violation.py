@@ -141,11 +141,11 @@ class ViolationSearch(tornado.web.RequestHandler):
 
                 fieldSearch = self.get_argument('fieldSearch', '')
 
+                values = {}
+
                 if fieldSearch != '':
 
                     fieldSearch = fieldSearch.split('|')
-
-                    values = {}
 
                     for item in fieldSearch:
                         value = self.get_argument(item, '')
