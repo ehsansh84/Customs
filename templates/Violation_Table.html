@@ -62,7 +62,12 @@
                                       {% if item['validation'] == 'date' %}date{% end %}
                                       check search" data-action="{{ item['name'] }}
                                       {% end %}
-                                      " >
+                                      "
+                                          {% if !item['searchable'] %}
+                                        disabled
+                                          {% end %}
+
+                                          >
                                 </div>
                               </div>
                                 {% end %}

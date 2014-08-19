@@ -200,7 +200,7 @@
 
 .wizard > .content > .body .form-group label
 {
-    ;
+    display: block;
 }
 
 
