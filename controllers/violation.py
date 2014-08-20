@@ -123,15 +123,10 @@ class Violation():
 
     @classmethod
     def find(cls, _filter={}, page=-1, per_page=15, sort='personnel_id', order=1):
-        #TODO: This shit should be rewrite!
-        # client = MongoClient('192.1.8.14', 27017)
-        # db = client.Customs
         # collection = db.violation
-        # records = list(collection.find())
+        # records = collection.find(_filter)
+        records = Model.objects(__raw__=_filter)
 
-
-        collection = db.violation
-        records = collection.find(_filter)
         result = []
         for item in records:
             try:
