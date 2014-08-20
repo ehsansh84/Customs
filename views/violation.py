@@ -159,10 +159,10 @@ class ViolationSearch(tornado.web.RequestHandler):
                             values.append(value)
                             filter[item] = self.get_argument(item, '')
 
-                self.write('<br>VALUES:')
-                self.write(str(values))
-                self.write('<br>FILTER:')
-                self.write(str(filter))
+                # self.write('<br>VALUES:')
+                # self.write(str(values))
+                # self.write('<br>FILTER:')
+                # self.write(str(filter))
 
                 records = {
                     'items': [],
@@ -191,21 +191,21 @@ class ViolationSearch(tornado.web.RequestHandler):
                 {
                 'name' : "kootaj",
                 'label' : "شماره کوتاژ",
-                'default' : True,
+                'default' : False,
                 'searchable' : True,
                 'validation' : "number"
                 },
                 {
                 'name' : "cert_no",
                 'label' : "شماره پروانه گمرکی",
-                'default' : True,
+                'default' : False,
                 'searchable' : True,
                 'validation' : "number"
                 },
                 {
                 'name' : "company",
                 'label' : "نام شرکت",
-                'default' : True,
+                'default' : False,
                 'searchable' : True,
                 'validation' : ""
                 },
@@ -216,28 +216,28 @@ class ViolationSearch(tornado.web.RequestHandler):
                 {
                 'name' : "card_no",
                 'label' : "شماره کارت",
-                'default' : True,
+                'default' : False,
                 'searchable' : True,
                 'validation' : ""
                 },
                 {
                 'name' : "code_no",
                 'label' : "شماره کد",
-                'default' : True,
+                'default' : False,
                 'searchable' : True,
                 'validation' : ""
                 },
                 {
                 'name' : "tariff_no",
                 'label' : "شماره تعرفه",
-                'default' : True,
+                'default' : False,
                 'searchable' : True,
                 'validation' : ""
                 },
                 {
                 'name' : "full_name",
                 'label' : "نام و نام خانوادگی",
-                'default' : True,
+                'default' : False,
                 'searchable' : True,
                 'validation' : ""
                 },
