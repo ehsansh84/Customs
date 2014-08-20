@@ -36,8 +36,8 @@
       <file leaf-file-name="violation.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.86327076" vertical-offset="2381" max-vertical-offset="4573">
-              <caret line="164" column="37" selection-start-line="164" selection-start-column="37" selection-end-line="164" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.49865952" vertical-offset="2738" max-vertical-offset="4573">
+              <caret line="177" column="65" selection-start-line="177" selection-start-column="65" selection-end-line="177" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -46,7 +46,7 @@
       <file leaf-file-name="violation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.6" vertical-offset="2222" max-vertical-offset="5899">
+            <state vertical-scroll-proportion="-5.32" vertical-offset="1924" max-vertical-offset="5899">
               <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
               <folding />
             </state>
@@ -1692,7 +1692,11 @@
       <created>1408558943361</created>
       <updated>1408558943361</updated>
     </task>
-    <option name="localTasksCounter" value="286" />
+    <task id="LOCAL-00286" summary="ok">
+      <created>1408559324004</created>
+      <updated>1408559324004</updated>
+    </task>
+    <option name="localTasksCounter" value="287" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2121,7 +2125,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.6" vertical-offset="2222" max-vertical-offset="5899">
+        <state vertical-scroll-proportion="-5.32" vertical-offset="1924" max-vertical-offset="5899">
           <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
           <folding />
         </state>
@@ -2129,8 +2133,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86327076" vertical-offset="2381" max-vertical-offset="4573">
-          <caret line="164" column="37" selection-start-line="164" selection-start-column="37" selection-end-line="164" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.49865952" vertical-offset="2738" max-vertical-offset="4573">
+          <caret line="177" column="65" selection-start-line="177" selection-start-column="65" selection-end-line="177" selection-end-column="65" />
           <folding />
         </state>
       </provider>
