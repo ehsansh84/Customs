@@ -85,6 +85,7 @@ class Violation(tornado.web.RequestHandler):
         locked = self.get_argument('locked', False)
 
         person_type = True if person_type == 1 else False
+        tr_type = True if person_type == 1 else False
 
         Controller.add(id=id, s_date=s_date, m_date=m_date, file_no=file_no, kootaj=kootaj, cert_no=cert_no,
                        s_date_1=s_date_1, s_date_2=s_date_2, policy_1=policy_1, policy_2=policy_2, policy_3=policy_3,
@@ -142,7 +143,8 @@ class ViolationSearch(tornado.web.RequestHandler):
                 page = self.get_argument('page', 1)
 
                 fieldSearch = self.get_argument('fieldSearch', '')
-
+                self.write('FIELDS:')
+                self.write(fieldSearch)
                 values = []
 
                 if fieldSearch != '':
