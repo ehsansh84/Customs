@@ -46,8 +46,10 @@ records = list(collection.find())
 # for item in records:
 #     Debug.dprint(item['full_name'])
 
-from controllers.violation import Violation as Controller
-Debug.dprint(text=str(Controller.find(_filter=filter)), type='custom')
-f = {'file_no': '123456'}
-Debug.dprint(text=str(f), type='error')
-Debug.dprint(text=str(Controller.find(_filter=f)), type='msg')
+# from controllers.violation import Violation as Controller
+from models.violation import Violation as Model
+Debug.dprint(text=str(Model.objects(__raw__={'file_no': '123456'})), type='custom')
+# Debug.dprint(text=str(Controller.find(_filter=filter)), type='custom')
+# f = {'file_no': '123456'}
+# Debug.dprint(text=str(f), type='error')
+# Debug.dprint(text=str(Controller.find(_filter=f)), type='msg')
