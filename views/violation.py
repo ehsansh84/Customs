@@ -143,10 +143,10 @@ class ViolationSearch(tornado.web.RequestHandler):
                 page = self.get_argument('page', 1)
 
                 fieldSearch = self.get_argument('fieldSearch', '')
-                self.write('FIELDS:')
-                self.write(fieldSearch)
+                # self.write('FIELDS:')
+                # self.write(fieldSearch)
                 values = []
-
+                filter = {}
                 if fieldSearch != '':
 
                     fieldSearch = fieldSearch.split('|')
@@ -157,8 +157,12 @@ class ViolationSearch(tornado.web.RequestHandler):
                         value['value'] = self.get_argument(item, '')
                         if value['value'] != '':
                             values.append(value)
+                            filter[item] = self.get_argument(item, '')
+
                 self.write('<br>VALUES:')
                 self.write(str(values))
+                self.write('<br>FILTER:')
+                self.write(str(filter))
 
                 records = {
                     'items': [],
