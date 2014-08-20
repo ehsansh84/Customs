@@ -1,5 +1,5 @@
 __author__ = 'ehsan'
-
+from tools.debug import Debug
 # a = 10
 # print a
 
@@ -43,5 +43,11 @@ records = list(collection.find())
 # records =  list(collection.find())
 # records =  json.dumps(list(collection.find()))
 # records = collection.find().count()
-for item in records:
-    Debug.dprint(item['full_name'])
+# for item in records:
+#     Debug.dprint(item['full_name'])
+
+from controllers.violation import Violation as Controller
+Debug.dprint(text=str(Controller.find(_filter=filter)), type='custom')
+f = {u'file_no': u'123456'}
+Debug.dprint(text=str(f), type='error')
+Debug.dprint(text=str(Controller.find(_filter=f)), type='msg')
