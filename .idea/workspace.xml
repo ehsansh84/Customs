@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/violation.py" afterPath="$PROJECT_DIR$/controllers/violation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test.py" afterPath="$PROJECT_DIR$/Test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Customs.iws" />
@@ -43,21 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="violation.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="violation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/violation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46" vertical-offset="2026" max-vertical-offset="5899">
+            <state vertical-scroll-proportion="-7.36" vertical-offset="2026" max-vertical-offset="5899">
               <caret line="133" column="42" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Test.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.96" vertical-offset="535" max-vertical-offset="986">
-              <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.7875" vertical-offset="535" max-vertical-offset="986">
+              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -114,8 +114,8 @@
         <option value="$PROJECT_DIR$/templates/Violation_Table.html" />
         <option value="$PROJECT_DIR$/templates/Violation.html" />
         <option value="$PROJECT_DIR$/views/violation.py" />
-        <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/controllers/violation.py" />
+        <option value="$PROJECT_DIR$/Test.py" />
       </list>
     </option>
   </component>
@@ -1714,7 +1714,11 @@
       <created>1408559754754</created>
       <updated>1408559754754</updated>
     </task>
-    <option name="localTasksCounter" value="289" />
+    <task id="LOCAL-00289" summary="ok">
+      <created>1408559927032</created>
+      <updated>1408559927032</updated>
+    </task>
+    <option name="localTasksCounter" value="290" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2141,18 +2145,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test.py">
+    <entry file="file://$PROJECT_DIR$/controllers/violation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.96" vertical-offset="535" max-vertical-offset="986">
-          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        <state vertical-scroll-proportion="-7.36" vertical-offset="2026" max-vertical-offset="5899">
+          <caret line="133" column="42" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/violation.py">
+    <entry file="file://$PROJECT_DIR$/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46" vertical-offset="2026" max-vertical-offset="5899">
-          <caret line="133" column="42" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.7875" vertical-offset="535" max-vertical-offset="986">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
           <folding />
         </state>
       </provider>

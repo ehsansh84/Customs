@@ -48,6 +48,6 @@ records = list(collection.find())
 
 from controllers.violation import Violation as Controller
 Debug.dprint(text=str(Controller.find(_filter=filter)), type='custom')
-f = {u'file_no': u'123456'}
+f = {'file_no': '123456'}
 Debug.dprint(text=str(f), type='error')
 Debug.dprint(text=str(Controller.find(_filter=f)), type='msg')
