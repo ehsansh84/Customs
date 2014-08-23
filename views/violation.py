@@ -134,7 +134,7 @@ class ViolationSearch(tornado.web.RequestHandler):
 
             if fields != '':
 
-                #To determone if it's a search or not
+                #To determine if it's a search or not
                 search = 'search'
 
                 fields = fields.split('|')
@@ -230,14 +230,14 @@ class ViolationSearch(tornado.web.RequestHandler):
                 {
                 'name' : "tariff_no",
                 'label' : "شماره تعرفه",
-                'default' : False,
+                'default' : True,
                 'searchable' : True,
                 'validation' : ""
                 },
                 {
                 'name' : "full_name",
                 'label' : "نام و نام خانوادگی",
-                'default' : False,
+                'default' : True,
                 'searchable' : True,
                 'validation' : ""
                 },
