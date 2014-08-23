@@ -191,21 +191,21 @@ class ViolationSearch(tornado.web.RequestHandler):
                 {
                 'name' : "kootaj",
                 'label' : "شماره کوتاژ",
-                'default' : False,
+                'default' : True,
                 'searchable' : True,
                 'validation' : "number"
                 },
                 {
                 'name' : "cert_no",
                 'label' : "شماره پروانه گمرکی",
-                'default' : False,
+                'default' : True,
                 'searchable' : True,
                 'validation' : "number"
                 },
                 {
                 'name' : "company",
                 'label' : "نام شرکت",
-                'default' : False,
+                'default' : True,
                 'searchable' : True,
                 'validation' : ""
                 },
@@ -216,14 +216,14 @@ class ViolationSearch(tornado.web.RequestHandler):
                 {
                 'name' : "card_no",
                 'label' : "شماره کارت",
-                'default' : False,
+                'default' : True,
                 'searchable' : True,
                 'validation' : ""
                 },
                 {
                 'name' : "code_no",
                 'label' : "شماره کد",
-                'default' : False,
+                'default' : True,
                 'searchable' : True,
                 'validation' : ""
                 },
