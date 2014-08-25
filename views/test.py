@@ -37,6 +37,7 @@ class Zzz(tornado.web.RequestHandler):
         session = SessionManager(self)
         # session.set('key', 'OMG')
         session['key'] = 'OMG'
+        self.write(session['key'])
         self.write('done')
         #
         # Session.set(handler=self, name='name', value='EHSAN Omg')
