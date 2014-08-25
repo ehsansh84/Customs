@@ -79,7 +79,7 @@ class LoginHandler(tornado.web.RequestHandler):
                           'report': True}
             Redis.set(key='permissions', value=permission, type='list')
             self.redirect('/violation_search')
-        elif username == 'harasat' and password == 'Ax@1245':
+        elif username == 'harasat' and password == 'Xd@1394':
             Redis.set(key='acc_type', value='user')
             permission = {'main': True,
                           'violation': False,
