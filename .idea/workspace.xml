@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446e713f-2fde-4af5-8311-72e5ac124c4f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Customs.iml" afterPath="$PROJECT_DIR$/.idea/Customs.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/test.py" afterPath="$PROJECT_DIR$/views/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -56,8 +57,8 @@
       <file leaf-file-name="test.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72069824" vertical-offset="408" max-vertical-offset="1717">
-              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.5586854" vertical-offset="459" max-vertical-offset="1751">
+              <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding>
                 <element signature="e#47#58#0" expanded="true" />
               </folding>
@@ -82,6 +83,7 @@
               <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <element signature="e#47#58#0" expanded="true" />
+                <marker date="1408936558894" expanded="true" signature="292:574" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -273,7 +275,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.completion" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -1820,7 +1822,11 @@
       <created>1408937171587</created>
       <updated>1408937171587</updated>
     </task>
-    <option name="localTasksCounter" value="309" />
+    <task id="LOCAL-00309" summary="ok">
+      <created>1408937198040</created>
+      <updated>1408937198040</updated>
+    </task>
+    <option name="localTasksCounter" value="310" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1891,13 +1897,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/old/personnel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1326">
-          <caret line="32" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/old/file_old.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3094">
@@ -2231,6 +2230,7 @@
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="e#47#58#0" expanded="true" />
+            <marker date="1408936558894" expanded="true" signature="292:574" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -2251,10 +2251,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pycket/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.866197" vertical-offset="2991" max-vertical-offset="3417">
+          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72069824" vertical-offset="408" max-vertical-offset="1717">
-          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.5586854" vertical-offset="459" max-vertical-offset="1751">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="e#47#58#0" expanded="true" />
           </folding>
