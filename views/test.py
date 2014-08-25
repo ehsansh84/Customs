@@ -36,7 +36,7 @@ class Zzz(tornado.web.RequestHandler):
         # self.write(redis_instance.get(name='name'))
         session = SessionManager(self)
         # session.set('key', 'OMG')
-        session.set(handler=self, name='key', value='OMG')
+        session.set(name='key', value='OMG')
         # session['key'] = 'OMG'
         self.write(session.get(self, 'key'))
         # self.write(session['key'])
