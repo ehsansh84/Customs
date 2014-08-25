@@ -41,7 +41,7 @@ class Zzz(tornado.web.RequestHandler):
         self.write(session.get(self, 'key'))
         self.write(str(session.get('key')))
         self.write(str(session.keys()))
-        self.write(session.iterkeys())
+        self.write(str(session.iterkeys()))
         # self.write(session['key'])
         self.write('done')
         #
