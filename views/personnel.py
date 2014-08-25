@@ -14,7 +14,14 @@ from controllers.personnel import Personnel as Controller
 class Personnel(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
-        self.render('personnel.html')
+        acc_type = Redis.get(key='acc_type')
+        if acc_type == 'admin':
+            permissions = Redis.get(key='permissions', type='list')
+            self.render('personnel.html',
+                        permissions=permissions
+)
+        else:
+            self.redirect('/')
 
     def post(self, *args, **kwargs):
         personnel_id = self.get_argument('personnel_id', '99')
