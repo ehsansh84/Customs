@@ -57,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/views/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.72069824" vertical-offset="408" max-vertical-offset="1717">
-              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
               <folding>
                 <element signature="e#47#58#0" expanded="true" />
               </folding>
@@ -1816,7 +1816,11 @@
       <created>1408937088520</created>
       <updated>1408937088520</updated>
     </task>
-    <option name="localTasksCounter" value="308" />
+    <task id="LOCAL-00308" summary="ok">
+      <created>1408937171587</created>
+      <updated>1408937171587</updated>
+    </task>
+    <option name="localTasksCounter" value="309" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2250,7 +2254,7 @@
     <entry file="file://$PROJECT_DIR$/views/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72069824" vertical-offset="408" max-vertical-offset="1717">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
           <folding>
             <element signature="e#47#58#0" expanded="true" />
           </folding>
