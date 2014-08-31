@@ -37,8 +37,11 @@ url_patterns = {
     (r'/edit_request_end', Editrequest),
     (r'/edit_requests', EditrequestList),
 
+    (r'/register', Logout),
+
     (r'/logout', Logout),
     (r'/login', LoginHandler),
+
 
 
     (r'/pull', Pull),
