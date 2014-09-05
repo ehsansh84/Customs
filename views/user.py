@@ -35,7 +35,7 @@ class Register(tornado.web.RequestHandler):
         type = self.get_argument('type', '')
         permissions = Redis.get(key='permissions', type='list')
         try:
-            obj = Controller
+            obj = Controller()
             obj.name = name
             obj.family = family
             obj.username = username
