@@ -8,7 +8,7 @@ import tornado.ioloop
 import tornado.options
 import tornado.web
 
-from controllers.user import User as Controller
+from models.user import User as Controller
 
 
 class Register(tornado.web.RequestHandler):
