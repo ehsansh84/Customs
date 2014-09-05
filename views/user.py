@@ -33,6 +33,7 @@ class Register(tornado.web.RequestHandler):
         username = self.get_argument('username', '')
         password = self.get_argument('password', '')
         type = self.get_argument('type', '')
+        permissions = Redis.get(key='permissions', type='list')
         try:
             Controller.name = name
             Controller.family = family
@@ -40,9 +41,9 @@ class Register(tornado.web.RequestHandler):
             Controller.password = password
             Controller.type = type
             Controller.save()
+            self.render('register.html', action='done', permissions=permissions)
         except:
-            self.render('register.html', action='error')
-        self.render('register.html', action='done')
+            self.render('register.html', action='error', permissions=permissions)
 
         # personnel_id = self.get_argument('personnel_id', '99')
         # name = self.get_argument('name', '')
