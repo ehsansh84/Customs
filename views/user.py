@@ -9,6 +9,7 @@ import tornado.options
 import tornado.web
 
 from models.user import User as Controller
+from tools.redis import Redis
 
 
 class Register(tornado.web.RequestHandler):
