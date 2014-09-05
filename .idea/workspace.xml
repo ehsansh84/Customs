@@ -36,8 +36,8 @@
       <file leaf-file-name="register.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21159421" vertical-offset="165" max-vertical-offset="1343">
-              <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.7536232" vertical-offset="811" max-vertical-offset="1360">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1836,7 +1836,11 @@
       <created>1409926951359</created>
       <updated>1409926951359</updated>
     </task>
-    <option name="localTasksCounter" value="323" />
+    <task id="LOCAL-00323" summary="ok">
+      <created>1409931923944</created>
+      <updated>1409931923944</updated>
+    </task>
+    <option name="localTasksCounter" value="324" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2276,8 +2280,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21159421" vertical-offset="165" max-vertical-offset="1343">
-          <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.7536232" vertical-offset="811" max-vertical-offset="1360">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
