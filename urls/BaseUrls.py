@@ -17,6 +17,7 @@ from views.test import *
 from views.general import *
 from views.violation import *
 from views.int_violation import *
+from views.user import Register
 
 
 url_patterns = {
@@ -37,7 +38,7 @@ url_patterns = {
     (r'/edit_request_end', Editrequest),
     (r'/edit_requests', EditrequestList),
 
-    (r'/register', Logout),
+    (r'/register', Register),
 
     (r'/logout', Logout),
     (r'/login', LoginHandler),

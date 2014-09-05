@@ -25,7 +25,22 @@ class Register(tornado.web.RequestHandler):
 #             self.redirect('/')
 
     def post(self, *args, **kwargs):
-        pass
+        name = self.get_argument('name', '')
+        family = self.get_argument('family', '')
+        username = self.get_argument('username', '')
+        password = self.get_argument('password', '')
+        type = self.get_argument('type', '')
+        try:
+            Controller.name = name
+            Controller.family = family
+            Controller.username = username
+            Controller.password = password
+            Controller.type = type
+            Controller.save()
+        except:
+            self.render('register.html', action='error')
+        self.render('register.html', action='done')
+
         # personnel_id = self.get_argument('personnel_id', '99')
         # name = self.get_argument('name', '')
         # family = self.get_argument('family', '')
