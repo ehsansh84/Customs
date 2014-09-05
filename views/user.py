@@ -35,12 +35,13 @@ class Register(tornado.web.RequestHandler):
         type = self.get_argument('type', '')
         permissions = Redis.get(key='permissions', type='list')
         try:
-            Controller.name = name
-            Controller.family = family
-            Controller.username = username
-            Controller.password = password
-            Controller.type = type
-            Controller.save()
+            obj = Controller
+            obj.name = name
+            obj.family = family
+            obj.username = username
+            obj.password = password
+            obj.type = type
+            obj.save()
             self.write('ok')
             self.render('register.html', action='done', permissions=permissions)
         except Exception, e:
