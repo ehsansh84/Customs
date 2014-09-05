@@ -41,8 +41,10 @@ class Register(tornado.web.RequestHandler):
             Controller.password = password
             Controller.type = type
             Controller.save()
+            self.write('ok')
             self.render('register.html', action='done', permissions=permissions)
         except:
+            self.write('NO')
             self.render('register.html', action='error', permissions=permissions)
 
         # personnel_id = self.get_argument('personnel_id', '99')
