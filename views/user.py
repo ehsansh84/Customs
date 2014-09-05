@@ -14,7 +14,9 @@ from models.user import User as Controller
 class Register(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
-        self.render('register.html')
+        permissions = Redis.get(key='permissions', type='list')
+        self.render('register.html',
+                        permissions=permissions)
 #         acc_type = Redis.get(key='acc_type')
 #         if acc_type == 'admin':
 #             permissions = Redis.get(key='permissions', type='list')
