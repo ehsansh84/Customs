@@ -56,6 +56,9 @@ class LoginHandler(tornado.web.RequestHandler):
         # self.write('USERS: ')
         records = User.objects(__raw__={'username': username, 'password': password})
         if len(records) > 0:
+            # type = records
+            self.write(records[0].name)
+
             # Redis.set(key='acc_type', value='admin')
             # permission = {'main': True,
             #               'violation': True,
