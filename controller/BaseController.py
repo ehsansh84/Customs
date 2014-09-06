@@ -44,7 +44,7 @@ class StepFormHandler(tornado.web.RequestHandler):
 class LoginHandler(tornado.web.RequestHandler):
 
     def get(self):
-        self.render('login.html')
+        self.render('login.html', msg='')
 
     def post(self, *args, **kwargs):
         username = self.get_argument('username', '')
@@ -81,6 +81,8 @@ class LoginHandler(tornado.web.RequestHandler):
 
             # self.write('Yes')
         else:
+            self.render('login.html', msg='اطلاعات کاربری صحیح نیست')
+
             self.write('No!')
 
         # self.write(str(len(User.objects(__raw__={'username': username, 'password': password}))))
