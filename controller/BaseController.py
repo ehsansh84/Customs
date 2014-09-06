@@ -12,9 +12,9 @@ import tornado.web
 # from tornado.options import define, options
 # from tools.session import Session
 from tools.redis import Redis
+from models.user import User
 
 
-# home page
 class IndexHandler(tornado.web.RequestHandler):
 
     def get(self):
@@ -49,49 +49,63 @@ class LoginHandler(tornado.web.RequestHandler):
     def post(self, *args, **kwargs):
         username = self.get_argument('username', '')
         password = self.get_argument('password', '')
-        if username == 'admin' and password == '123':
-            Redis.set(key='acc_type', value='admin')
-            permission = {'main': True,
-                          'violation': True,
-                          'int_violation': True,
-                          'login':True,
-                          'logout': True,
-                          'report': True}
-            Redis.set(key='permissions', value=permission, type='list')
-            self.redirect('/violation')
-        elif username == 'user' and password == '111111':
-            Redis.set(key='acc_type', value='user')
-            permission = {'main': True,
-                          'violation': False,
-                          'int_violation': False,
-                          'login':True,
-                          'logout': True,
-                          'report': True}
-            Redis.set(key='permissions', value=permission, type='list')
-            self.redirect('/violation_search')
-        elif username == 'bazrasi' and password == 'Ax@1245':
-            Redis.set(key='acc_type', value='user')
-            permission = {'main': True,
-                          'violation': False,
-                          'int_violation': False,
-                          'login':True,
-                          'logout': True,
-                          'report': True}
-            Redis.set(key='permissions', value=permission, type='list')
-            self.redirect('/violation_search')
-        elif username == 'harasat' and password == 'Xd@1394':
-            Redis.set(key='acc_type', value='user')
-            permission = {'main': True,
-                          'violation': False,
-                          'int_violation': False,
-                          'login':True,
-                          'logout': True,
-                          'report': True}
-            Redis.set(key='permissions', value=permission, type='list')
-            self.redirect('/violation_search')
-        else:
-            # Redis.set(key='acc_type', value='no acc')
-            self.render('login.html')
+        obj = User()
+        self.write(str(obj.find(_filter={'username': username, 'password': password}, page=1, perpage=1)))
+        # if username == 'admin' and password == '123':
+        #     Redis.set(key='acc_type', value='admin')
+        #     permission = {'main': True,
+        #                   'violation': True,
+        #                   'int_violation': True,
+        #                   'login':True,
+        #                   'logout': True,
+        #                   'report': True}
+        #     Redis.set(key='permissions', value=permission, type='list')
+        #     self.redirect('/violation')
+        # elif username == 'user' and password == '111111':
+        #     Redis.set(key='acc_type', value='user')
+        #     permission = {'main': True,
+        #                   'violation': False,
+        #                   'int_violation': False,
+        #                   'login':True,
+        #                   'logout': True,
+        #                   'report': True}
+        #     Redis.set(key='permissions', value=permission, type='list')
+        #     self.redirect('/violation_search')
+        # elif username == 'bazrasi' and password == 'Ax@1245':
+        #     Redis.set(key='acc_type', value='user')
+        #     permission = {'main': True,
+        #                   'violation': False,
+        #                   'int_violation': False,
+        #                   'login':True,
+        #                   'logout': True,
+        #                   'report': True}
+        #     Redis.set(key='permissions', value=permission, type='list')
+        #     self.redirect('/violation_search')
+        # elif username == 'harasat' and password == 'Xd@1394':
+        #     Redis.set(key='acc_type', value='user')
+        #     permission = {'main': True,
+        #                   'violation': False,
+        #                   'int_violation': False,
+        #                   'login':True,
+        #                   'logout': True,
+        #                   'report': True}
+        #     Redis.set(key='permissions', value=permission, type='list')
+        #     self.redirect('/violation_search')
+        # else:
+        #     # Redis.set(key='acc_type', value='no acc')
+        #     self.render('login.html')
+
+
+
+
+
+
+
+
+
+
+
+
 
         # Session.set(handler=self, name='acc_type', value='admin')
         # self.write(username)
