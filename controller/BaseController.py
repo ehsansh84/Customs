@@ -54,7 +54,7 @@ class LoginHandler(tornado.web.RequestHandler):
         self.write(username)
         self.write(password)
         self.write('USERS: ')
-        self.write(str(len(User.objects)))
+        self.write(str(len(User.objects(__raw__={'username': username, 'password': password}))))
 
         if User.objects.first() == None:
             self.write('NO USER')
