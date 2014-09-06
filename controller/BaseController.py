@@ -49,8 +49,8 @@ class LoginHandler(tornado.web.RequestHandler):
     def post(self, *args, **kwargs):
         username = self.get_argument('username', '')
         password = self.get_argument('password', '')
-        obj = User()
-        self.write(str(obj.find(_filter={'username': username, 'password': password}, page=1, perpage=1)))
+        # obj = User()
+        self.write(str(User.objects(__raw__={'username': username, 'password': password})))
         # if username == 'admin' and password == '123':
         #     Redis.set(key='acc_type', value='admin')
         #     permission = {'main': True,
