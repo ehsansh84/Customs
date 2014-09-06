@@ -79,7 +79,7 @@ class LoginHandler(tornado.web.RequestHandler):
                 Redis.set(key='permissions', value=permission, type='list')
                 self.redirect('/violation_search')
 
-            self.write('Yes')
+            # self.write('Yes')
         else:
             self.write('No!')
 
