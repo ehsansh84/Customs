@@ -56,19 +56,28 @@ class LoginHandler(tornado.web.RequestHandler):
         # self.write('USERS: ')
         records = User.objects(__raw__={'username': username, 'password': password})
         if len(records) > 0:
-            # type = records
-            self.write(records[0].type)
+            type = records[0].type
+            Redis.set(key='acc_type', value=type)
+            # self.write()
             # self.write(records[0].name)
-
-            # Redis.set(key='acc_type', value='admin')
-            # permission = {'main': True,
-            #               'violation': True,
-            #               'int_violation': True,
-            #               'login':True,
-            #               'logout': True,
-            #               'report': True}
-            # Redis.set(key='permissions', value=permission, type='list')
-            # self.redirect('/violation')
+            if type == 'admin':
+                permission = {'main': True,
+                              'violation': True,
+                              'int_violation': True,
+                              'login':True,
+                              'logout': True,
+                              'report': True}
+                Redis.set(key='permissions', value=permission, type='list')
+                self.redirect('/violation')
+            elif type == 'user':
+                permission = {'main': True,
+                              'violation': False,
+                              'int_violation': False,
+                              'login':True,
+                              'logout': True,
+                              'report': True}
+                Redis.set(key='permissions', value=permission, type='list')
+                self.redirect('/violation_search')
 
             self.write('Yes')
         else:
