@@ -14,4 +14,4 @@ class Logout(tornado.web.RequestHandler):
 
     def get(self, *args, **kwargs):
         Redis.set(key='acc_type', value='')
-        self.render('login.html')
+        self.render('login.html', msg='')

@@ -18,7 +18,7 @@ from models.user import User
 class IndexHandler(tornado.web.RequestHandler):
 
     def get(self):
-        self.render('login.html')
+        self.render('login.html', msg='')
 
 # home page
 class FormHandler(tornado.web.RequestHandler):
